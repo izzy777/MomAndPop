@@ -54,7 +54,7 @@ public class login {
 		panel.setLayout(null);
 		
 		JLabel lblLogin = new JLabel("LOGIN");
-		lblLogin.setBounds(442, 79, 214, 80);
+		lblLogin.setBounds(390, 79, 317, 80);
 		panel.add(lblLogin);
 		lblLogin.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 70));
 		lblLogin.setHorizontalAlignment(JLabel.CENTER);
@@ -72,7 +72,7 @@ public class login {
 		panel.add(passwordTxt);
 		
 		JLabel lblEmail = new JLabel("Email");
-		lblEmail.setFont(new Font("Nirmala UI", Font.PLAIN, 11));
+		lblEmail.setFont(new Font("Nirmala UI", Font.PLAIN, 14));
 		lblEmail.setBounds(400, 275, 46, 14);
 		panel.add(lblEmail);
 		
