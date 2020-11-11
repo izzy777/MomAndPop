@@ -64,12 +64,14 @@ public class login {
 		lblLogin.setHorizontalAlignment(JLabel.CENTER);
 		
 		emailTxt = new JTextField();
+		emailTxt.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		emailTxt.setBorder(new LineBorder(Color.BLACK));
 		emailTxt.setBounds(395, 313, 317, 36);
 		panel.add(emailTxt);
 		emailTxt.setColumns(10);
 		
 		passwordTxt = new JTextField();
+		passwordTxt.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		passwordTxt.setBorder(new LineBorder(Color.BLACK));
 		passwordTxt.setColumns(10);
 		passwordTxt.setBounds(395, 228, 317, 36);
