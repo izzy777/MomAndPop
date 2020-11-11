@@ -58,21 +58,21 @@ public class login {
 		panel.setLayout(null);
 		
 		JLabel lblLogin = new JLabel("LOGIN");
-		lblLogin.setBounds(390, 79, 317, 80);
+		lblLogin.setBounds(395, 79, 317, 80);
 		panel.add(lblLogin);
 		lblLogin.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 70));
 		lblLogin.setHorizontalAlignment(JLabel.CENTER);
 		
 		emailTxt = new JTextField();
 		emailTxt.setBorder(new LineBorder(Color.BLACK));
-		emailTxt.setBounds(390, 313, 317, 36);
+		emailTxt.setBounds(395, 313, 317, 36);
 		panel.add(emailTxt);
 		emailTxt.setColumns(10);
 		
 		passwordTxt = new JTextField();
 		passwordTxt.setBorder(new LineBorder(Color.BLACK));
 		passwordTxt.setColumns(10);
-		passwordTxt.setBounds(390, 228, 317, 36);
+		passwordTxt.setBounds(395, 228, 317, 36);
 		panel.add(passwordTxt);
 		
 		JLabel lblEmail = new JLabel("Email");
@@ -90,7 +90,7 @@ public class login {
 		btnLogin.setBorderPainted(false);
 		btnLogin.setBackground(Color.RED);
 		btnLogin.setForeground(Color.WHITE);
-		btnLogin.setBounds(390, 398, 137, 36);
+		btnLogin.setBounds(395, 398, 137, 36);
 		btnLogin.setFocusable(false);
 		panel.add(btnLogin);
 		
@@ -99,7 +99,7 @@ public class login {
 		btnSignUp.setBorderPainted(false);
 		btnSignUp.setForeground(Color.WHITE);
 		btnSignUp.setBackground(Color.RED);
-		btnSignUp.setBounds(570, 398, 137, 36);
+		btnSignUp.setBounds(575, 398, 137, 36);
 		btnSignUp.setFocusable(false);
 		panel.add(btnSignUp);
 	}
