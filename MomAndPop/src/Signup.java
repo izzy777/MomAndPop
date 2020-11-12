@@ -63,69 +63,75 @@ public class Signup {
 		lblSignup.setHorizontalAlignment(JLabel.CENTER);
 		
 		emailTxt = new JTextField();
+		emailTxt.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		emailTxt.setBorder(new LineBorder(Color.BLACK));
 		emailTxt.setBounds(630, 335, 317, 36);
 		panel.add(emailTxt);
 		emailTxt.setColumns(10);
 		
 		passwordTxt = new JTextField();
+		passwordTxt.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		passwordTxt.setBorder(new LineBorder(Color.BLACK));
 		passwordTxt.setColumns(10);
 		passwordTxt.setBounds(630, 228, 317, 36);
 		panel.add(passwordTxt);
 		
 		JLabel lblEmail = new JLabel("Email");
-		lblEmail.setFont(new Font("Nirmala UI", Font.PLAIN, 14));
+		lblEmail.setFont(new Font("Nirmala UI", Font.BOLD, 14));
 		lblEmail.setBounds(640, 275, 46, 14);
 		panel.add(lblEmail);
 		
 		JLabel lblPassword = new JLabel("Password");
-		lblPassword.setFont(new Font("Nirmala UI", Font.PLAIN, 11));
+		lblPassword.setFont(new Font("Nirmala UI", Font.BOLD, 14));
 		lblPassword.setBounds(640, 377, 93, 14);
 		panel.add(lblPassword);
 		
 		textField = new JTextField();
+		textField.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		textField.setColumns(10);
 		textField.setBorder(new LineBorder(Color.BLACK));
 		textField.setBounds(144, 228, 317, 36);
 		panel.add(textField);
 		
 		textField_1 = new JTextField();
+		textField_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		textField_1.setColumns(10);
 		textField_1.setBorder(new LineBorder(Color.BLACK));
 		textField_1.setBounds(144, 335, 317, 36);
 		panel.add(textField_1);
 		
 		textField_2 = new JTextField();
+		textField_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		textField_2.setColumns(10);
 		textField_2.setBorder(new LineBorder(Color.BLACK));
-		textField_2.setBounds(144, 422, 317, 36);
+		textField_2.setBounds(144, 432, 317, 36);
 		panel.add(textField_2);
 		
 		textField_3 = new JTextField();
+		textField_3.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		textField_3.setColumns(10);
 		textField_3.setBorder(new LineBorder(Color.BLACK));
-		textField_3.setBounds(630, 422, 317, 36);
+		textField_3.setBounds(630, 432, 317, 36);
 		panel.add(textField_3);
 		
 		JLabel lblConfirmPassword = new JLabel("Confirm Password");
-		lblConfirmPassword.setFont(new Font("Nirmala UI", Font.PLAIN, 11));
-		lblConfirmPassword.setBounds(640, 469, 98, 14);
+		lblConfirmPassword.setFont(new Font("Nirmala UI", Font.BOLD, 14));
+		lblConfirmPassword.setBounds(640, 479, 148, 14);
 		panel.add(lblConfirmPassword);
 		
 		JLabel lblFirstName = new JLabel("First Name");
-		lblFirstName.setFont(new Font("Nirmala UI", Font.PLAIN, 14));
-		lblFirstName.setBounds(164, 277, 66, 14);
+		lblFirstName.setFont(new Font("Nirmala UI", Font.BOLD, 14));
+		lblFirstName.setBounds(154, 275, 98, 14);
 		panel.add(lblFirstName);
 		
 		JLabel lblLastName = new JLabel("Last Name");
-		lblLastName.setFont(new Font("Nirmala UI", Font.PLAIN, 14));
+		lblLastName.setFont(new Font("Nirmala UI", Font.BOLD, 14));
 		lblLastName.setBounds(154, 378, 76, 14);
 		panel.add(lblLastName);
 		
 		JLabel lblPhoneNumber = new JLabel("Phone Number");
-		lblPhoneNumber.setFont(new Font("Nirmala UI", Font.PLAIN, 14));
-		lblPhoneNumber.setBounds(154, 469, 98, 14);
+		lblPhoneNumber.setFont(new Font("Nirmala UI", Font.BOLD, 14));
+		lblPhoneNumber.setBounds(154, 479, 148, 14);
 		panel.add(lblPhoneNumber);
 
 	}
