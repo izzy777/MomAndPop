@@ -7,6 +7,9 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class login {
 
@@ -47,38 +50,59 @@ public class login {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		frame.setBackground(Color.RED);
+		frame.setResizable(false);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(136, 0, 1098, 661);
+		panel.setBounds(136, 0, 1108, 671);
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
 		
 		JLabel lblLogin = new JLabel("LOGIN");
-		lblLogin.setBounds(390, 79, 317, 80);
+		lblLogin.setBounds(395, 79, 317, 80);
 		panel.add(lblLogin);
 		lblLogin.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 70));
 		lblLogin.setHorizontalAlignment(JLabel.CENTER);
 		
 		emailTxt = new JTextField();
+		emailTxt.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		emailTxt.setBorder(new LineBorder(Color.BLACK));
-		emailTxt.setBounds(390, 313, 317, 36);
+		emailTxt.setBounds(395, 313, 317, 36);
 		panel.add(emailTxt);
 		emailTxt.setColumns(10);
 		
 		passwordTxt = new JTextField();
+		passwordTxt.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		passwordTxt.setBorder(new LineBorder(Color.BLACK));
 		passwordTxt.setColumns(10);
-		passwordTxt.setBounds(390, 228, 317, 36);
+		passwordTxt.setBounds(395, 228, 317, 36);
 		panel.add(passwordTxt);
 		
 		JLabel lblEmail = new JLabel("Email");
-		lblEmail.setFont(new Font("Nirmala UI", Font.PLAIN, 14));
+		lblEmail.setFont(new Font("Nirmala UI", Font.BOLD, 14));
 		lblEmail.setBounds(400, 275, 46, 14);
 		panel.add(lblEmail);
 		
 		JLabel lblPassword = new JLabel("Password");
-		lblPassword.setFont(new Font("Nirmala UI", Font.PLAIN, 11));
+		lblPassword.setFont(new Font("Nirmala UI", Font.BOLD, 14));
 		lblPassword.setBounds(400, 360, 93, 14);
 		panel.add(lblPassword);
+		
+		JButton btnLogin = new JButton("Login");
+		btnLogin.setFont(new Font("Nirmala UI", Font.BOLD, 20));
+		btnLogin.setBorderPainted(false);
+		btnLogin.setBackground(Color.RED);
+		btnLogin.setForeground(Color.WHITE);
+		btnLogin.setBounds(395, 398, 137, 36);
+		btnLogin.setFocusable(false);
+		panel.add(btnLogin);
+		
+		JButton btnSignUp = new JButton("Sign Up");
+		btnSignUp.setFont(new Font("Nirmala UI", Font.BOLD, 20));
+		btnSignUp.setBorderPainted(false);
+		btnSignUp.setForeground(Color.WHITE);
+		btnSignUp.setBackground(Color.RED);
+		btnSignUp.setBounds(575, 398, 137, 36);
+		btnSignUp.setFocusable(false);
+		panel.add(btnSignUp);
 	}
 }
