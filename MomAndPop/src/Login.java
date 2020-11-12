@@ -10,8 +10,10 @@ import javax.swing.border.LineBorder;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
+import javax.swing.SwingConstants;
 
-public class login {
+public class Login {
 
 	private JFrame frame;
 	private JTextField emailTxt;
@@ -24,7 +26,7 @@ public class login {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					login window = new login();
+					Login window = new Login();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -36,7 +38,7 @@ public class login {
 	/**
 	 * Create the application.
 	 */
-	public login() {
+	public Login() {
 		initialize();
 	}
 
@@ -104,5 +106,11 @@ public class login {
 		btnSignUp.setBounds(575, 398, 137, 36);
 		btnSignUp.setFocusable(false);
 		panel.add(btnSignUp);
+		
+		JLabel logo = new JLabel("");
+		logo.setIcon(new ImageIcon(Login.class.getResource("/imgs/logo.png")));
+		logo.setHorizontalAlignment(SwingConstants.CENTER);
+		logo.setBounds(0, 0, 136, 124);
+		frame.getContentPane().add(logo);
 	}
 }

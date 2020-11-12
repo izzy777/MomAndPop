@@ -7,6 +7,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
+import javax.swing.SwingConstants;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
 
 public class Signup {
 
@@ -50,6 +53,12 @@ public class Signup {
 		frame.getContentPane().setLayout(null);
 		frame.setBackground(Color.RED);
 		frame.setResizable(false);
+		
+		JLabel logo = new JLabel("");
+		logo.setIcon(new ImageIcon(Signup.class.getResource("/imgs/logo.png")));
+		logo.setHorizontalAlignment(SwingConstants.CENTER);
+		logo.setBounds(0, 0, 136, 124);
+		frame.getContentPane().add(logo);
 		
 		JPanel panel = new JPanel();
 		panel.setBounds(136, 0, 1098, 661);
@@ -133,7 +142,15 @@ public class Signup {
 		lblPhoneNumber.setFont(new Font("Nirmala UI", Font.BOLD, 14));
 		lblPhoneNumber.setBounds(154, 479, 148, 14);
 		panel.add(lblPhoneNumber);
+		
+		JButton btnSignUp = new JButton("Sign Up");
+		btnSignUp.setForeground(Color.WHITE);
+		btnSignUp.setFont(new Font("Nirmala UI", Font.BOLD, 20));
+		btnSignUp.setFocusable(false);
+		btnSignUp.setBorderPainted(false);
+		btnSignUp.setBackground(Color.RED);
+		btnSignUp.setBounds(480, 527, 137, 36);
+		panel.add(btnSignUp);
 
 	}
-
 }

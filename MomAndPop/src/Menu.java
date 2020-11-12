@@ -19,10 +19,11 @@ import java.awt.event.MouseEvent;
 import javax.swing.JCheckBox;
 import java.awt.Component;
 
-public class menu {
+public class Menu {
 
-	private JFrame frame;
-
+	private JFrame frmMomAndPop;
+	Toppings topPnl;
+	Toppings2 top2Pnl;
 
 	/**
 	 * Launch the application.
@@ -31,8 +32,8 @@ public class menu {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					menu window = new menu();
-					window.frame.setVisible(true);
+					Menu window = new Menu();
+					window.frmMomAndPop.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -43,7 +44,7 @@ public class menu {
 	/**
 	 * Create the application.
 	 */
-	public menu() {
+	public Menu() {
 		initialize();
 	}
 
@@ -51,28 +52,31 @@ public class menu {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();
-		frame.getContentPane().setBackground(Color.RED);
-		frame.setBounds(100, 100, 1250, 700);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(null);
-		frame.setBackground(Color.RED);
-		frame.setResizable(false);
+		//frame of main menu
+		frmMomAndPop = new JFrame();
+		frmMomAndPop.setTitle("Mom and Pop Pizzeria");
+		frmMomAndPop.getContentPane().setBackground(Color.RED);
+		frmMomAndPop.setBounds(100, 100, 1250, 700);
+		frmMomAndPop.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmMomAndPop.getContentPane().setLayout(null);
+		frmMomAndPop.setBackground(Color.RED);
+		frmMomAndPop.setResizable(false);
 		
-		JPanel panel = new JPanel();
-		panel.setBorder(null);
-		panel.setBounds(136, 0, 1108, 671);
-		frame.getContentPane().add(panel);
-		panel.setLayout(null);
+		//main menu panel
+		JPanel menu = new JPanel();
+		menu.setBorder(null);
+		menu.setBounds(136, 0, 1108, 671);
+		frmMomAndPop.getContentPane().add(menu);
+		menu.setLayout(null);
 		
 		JLabel menuTxt = new JLabel("CHOOSE A CATEGORY ON THE LEFT TO GET STARTED");
 		menuTxt.setFont(new Font("Nirmala UI", Font.BOLD, 33));
 		menuTxt.setHorizontalAlignment(SwingConstants.CENTER);
 		menuTxt.setBounds(0, 274, 1108, 123);
-		panel.add(menuTxt);
+		menu.add(menuTxt);
 		
 		JButton btnPizza = new JButton("Pizza");
-		btnPizza.setIcon(new ImageIcon(menu.class.getResource("/imgs/pizza.png")));
+		btnPizza.setIcon(new ImageIcon(Menu.class.getResource("/imgs/pizza.png")));
 		btnPizza.setRequestFocusEnabled(false);
 		btnPizza.setForeground(Color.WHITE);
 		btnPizza.setBackground(Color.RED);
@@ -81,10 +85,10 @@ public class menu {
 		btnPizza.setFont(new Font("Nirmala UI", Font.BOLD, 22));
 		btnPizza.setBounds(0, 198, 136, 39);
 
-		frame.getContentPane().add(btnPizza);
+		frmMomAndPop.getContentPane().add(btnPizza);
 		
 		JButton btnSides = new JButton("Sides");
-		btnSides.setIcon(new ImageIcon(menu.class.getResource("/imgs/sides.png")));
+		btnSides.setIcon(new ImageIcon(Menu.class.getResource("/imgs/sides.png")));
 		btnSides.setForeground(Color.WHITE);
 		btnSides.setRequestFocusEnabled(false);
 		btnSides.setBackground(Color.RED);
@@ -92,10 +96,10 @@ public class menu {
 		btnSides.setFocusable(false);
 		btnSides.setFont(new Font("Nirmala UI", Font.BOLD, 22));
 		btnSides.setBounds(0, 248, 136, 39);
-		frame.getContentPane().add(btnSides);
+		frmMomAndPop.getContentPane().add(btnSides);
 		
 		JButton btnDrinks = new JButton("Drinks");
-		btnDrinks.setIcon(new ImageIcon(menu.class.getResource("/imgs/drinks.png")));
+		btnDrinks.setIcon(new ImageIcon(Menu.class.getResource("/imgs/drinks.png")));
 		btnDrinks.setForeground(Color.WHITE);
 		btnDrinks.setRequestFocusEnabled(false);
 		btnDrinks.setBackground(Color.RED);
@@ -103,27 +107,59 @@ public class menu {
 		btnDrinks.setFocusable(false);
 		btnDrinks.setFont(new Font("Nirmala UI", Font.BOLD, 22));
 		btnDrinks.setBounds(0, 298, 136, 39);
-		frame.getContentPane().add(btnDrinks);
+		frmMomAndPop.getContentPane().add(btnDrinks);
 		
 		JButton btnCheckout = new JButton();
-		btnCheckout.setIcon(new ImageIcon(menu.class.getResource("/imgs/cart.png")));
+		btnCheckout.setIcon(new ImageIcon(Menu.class.getResource("/imgs/cart.png")));
 		btnCheckout.setFocusable(false);
 		btnCheckout.setRequestFocusEnabled(false);
 		btnCheckout.setBorder(null);
 		btnCheckout.setBorderPainted(false);
 		btnCheckout.setBackground(Color.RED);
-		btnCheckout.setBounds(0, 609, 136, 51);
-		frame.getContentPane().add(btnCheckout);
+		btnCheckout.setBounds(0, 609, 136, 62);
+		frmMomAndPop.getContentPane().add(btnCheckout);
 		
-		// Changes the color of selected.
+		JLabel logo = new JLabel("");
+		logo.setHorizontalAlignment(SwingConstants.CENTER);
+		logo.setIcon(new ImageIcon(Menu.class.getResource("/imgs/logo.png")));
+		logo.setBounds(0, 0, 136, 124);
+		frmMomAndPop.getContentPane().add(logo);
+		
+		//Toppings: Size, Crust, Sauce, Cheese
+		topPnl = new Toppings();
+		topPnl.setBounds(136, 0, 1108, 671);
+		frmMomAndPop.getContentPane().add(topPnl);
+		
+		//Toppings:Meats and Veggies
+		top2Pnl = new Toppings2();
+		top2Pnl.setBounds(136, 0, 1108, 671);
+		frmMomAndPop.getContentPane().add(top2Pnl);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		//If Pizza was click
 		btnPizza.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
+				//Change/reset colors
 				btnPizza.setBackground(Color.decode("#FF3030"));
 				btnSides.setBackground(Color.red);
 				btnDrinks.setBackground(Color.red);
 				btnCheckout.setBackground(Color.red);
+				
+				//shows toppings
+				topPnl.setVisible(true);
+				menu.setVisible(false);
 			}
 		});
 		//If Sides was clicked
