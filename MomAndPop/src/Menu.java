@@ -18,12 +18,13 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JCheckBox;
 import java.awt.Component;
+import javax.swing.JComboBox;
 
 public class Menu {
 
 	private JFrame frmMomAndPop;
-	PizzaType topPnl;
-	Toppings top2Pnl;
+	PizzaType pizzaTypePnl;
+	Toppings topPnl;
 
 	/**
 	 * Launch the application.
@@ -69,20 +70,43 @@ public class Menu {
 		frmMomAndPop.getContentPane().add(menu);
 		menu.setLayout(null);
 		
-		JLabel menuTxt = new JLabel("CHOOSE A CATEGORY ON THE LEFT TO GET STARTED");
-		menuTxt.setFont(new Font("Nirmala UI", Font.BOLD, 33));
-		menuTxt.setHorizontalAlignment(SwingConstants.CENTER);
-		menuTxt.setBounds(0, 274, 1108, 123);
-		menu.add(menuTxt);
-		
+		//PizzaType Next Button
 		JButton btnNext = new JButton("NEXT");
+		btnNext.setVisible(false);
 		btnNext.setForeground(Color.WHITE);
 		btnNext.setFont(new Font("Nirmala UI", Font.BOLD, 20));
 		btnNext.setFocusable(false);
 		btnNext.setBorderPainted(false);
 		btnNext.setBackground(Color.RED);
 		btnNext.setBounds(867, 600, 201, 40);
-		menu.add(btnNext);
+		
+		JLabel menuTxt = new JLabel("CHOOSE A CATEGORY ON THE LEFT TO GET STARTED");
+		menuTxt.setVisible(true);
+		menuTxt.setFont(new Font("Nirmala UI", Font.BOLD, 33));
+		menuTxt.setHorizontalAlignment(SwingConstants.CENTER);
+		menuTxt.setBounds(0, 274, 1108, 123);
+		menu.add(menuTxt);
+		
+		//Add to Cart Button on Toppings Page
+		JButton btnATC = new JButton("ADD TO CART");
+		btnATC.setVisible(false);
+		btnATC.setForeground(Color.WHITE);
+		btnATC.setFont(new Font("Nirmala UI", Font.BOLD, 20));
+		btnATC.setFocusable(false);
+		btnATC.setBorderPainted(false);
+		btnATC.setBackground(Color.RED);
+		btnATC.setBounds(867, 600, 201, 40);
+		
+		//Back Button on Pizza Type Page
+		JButton btnPTBack = new JButton("BACK");
+		btnPTBack.setVisible(false);
+		btnPTBack.setForeground(Color.WHITE);
+		btnPTBack.setFont(new Font("Nirmala UI", Font.BOLD, 20));
+		btnPTBack.setFocusable(false);
+		btnPTBack.setBorderPainted(false);
+		btnPTBack.setBackground(Color.RED);
+		btnPTBack.setBounds(37, 600, 201, 40);
+
 		
 		JButton btnPizza = new JButton("Pizza");
 		btnPizza.setIcon(new ImageIcon(Menu.class.getResource("/imgs/pizza.png")));
@@ -134,16 +158,42 @@ public class Menu {
 		logo.setBounds(0, 0, 136, 124);
 		frmMomAndPop.getContentPane().add(logo);
 		
-		//Toppings: Size, Crust, Sauce, Cheese
-		topPnl = new PizzaType();
+		//These are pages
+		//Pizza Type: Size, Crust, Sauce, Cheese
+		pizzaTypePnl = new PizzaType();
+		pizzaTypePnl.setBounds(136, 0, 1108, 671);
+		pizzaTypePnl.add(btnNext);
+		frmMomAndPop.getContentPane().add(pizzaTypePnl);
+		
+		//Toppings: Meats and Veggies
+		topPnl = new Toppings();
+		topPnl.setVisible(false);
 		topPnl.setBounds(136, 0, 1108, 671);
+		topPnl.add(btnATC);
+		topPnl.add(btnPTBack);
 		frmMomAndPop.getContentPane().add(topPnl);
 		
-		//Toppings:Meats and Veggies
 
-
-
+		//PizzaType Next Button
+		btnNext.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				topPnl.setVisible(true);
+				pizzaTypePnl.setVisible(false);
+				btnPTBack.setVisible(true);
+				btnATC.setVisible(true);
+			}
+		});
 		
+		//Back Button on Pizza Topping Page Method
+		btnPTBack.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				pizzaTypePnl.setVisible(true);
+				topPnl.setVisible(false);
+				
+			}
+		});
 		
 		//If Pizza was click
 		btnPizza.addMouseListener(new MouseAdapter() {
@@ -156,7 +206,8 @@ public class Menu {
 				btnCheckout.setBackground(Color.red);
 				
 				//shows toppings
-				topPnl.setVisible(true);
+				pizzaTypePnl.setVisible(true);
+				btnNext.setVisible(true);
 				menu.setVisible(false);
 			}
 		});

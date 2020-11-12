@@ -4,10 +4,14 @@ import java.awt.Font;
 import javax.swing.SwingConstants;
 import javax.swing.border.EtchedBorder;
 import java.awt.Color;
+import java.awt.Component;
+
 import javax.swing.JCheckBox;
 import javax.swing.JButton;
 import javax.swing.border.LineBorder;
 import java.awt.SystemColor;
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
 
 public class Toppings extends JPanel {
 
@@ -142,24 +146,6 @@ public class Toppings extends JPanel {
 		cbPA.setContentAreaFilled(false);
 		cbPA.setBounds(620, 500, 28, 40);
 		add(cbPA);
-		
-		JButton btnATC = new JButton("ADD TO CART");
-		btnATC.setFocusable(false);
-		btnATC.setForeground(Color.WHITE);
-		btnATC.setFont(new Font("Nirmala UI", Font.BOLD, 20));
-		btnATC.setBorderPainted(false);
-		btnATC.setBackground(Color.RED);
-		btnATC.setBounds(867, 600, 201, 40);
-		add(btnATC);
-		
-		JButton btnBack = new JButton("BACK");
-		btnBack.setFocusable(false);
-		btnBack.setForeground(Color.WHITE);
-		btnBack.setFont(new Font("Nirmala UI", Font.BOLD, 20));
-		btnBack.setBorderPainted(false);
-		btnBack.setBackground(Color.RED);
-		btnBack.setBounds(40, 600, 201, 40);
-		add(btnBack);
 
 	}
 }

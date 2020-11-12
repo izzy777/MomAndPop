@@ -224,21 +224,5 @@ public class PizzaType extends JPanel {
 		
 		top2Pnl = new Toppings();
 		
-		JButton btnNext = new JButton("NEXT");
-		btnNext.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseReleased(MouseEvent e) {
-				frmMomAndPop.addPanel(top2Pnl);
-				top2Pnl.setVisible(true);
-			}
-		});
-		btnNext.setForeground(Color.WHITE);
-		btnNext.setFont(new Font("Nirmala UI", Font.BOLD, 20));
-		btnNext.setFocusable(false);
-		btnNext.setBorderPainted(false);
-		btnNext.setBackground(Color.RED);
-		btnNext.setBounds(867, 600, 201, 40);
-		add(btnNext);
-		
 	}
 }
