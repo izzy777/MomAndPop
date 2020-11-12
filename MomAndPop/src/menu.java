@@ -65,11 +65,11 @@ public class menu {
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("CHOOSE A CATEGORY ON THE LEFT TO GET STARTED");
-		lblNewLabel.setFont(new Font("Nirmala UI", Font.BOLD, 33));
-		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setBounds(0, 274, 1108, 123);
-		panel.add(lblNewLabel);
+		JLabel menuTxt = new JLabel("CHOOSE A CATEGORY ON THE LEFT TO GET STARTED");
+		menuTxt.setFont(new Font("Nirmala UI", Font.BOLD, 33));
+		menuTxt.setHorizontalAlignment(SwingConstants.CENTER);
+		menuTxt.setBounds(0, 274, 1108, 123);
+		panel.add(menuTxt);
 		
 		JButton btnPizza = new JButton("Pizza");
 		
