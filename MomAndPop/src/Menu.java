@@ -22,8 +22,8 @@ import java.awt.Component;
 public class Menu {
 
 	private JFrame frmMomAndPop;
-	Toppings topPnl;
-	Toppings2 top2Pnl;
+	PizzaType topPnl;
+	Toppings top2Pnl;
 
 	/**
 	 * Launch the application.
@@ -135,7 +135,7 @@ public class Menu {
 		frmMomAndPop.getContentPane().add(logo);
 		
 		//Toppings: Size, Crust, Sauce, Cheese
-		topPnl = new Toppings();
+		topPnl = new PizzaType();
 		topPnl.setBounds(136, 0, 1108, 671);
 		frmMomAndPop.getContentPane().add(topPnl);
 		
