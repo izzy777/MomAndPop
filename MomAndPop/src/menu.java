@@ -72,7 +72,7 @@ public class menu {
 		panel.add(menuTxt);
 		
 		JButton btnPizza = new JButton("Pizza");
-		
+		btnPizza.setIcon(new ImageIcon(menu.class.getResource("/imgs/pizza.png")));
 		btnPizza.setRequestFocusEnabled(false);
 		btnPizza.setForeground(Color.WHITE);
 		btnPizza.setBackground(Color.RED);
@@ -80,10 +80,11 @@ public class menu {
 		btnPizza.setFocusable(false);
 		btnPizza.setFont(new Font("Nirmala UI", Font.BOLD, 22));
 		btnPizza.setBounds(0, 198, 136, 39);
-		btnPizza.setIcon(new ImageIcon(this.getClass().getResource("pizza.png")));
+
 		frame.getContentPane().add(btnPizza);
 		
 		JButton btnSides = new JButton("Sides");
+		btnSides.setIcon(new ImageIcon(menu.class.getResource("/imgs/sides.png")));
 		btnSides.setForeground(Color.WHITE);
 		btnSides.setRequestFocusEnabled(false);
 		btnSides.setBackground(Color.RED);
@@ -91,10 +92,10 @@ public class menu {
 		btnSides.setFocusable(false);
 		btnSides.setFont(new Font("Nirmala UI", Font.BOLD, 22));
 		btnSides.setBounds(0, 248, 136, 39);
-		btnSides.setIcon(new ImageIcon(this.getClass().getResource("sides.png")));
 		frame.getContentPane().add(btnSides);
 		
 		JButton btnDrinks = new JButton("Drinks");
+		btnDrinks.setIcon(new ImageIcon(menu.class.getResource("/imgs/drinks.png")));
 		btnDrinks.setForeground(Color.WHITE);
 		btnDrinks.setRequestFocusEnabled(false);
 		btnDrinks.setBackground(Color.RED);
@@ -102,24 +103,23 @@ public class menu {
 		btnDrinks.setFocusable(false);
 		btnDrinks.setFont(new Font("Nirmala UI", Font.BOLD, 22));
 		btnDrinks.setBounds(0, 298, 136, 39);
-		btnDrinks.setIcon(new ImageIcon(this.getClass().getResource("drinks.png")));
 		frame.getContentPane().add(btnDrinks);
 		
 		JButton btnCheckout = new JButton();
+		btnCheckout.setIcon(new ImageIcon(menu.class.getResource("/imgs/cart.png")));
 		btnCheckout.setFocusable(false);
 		btnCheckout.setRequestFocusEnabled(false);
 		btnCheckout.setBorder(null);
 		btnCheckout.setBorderPainted(false);
 		btnCheckout.setBackground(Color.RED);
 		btnCheckout.setBounds(0, 609, 136, 51);
-		btnCheckout.setIcon(new ImageIcon(this.getClass().getResource("cart.png")));
 		frame.getContentPane().add(btnCheckout);
 		
 		// Changes the color of selected.
 		//If Pizza was click
 		btnPizza.addMouseListener(new MouseAdapter() {
 			@Override
-			public void mouseClicked(MouseEvent e) {
+			public void mouseReleased(MouseEvent e) {
 				btnPizza.setBackground(Color.decode("#FF3030"));
 				btnSides.setBackground(Color.red);
 				btnDrinks.setBackground(Color.red);
@@ -129,7 +129,7 @@ public class menu {
 		//If Sides was clicked
 		btnSides.addMouseListener(new MouseAdapter() {
 			@Override
-			public void mouseClicked(MouseEvent e) {
+			public void mouseReleased(MouseEvent e) {
 				btnSides.setBackground(Color.decode("#FF3030"));
 				btnPizza.setBackground(Color.red);
 				btnDrinks.setBackground(Color.red);
@@ -139,7 +139,7 @@ public class menu {
 		//If Drinks was clicked
 		btnDrinks.addMouseListener(new MouseAdapter() {
 			@Override
-			public void mouseClicked(MouseEvent e) {
+			public void mouseReleased(MouseEvent e) {
 				btnDrinks.setBackground(Color.decode("#FF3030"));
 				btnSides.setBackground(Color.red);
 				btnPizza.setBackground(Color.red);
@@ -149,7 +149,7 @@ public class menu {
 		//If Checkout was clicked
 		btnCheckout.addMouseListener(new MouseAdapter() {
 			@Override
-			public void mouseClicked(MouseEvent e) {
+			public void mouseReleased(MouseEvent e) {
 				btnCheckout.setBackground(Color.decode("#FF3030"));
 				btnSides.setBackground(Color.red);
 				btnDrinks.setBackground(Color.red);
