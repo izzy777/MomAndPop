@@ -17,7 +17,7 @@ public class Toppings2 extends JPanel {
 	public Toppings2() {
 		setBackground(SystemColor.control);
 		setLayout(null);
-		setBounds(0, 0, 1108, 671);
+		setBounds(136, 0, 1108, 671);
 		setVisible(false);
 		
 		JLabel lblPA = new JLabel("Pineapple");

@@ -18,6 +18,7 @@ public class Toppings extends JPanel {
 	private final ButtonGroup sauceBtnGrp = new ButtonGroup();
 	private final ButtonGroup cheeseBtnGrp = new ButtonGroup();
 	Toppings2 top2Pnl;
+	Menu frmMomAndPop;
 
 	/**
 	 * Create the panel.
@@ -227,7 +228,8 @@ public class Toppings extends JPanel {
 		btnNext.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
-
+				frmMomAndPop.addPanel(top2Pnl);
+				top2Pnl.setVisible(true);
 			}
 		});
 		btnNext.setForeground(Color.WHITE);

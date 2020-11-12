@@ -75,6 +75,15 @@ public class Menu {
 		menuTxt.setBounds(0, 274, 1108, 123);
 		menu.add(menuTxt);
 		
+		JButton btnNext = new JButton("NEXT");
+		btnNext.setForeground(Color.WHITE);
+		btnNext.setFont(new Font("Nirmala UI", Font.BOLD, 20));
+		btnNext.setFocusable(false);
+		btnNext.setBorderPainted(false);
+		btnNext.setBackground(Color.RED);
+		btnNext.setBounds(867, 600, 201, 40);
+		menu.add(btnNext);
+		
 		JButton btnPizza = new JButton("Pizza");
 		btnPizza.setIcon(new ImageIcon(Menu.class.getResource("/imgs/pizza.png")));
 		btnPizza.setRequestFocusEnabled(false);
@@ -131,20 +140,9 @@ public class Menu {
 		frmMomAndPop.getContentPane().add(topPnl);
 		
 		//Toppings:Meats and Veggies
-		top2Pnl = new Toppings2();
-		top2Pnl.setBounds(136, 0, 1108, 671);
-		frmMomAndPop.getContentPane().add(top2Pnl);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
+
 		
 		
 		//If Pizza was click
@@ -193,5 +191,9 @@ public class Menu {
 			}
 		});
 		
+	}
+	
+	public void addPanel(JPanel a) {
+		frmMomAndPop.getContentPane().add(a);
 	}
 }
