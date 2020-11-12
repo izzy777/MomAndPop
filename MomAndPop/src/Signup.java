@@ -52,7 +52,7 @@ public class Signup {
 		frame.setResizable(false);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(83, 0, 1098, 661);
+		panel.setBounds(136, 0, 1098, 661);
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
 		
