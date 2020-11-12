@@ -60,7 +60,7 @@ public class login {
 		JLabel lblLogin = new JLabel("LOGIN");
 		lblLogin.setBounds(395, 79, 317, 80);
 		panel.add(lblLogin);
-		lblLogin.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 70));
+		lblLogin.setFont(new Font("Franklin Gothic Demi", Font.PLAIN, 70));
 		lblLogin.setHorizontalAlignment(JLabel.CENTER);
 		
 		emailTxt = new JTextField();

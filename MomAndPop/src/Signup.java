@@ -59,7 +59,7 @@ public class Signup {
 		JLabel lblSignup = new JLabel("SIGN UP");
 		lblSignup.setBounds(390, 68, 317, 80);
 		panel.add(lblSignup);
-		lblSignup.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 70));
+		lblSignup.setFont(new Font("Franklin Gothic Demi", Font.PLAIN, 70));
 		lblSignup.setHorizontalAlignment(JLabel.CENTER);
 		
 		emailTxt = new JTextField();

@@ -58,7 +58,7 @@ public class toppings extends JPanel {
 		
 		JLabel lblTopping = new JLabel("Toppings");
 		lblTopping.setHorizontalAlignment(SwingConstants.CENTER);
-		lblTopping.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 70));
+		lblTopping.setFont(new Font("Franklin Gothic Demi Cond", Font.PLAIN, 70));
 		lblTopping.setBounds(10, 11, 1088, 130);
 		add(lblTopping);
 		
