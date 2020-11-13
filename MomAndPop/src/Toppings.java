@@ -27,7 +27,7 @@ public class Toppings extends JPanel {
 		JLabel lblPA = new JLabel("Pineapple");
 		lblPA.setHorizontalAlignment(SwingConstants.CENTER);
 		lblPA.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblPA.setBorder(new LineBorder(Color.LIGHT_GRAY, 2, true));
+		lblPA.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
 		lblPA.setAlignmentY(0.0f);
 		lblPA.setBounds(654, 500, 219, 40);
 		add(lblPA);
@@ -35,7 +35,7 @@ public class Toppings extends JPanel {
 		JLabel lblT = new JLabel("Tomatoes");
 		lblT.setHorizontalAlignment(SwingConstants.CENTER);
 		lblT.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblT.setBorder(new LineBorder(Color.LIGHT_GRAY, 2, true));
+		lblT.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
 		lblT.setAlignmentY(0.0f);
 		lblT.setBounds(654, 439, 219, 40);
 		add(lblT);
@@ -43,7 +43,7 @@ public class Toppings extends JPanel {
 		JLabel lblM = new JLabel("Mushrooms");
 		lblM.setHorizontalAlignment(SwingConstants.CENTER);
 		lblM.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblM.setBorder(new LineBorder(Color.LIGHT_GRAY, 2, true));
+		lblM.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
 		lblM.setAlignmentY(0.0f);
 		lblM.setBounds(654, 378, 219, 40);
 		add(lblM);
@@ -51,7 +51,7 @@ public class Toppings extends JPanel {
 		JLabel lblO = new JLabel("Onions");
 		lblO.setHorizontalAlignment(SwingConstants.CENTER);
 		lblO.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblO.setBorder(new LineBorder(Color.LIGHT_GRAY, 2, true));
+		lblO.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
 		lblO.setAlignmentY(0.0f);
 		lblO.setBounds(654, 314, 219, 40);
 		add(lblO);
@@ -59,7 +59,7 @@ public class Toppings extends JPanel {
 		JLabel lblGP = new JLabel("Green Peppers");
 		lblGP.setHorizontalAlignment(SwingConstants.CENTER);
 		lblGP.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblGP.setBorder(new LineBorder(Color.LIGHT_GRAY, 2, true));
+		lblGP.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
 		lblGP.setAlignmentY(0.0f);
 		lblGP.setBounds(654, 249, 219, 40);
 		add(lblGP);
@@ -85,7 +85,7 @@ public class Toppings extends JPanel {
 		JLabel lblP = new JLabel("Pepperoni");
 		lblP.setHorizontalAlignment(SwingConstants.CENTER);
 		lblP.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblP.setBorder(new LineBorder(Color.LIGHT_GRAY, 2, true));
+		lblP.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
 		lblP.setAlignmentY(0.0f);
 		lblP.setBounds(234, 249, 219, 40);
 		add(lblP);
@@ -93,7 +93,7 @@ public class Toppings extends JPanel {
 		JLabel lblS = new JLabel("Sausage");
 		lblS.setHorizontalAlignment(SwingConstants.CENTER);
 		lblS.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblS.setBorder(new LineBorder(Color.LIGHT_GRAY, 2, true));
+		lblS.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
 		lblS.setAlignmentY(0.0f);
 		lblS.setBounds(234, 314, 219, 40);
 		add(lblS);
@@ -101,7 +101,7 @@ public class Toppings extends JPanel {
 		JLabel lblH = new JLabel("Ham");
 		lblH.setHorizontalAlignment(SwingConstants.CENTER);
 		lblH.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblH.setBorder(new LineBorder(Color.LIGHT_GRAY, 2, true));
+		lblH.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
 		lblH.setAlignmentY(0.0f);
 		lblH.setBounds(234, 378, 219, 40);
 		add(lblH);
