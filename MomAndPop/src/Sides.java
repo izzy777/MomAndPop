@@ -49,12 +49,14 @@ public class Sides extends JPanel {
 		cbBS.setContentAreaFilled(false);
 		cbBS.setBounds(331, 131, 37, 81);
 		add(cbBS);
-		
+	
 		JCheckBox cbBSB = new JCheckBox("");
 		cbBSB.setFocusable(false);
 		cbBSB.setContentAreaFilled(false);
 		cbBSB.setBounds(331, 288, 37, 81);
 		add(cbBSB);
+		
+		
 		
 		JCheckBox cbBCC = new JCheckBox("");
 		cbBCC.setFocusable(false);
@@ -63,19 +65,23 @@ public class Sides extends JPanel {
 		add(cbBCC);
 		
 		JComboBox cbB = new JComboBox();
+		cbB.setFocusable(false);
 		cbB.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbB.setBounds(784, 145, 50, 41);
 		add(cbB);
 		
 		JComboBox cbBSb = new JComboBox();
+		cbBSb.setFocusable(false);
 		cbBSb.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbBSb.setBounds(784, 301, 50, 41);
 		add(cbBSb);
 		
 		JComboBox cbBC = new JComboBox();
+		cbBC.setFocusable(false);
 		cbBC.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbBC.setBounds(784, 482, 50, 41);
 		add(cbBC);
 		setVisible(false);
+			
 	}
 }
