@@ -10,12 +10,12 @@ import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
 
-public class sides extends JPanel {
+public class Sides extends JPanel {
 
 	/**
 	 * Create the panel.
 	 */
-	public sides() {
+	public Sides() {
 		setBackground(SystemColor.control);
 		setBounds(0, 0, 1108, 671);
 		setLayout(null);
