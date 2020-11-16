@@ -146,6 +146,13 @@ public class Toppings extends JPanel {
 		cbPA.setContentAreaFilled(false);
 		cbPA.setBounds(620, 500, 28, 40);
 		add(cbPA);
+		
+		JLabel lblFirstTopping = new JLabel("First Topping Free");
+		lblFirstTopping.setForeground(Color.RED);
+		lblFirstTopping.setHorizontalAlignment(SwingConstants.CENTER);
+		lblFirstTopping.setFont(new Font("Franklin Gothic Demi Cond", Font.PLAIN, 25));
+		lblFirstTopping.setBounds(10, 74, 1088, 130);
+		add(lblFirstTopping);
 
 	}
 }

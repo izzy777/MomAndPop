@@ -12,6 +12,8 @@ import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
 import javax.swing.JButton;
 import javax.swing.ImageIcon;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class SignUp extends JFrame {
 
@@ -147,6 +149,17 @@ public class SignUp extends JFrame {
 		lblEmail.setFont(new Font("Nirmala UI", Font.BOLD, 14));
 		lblEmail.setBounds(640, 278, 46, 14);
 		panel.add(lblEmail);
+		
+		//Action when SignUp button is pressed
+		btnSignUp.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (e.getSource() == btnSignUp) {
+					Menu m = new Menu();
+					m.setVisible(true);
+					dispose();
+				}
+			}
+		});
 		
 	}
 }
