@@ -12,6 +12,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.ImageIcon;
 import javax.swing.SwingConstants;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class Login {
 
@@ -89,6 +91,7 @@ public class Login {
 		lblPassword.setBounds(400, 360, 93, 14);
 		panel.add(lblPassword);
 		
+		//Login button
 		JButton btnLogin = new JButton("Login");
 		btnLogin.setFont(new Font("Nirmala UI", Font.BOLD, 20));
 		btnLogin.setBorderPainted(false);
@@ -98,7 +101,9 @@ public class Login {
 		btnLogin.setFocusable(false);
 		panel.add(btnLogin);
 		
+		//Sign up button
 		JButton btnSignUp = new JButton("Sign Up");
+
 		btnSignUp.setFont(new Font("Nirmala UI", Font.BOLD, 20));
 		btnSignUp.setBorderPainted(false);
 		btnSignUp.setForeground(Color.WHITE);
@@ -112,5 +117,29 @@ public class Login {
 		logo.setHorizontalAlignment(SwingConstants.CENTER);
 		logo.setBounds(0, 0, 136, 124);
 		frame.getContentPane().add(logo);
+		
+		//Action when Signup button is pressed
+		btnSignUp.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (e.getSource() == btnSignUp) {
+					SignUp su = new SignUp();
+					su.setVisible(true);
+					frame.dispose();
+				}
+					
+			}
+		});
+		
+		//Action when Login button is pressed
+		btnLogin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (e.getSource() == btnLogin) {
+					Menu m = new Menu();
+					m.setVisible(true);
+					frame.dispose();
+				}
+					
+			}
+		});
 	}
 }

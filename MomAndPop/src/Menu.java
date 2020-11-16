@@ -20,9 +20,8 @@ import javax.swing.JCheckBox;
 import java.awt.Component;
 import javax.swing.JComboBox;
 
-public class Menu {
+public class Menu extends JFrame {
 
-	private JFrame frmMomAndPop;
 	PizzaType pizzaTypePnl;
 	Toppings topPnl;
 
@@ -33,8 +32,8 @@ public class Menu {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Menu window = new Menu();
-					window.frmMomAndPop.setVisible(true);
+					Menu frame = new Menu();
+					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -45,29 +44,26 @@ public class Menu {
 	/**
 	 * Create the application.
 	 */
-	public Menu() {
-		initialize();
-	}
+
 
 	/**
 	 * Initialize the contents of the frame.
 	 */
-	private void initialize() {
+	public Menu() {
 		//frame of main menu
-		frmMomAndPop = new JFrame();
-		frmMomAndPop.setTitle("Mom and Pop Pizzeria");
-		frmMomAndPop.getContentPane().setBackground(Color.RED);
-		frmMomAndPop.setBounds(100, 100, 1250, 700);
-		frmMomAndPop.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frmMomAndPop.getContentPane().setLayout(null);
-		frmMomAndPop.setBackground(Color.RED);
-		frmMomAndPop.setResizable(false);
+		setTitle("Mom and Pop Pizzeria");
+		getContentPane().setBackground(Color.RED);
+		setBounds(100, 100, 1250, 700);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		getContentPane().setLayout(null);
+		setBackground(Color.RED);
+		setResizable(false);
 		
 		//main menu panel
 		JPanel menu = new JPanel();
 		menu.setBorder(null);
 		menu.setBounds(136, 0, 1108, 671);
-		frmMomAndPop.getContentPane().add(menu);
+		getContentPane().add(menu);
 		menu.setLayout(null);
 		
 		//PizzaType Next Button
@@ -117,8 +113,7 @@ public class Menu {
 		btnPizza.setFocusable(false);
 		btnPizza.setFont(new Font("Nirmala UI", Font.BOLD, 22));
 		btnPizza.setBounds(0, 198, 136, 39);
-
-		frmMomAndPop.getContentPane().add(btnPizza);
+		getContentPane().add(btnPizza);
 		
 		JButton btnSides = new JButton("Sides");
 		btnSides.setIcon(new ImageIcon(Menu.class.getResource("/imgs/sides.png")));
@@ -129,7 +124,7 @@ public class Menu {
 		btnSides.setFocusable(false);
 		btnSides.setFont(new Font("Nirmala UI", Font.BOLD, 22));
 		btnSides.setBounds(0, 248, 136, 39);
-		frmMomAndPop.getContentPane().add(btnSides);
+		getContentPane().add(btnSides);
 		
 		JButton btnDrinks = new JButton("Drinks");
 		btnDrinks.setIcon(new ImageIcon(Menu.class.getResource("/imgs/drinks.png")));
@@ -140,7 +135,7 @@ public class Menu {
 		btnDrinks.setFocusable(false);
 		btnDrinks.setFont(new Font("Nirmala UI", Font.BOLD, 22));
 		btnDrinks.setBounds(0, 298, 136, 39);
-		frmMomAndPop.getContentPane().add(btnDrinks);
+		getContentPane().add(btnDrinks);
 		
 		JButton btnCheckout = new JButton();
 		btnCheckout.setIcon(new ImageIcon(Menu.class.getResource("/imgs/cart.png")));
@@ -150,20 +145,20 @@ public class Menu {
 		btnCheckout.setBorderPainted(false);
 		btnCheckout.setBackground(Color.RED);
 		btnCheckout.setBounds(0, 609, 136, 62);
-		frmMomAndPop.getContentPane().add(btnCheckout);
+		getContentPane().add(btnCheckout);
 		
 		JLabel logo = new JLabel("");
 		logo.setHorizontalAlignment(SwingConstants.CENTER);
 		logo.setIcon(new ImageIcon(Menu.class.getResource("/imgs/logo.png")));
 		logo.setBounds(0, 0, 136, 124);
-		frmMomAndPop.getContentPane().add(logo);
+		getContentPane().add(logo);
 		
 		//These are pages
 		//Pizza Type: Size, Crust, Sauce, Cheese
 		pizzaTypePnl = new PizzaType();
 		pizzaTypePnl.setBounds(136, 0, 1108, 671);
 		pizzaTypePnl.add(btnNext);
-		frmMomAndPop.getContentPane().add(pizzaTypePnl);
+		getContentPane().add(pizzaTypePnl);
 		
 		//Toppings: Meats and Veggies
 		topPnl = new Toppings();
@@ -171,7 +166,7 @@ public class Menu {
 		topPnl.setBounds(136, 0, 1108, 671);
 		topPnl.add(btnATC);
 		topPnl.add(btnPTBack);
-		frmMomAndPop.getContentPane().add(topPnl);
+		getContentPane().add(topPnl);
 		
 
 		//PizzaType Next Button
@@ -240,11 +235,6 @@ public class Menu {
 				btnDrinks.setBackground(Color.red);
 				btnPizza.setBackground(Color.red);
 			}
-		});
-		
-	}
-	
-	public void addPanel(JPanel a) {
-		frmMomAndPop.getContentPane().add(a);
+		});	
 	}
 }
