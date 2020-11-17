@@ -25,6 +25,7 @@ public class Menu extends JFrame {
 	PizzaType pizzaTypePnl;
 	Toppings topPnl;
 	Sides side;
+	Drinks drinks;
 
 	/**
 	 * Launch the application.
@@ -186,6 +187,12 @@ public class Menu extends JFrame {
 		side.add(btnSATC);
 		getContentPane().add(side);
 		
+		//Drinks
+		drinks = new Drinks();
+		drinks.setVisible(false);
+		drinks.setBounds(136, 0, 1108, 671);
+		getContentPane().add(drinks);
+		
 
 		//PizzaType Next Button
 		btnNext.addMouseListener(new MouseAdapter() {
@@ -248,6 +255,12 @@ public class Menu extends JFrame {
 				btnSides.setBackground(Color.red);
 				btnPizza.setBackground(Color.red);
 				btnCheckout.setBackground(Color.red);
+				
+				//shows drinks
+				drinks.setVisible(true);
+				pizzaTypePnl.setVisible(false);
+				menu.setVisible(false);
+				side.setVisible(false);
 			}
 		});
 		//If Checkout was clicked
