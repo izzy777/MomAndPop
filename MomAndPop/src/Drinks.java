@@ -446,15 +446,6 @@ public class Drinks extends JPanel {
 		lbSK.setBounds(74, 388, 362, 107);
 		add(lbSK);
 		
-		JLabel lbSM = new JLabel("Sierra Mist");
-		lbSM.setVerticalAlignment(SwingConstants.TOP);
-		lbSM.setHorizontalAlignment(SwingConstants.CENTER);
-		lbSM.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lbSM.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
-		lbSM.setAlignmentY(0.0f);
-		lbSM.setBounds(574, 388, 362, 107);
-		add(lbSM);
-		
 		JLabel lbDSK = new JLabel("Diet Sunkist");
 		lbDSK.setVerticalAlignment(SwingConstants.TOP);
 		lbDSK.setHorizontalAlignment(SwingConstants.CENTER);
@@ -528,7 +519,7 @@ public class Drinks extends JPanel {
 		add(lblNewLabel_3_3);
 		
 		JLabel lblNewLabel_3_4 = new JLabel("");
-		lblNewLabel_3_4.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/Sierra mist.jpg")));
+		lblNewLabel_3_4.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/Sierra-mist.jpg")));
 		lblNewLabel_3_4.setBounds(594, 405, 71, 78);
 		add(lblNewLabel_3_4);
 		
@@ -545,6 +536,15 @@ public class Drinks extends JPanel {
 		lblNewLabel_3_5.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/lemonade.jpg")));
 		lblNewLabel_3_5.setBounds(608, 542, 71, 78);
 		add(lblNewLabel_3_5);
+		
+		JLabel lbSM = new JLabel("Sierra Mist");
+		lbSM.setVerticalAlignment(SwingConstants.TOP);
+		lbSM.setHorizontalAlignment(SwingConstants.CENTER);
+		lbSM.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lbSM.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
+		lbSM.setAlignmentY(0.0f);
+		lbSM.setBounds(574, 388, 362, 107);
+		add(lbSM);
 		setVisible(false);
 
 	}
