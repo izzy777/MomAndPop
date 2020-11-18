@@ -245,6 +245,7 @@ public class Menu extends JFrame {
 				btnSATC.setVisible(true);
 				pizzaTypePnl.setVisible(false);
 				menu.setVisible(false);
+				
 			}
 		});
 		//If Drinks was clicked

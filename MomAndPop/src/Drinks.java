@@ -47,7 +47,7 @@ public class Drinks extends JPanel {
 		
 		JRadioButton rbLS = new JRadioButton("");
 		lemonade.add(rbLS);
-		rbLS.setBounds(719, 563, 21, 21);
+		rbLS.setBounds(722, 565, 21, 21);
 		add(rbLS);
 		
 		JLabel lblM7 = new JLabel("M");
@@ -72,7 +72,7 @@ public class Drinks extends JPanel {
 		
 		JRadioButton rbSMS = new JRadioButton("");
 		sierraMist.add(rbSMS);
-		rbSMS.setBounds(719, 432, 21, 21);
+		rbSMS.setBounds(722, 428, 21, 21);
 		add(rbSMS);
 		
 		JLabel lblL6 = new JLabel("L");
@@ -97,7 +97,7 @@ public class Drinks extends JPanel {
 		
 		JRadioButton rbDAWM = new JRadioButton("");
 		dietAW.add(rbDAWM);
-		rbDAWM.setBounds(745, 280, 21, 21);
+		rbDAWM.setBounds(745, 284, 21, 21);
 		add(rbDAWM);
 		
 		JLabel lblS5 = new JLabel("S");
@@ -107,7 +107,7 @@ public class Drinks extends JPanel {
 		
 		JRadioButton rbDAWL = new JRadioButton("");
 		dietAW.add(rbDAWL);
-		rbDAWL.setBounds(768, 280, 21, 21);
+		rbDAWL.setBounds(768, 284, 21, 21);
 		add(rbDAWL);
 		
 		JLabel lblL5 = new JLabel("L");
@@ -122,7 +122,7 @@ public class Drinks extends JPanel {
 		
 		JRadioButton rbDAWS = new JRadioButton("");
 		dietAW.add(rbDAWS);
-		rbDAWS.setBounds(722, 280, 21, 21);
+		rbDAWS.setBounds(722, 284, 21, 21);
 		add(rbDAWS);
 		
 		JRadioButton rbAWM = new JRadioButton("");
