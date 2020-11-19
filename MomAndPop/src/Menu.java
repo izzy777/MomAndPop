@@ -27,6 +27,7 @@ public class Menu extends JFrame {
 	Sides side;
 	Drinks drinks;
 	ReviewCart cart;
+	ContactInfo ci;
 
 	/**
 	 * Launch the application.
@@ -64,6 +65,7 @@ public class Menu extends JFrame {
 		
 		//main menu panel
 		JPanel menu = new JPanel();
+		menu.setBackground(new Color(250, 235, 215));
 		menu.setBorder(null);
 		menu.setBounds(136, 0, 1108, 671);
 		getContentPane().add(menu);
@@ -71,7 +73,6 @@ public class Menu extends JFrame {
 		
 		//PizzaType Next Button
 		JButton btnNext = new JButton("NEXT");
-		btnNext.setVisible(false);
 		btnNext.setForeground(Color.WHITE);
 		btnNext.setFont(new Font("Nirmala UI", Font.BOLD, 20));
 		btnNext.setFocusable(false);
@@ -80,15 +81,40 @@ public class Menu extends JFrame {
 		btnNext.setBounds(867, 600, 201, 40);
 		
 		JLabel menuTxt = new JLabel("CHOOSE A CATEGORY ON THE LEFT TO GET STARTED");
-		menuTxt.setVisible(true);
 		menuTxt.setFont(new Font("Nirmala UI", Font.BOLD, 33));
 		menuTxt.setHorizontalAlignment(SwingConstants.CENTER);
 		menuTxt.setBounds(0, 274, 1108, 123);
 		menu.add(menuTxt);
 		
+		//Delivery Button on Contact Info
+		JButton btnDelivery = new JButton("Delivery");
+		btnDelivery.setForeground(Color.WHITE);
+		btnDelivery.setFont(new Font("Nirmala UI", Font.BOLD, 20));
+		btnDelivery.setFocusable(false);
+		btnDelivery.setBorderPainted(false);
+		btnDelivery.setBackground(Color.RED);
+		btnDelivery.setBounds(867, 600, 201, 40);
+		
+		//Pick Up Button on Contact Info
+		JButton btnPickup = new JButton("Pickup");
+		btnPickup.setForeground(Color.WHITE);
+		btnPickup.setFont(new Font("Nirmala UI", Font.BOLD, 20));
+		btnPickup.setFocusable(false);
+		btnPickup.setBorderPainted(false);
+		btnPickup.setBackground(Color.RED);
+		btnPickup.setBounds(453, 600, 201, 40);
+		
+		//Back Button on Contact Info
+		JButton btnCIBack = new JButton("Back");
+		btnCIBack.setForeground(Color.WHITE);
+		btnCIBack.setFont(new Font("Nirmala UI", Font.BOLD, 20));
+		btnCIBack.setFocusable(false);
+		btnCIBack.setBorderPainted(false);
+		btnCIBack.setBackground(Color.RED);
+		btnCIBack.setBounds(37, 600, 201, 40);
+		
 		//Add to Cart Button on Toppings Page
 		JButton btnATC = new JButton("ADD TO CART");
-		btnATC.setVisible(false);
 		btnATC.setForeground(Color.WHITE);
 		btnATC.setFont(new Font("Nirmala UI", Font.BOLD, 20));
 		btnATC.setFocusable(false);
@@ -98,7 +124,6 @@ public class Menu extends JFrame {
 		
 		//Add to Cart Button on Sides Page
 		JButton btnSATC = new JButton("ADD TO CART");
-		btnSATC.setVisible(false);
 		btnSATC.setForeground(Color.WHITE);
 		btnSATC.setFont(new Font("Nirmala UI", Font.BOLD, 20));
 		btnSATC.setFocusable(false);
@@ -106,9 +131,17 @@ public class Menu extends JFrame {
 		btnSATC.setBackground(Color.RED);
 		btnSATC.setBounds(867, 600, 201, 40);
 		
+		//Continue Button for Review Cart Page
+		JButton btnContinue = new JButton("Continue");
+		btnContinue.setForeground(Color.WHITE);
+		btnContinue.setFont(new Font("Nirmala UI", Font.BOLD, 20));
+		btnContinue.setFocusable(false);
+		btnContinue.setBorderPainted(false);
+		btnContinue.setBackground(Color.RED);
+		btnContinue.setBounds(867, 600, 201, 40);
+		
 		//Back Button on Pizza Type Page
 		JButton btnPTBack = new JButton("BACK");
-		btnPTBack.setVisible(false);
 		btnPTBack.setForeground(Color.WHITE);
 		btnPTBack.setFont(new Font("Nirmala UI", Font.BOLD, 20));
 		btnPTBack.setFocusable(false);
@@ -116,7 +149,7 @@ public class Menu extends JFrame {
 		btnPTBack.setBackground(Color.RED);
 		btnPTBack.setBounds(37, 600, 201, 40);
 
-		
+		//Pizza Side Button
 		JButton btnPizza = new JButton("Pizza");
 		btnPizza.setIcon(new ImageIcon(Menu.class.getResource("/imgs/pizza.png")));
 		btnPizza.setRequestFocusEnabled(false);
@@ -128,6 +161,7 @@ public class Menu extends JFrame {
 		btnPizza.setBounds(0, 198, 136, 39);
 		getContentPane().add(btnPizza);
 		
+		//Sides Side Button
 		JButton btnSides = new JButton("Sides");
 		btnSides.setIcon(new ImageIcon(Menu.class.getResource("/imgs/sides.png")));
 		btnSides.setForeground(Color.WHITE);
@@ -139,6 +173,7 @@ public class Menu extends JFrame {
 		btnSides.setBounds(0, 248, 136, 39);
 		getContentPane().add(btnSides);
 		
+		//Drinks Side Button
 		JButton btnDrinks = new JButton("Drinks");
 		btnDrinks.setIcon(new ImageIcon(Menu.class.getResource("/imgs/drinks.png")));
 		btnDrinks.setForeground(Color.WHITE);
@@ -150,6 +185,7 @@ public class Menu extends JFrame {
 		btnDrinks.setBounds(0, 298, 136, 39);
 		getContentPane().add(btnDrinks);
 		
+		//Checkout Bottom Left Button
 		JButton btnCheckout = new JButton();
 		btnCheckout.setIcon(new ImageIcon(Menu.class.getResource("/imgs/cart.png")));
 		btnCheckout.setFocusable(false);
@@ -160,6 +196,7 @@ public class Menu extends JFrame {
 		btnCheckout.setBounds(0, 609, 136, 62);
 		getContentPane().add(btnCheckout);
 		
+		//Logo
 		JLabel logo = new JLabel("");
 		logo.setHorizontalAlignment(SwingConstants.CENTER);
 		logo.setIcon(new ImageIcon(Menu.class.getResource("/imgs/logo.png")));
@@ -198,30 +235,19 @@ public class Menu extends JFrame {
 		cart = new ReviewCart();
 		cart.setVisible(false);
 		cart.setBounds(136, 0, 1108, 671);
+		cart.add(btnContinue);
 		getContentPane().add(cart);
 		
+		//Contact Information
+		ci = new ContactInfo();
+		ci.setVisible(false);
+		ci.setBounds(136, 0, 1108, 671);
+		ci.add(btnCIBack);
+		ci.add(btnDelivery);
+		ci.add(btnPickup);
+		getContentPane().add(ci);
 
-		//PizzaType Next Button
-		btnNext.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseReleased(MouseEvent e) {
-				topPnl.setVisible(true);
-				pizzaTypePnl.setVisible(false);
-				btnPTBack.setVisible(true);
-				btnATC.setVisible(true);
-			}
-		});
-		
-		//Back Button on Pizza Topping Page Method
-		btnPTBack.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseReleased(MouseEvent e) {
-				pizzaTypePnl.setVisible(true);
-				topPnl.setVisible(false);
-				
-			}
-		});
-		
+	
 		//If Pizza was click
 		btnPizza.addMouseListener(new MouseAdapter() {
 			@Override
@@ -234,10 +260,13 @@ public class Menu extends JFrame {
 				
 				//Shows toppings
 				pizzaTypePnl.setVisible(true);
-				btnNext.setVisible(true);
 				menu.setVisible(false);
+				side.setVisible(false);
+				drinks.setVisible(false);
+				cart.setVisible(false);
 			}
 		});
+		
 		//If Sides was clicked
 		btnSides.addMouseListener(new MouseAdapter() {
 			@Override
@@ -249,12 +278,14 @@ public class Menu extends JFrame {
 				
 				//Shows sides
 				side.setVisible(true);
-				btnSATC.setVisible(true);
 				pizzaTypePnl.setVisible(false);
 				menu.setVisible(false);
+				cart.setVisible(false);
+				drinks.setVisible(false);
 				
 			}
 		});
+		
 		//If Drinks was clicked
 		btnDrinks.addMouseListener(new MouseAdapter() {
 			@Override
@@ -269,8 +300,10 @@ public class Menu extends JFrame {
 				pizzaTypePnl.setVisible(false);
 				menu.setVisible(false);
 				side.setVisible(false);
+				cart.setVisible(false);
 			}
 		});
+		
 		//If Checkout was clicked
 		btnCheckout.addMouseListener(new MouseAdapter() {
 			@Override
@@ -289,5 +322,44 @@ public class Menu extends JFrame {
 				
 			}
 		});	
+		
+		//PizzaType Next Button
+		btnNext.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				topPnl.setVisible(true);
+				pizzaTypePnl.setVisible(false);
+			}
+		});
+				
+		//Back Button on Pizza Topping Page Method
+		btnPTBack.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				pizzaTypePnl.setVisible(true);
+				topPnl.setVisible(false);
+						
+			}
+		});
+		
+		//Continue Button on Review Cart Page
+		btnContinue.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				ci.setVisible(true);
+				cart.setVisible(false);
+				
+				
+			}
+		});
+		
+		//Back Button on Contact Information
+		btnCIBack.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				ci.setVisible(false);
+				cart.setVisible(true);
+			}
+		});
 	}
 }
