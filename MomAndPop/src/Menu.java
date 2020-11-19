@@ -26,6 +26,7 @@ public class Menu extends JFrame {
 	Toppings topPnl;
 	Sides side;
 	Drinks drinks;
+	ReviewCart cart;
 
 	/**
 	 * Launch the application.
@@ -193,6 +194,12 @@ public class Menu extends JFrame {
 		drinks.setBounds(136, 0, 1108, 671);
 		getContentPane().add(drinks);
 		
+		//Cart
+		cart = new ReviewCart();
+		cart.setVisible(false);
+		cart.setBounds(136, 0, 1108, 671);
+		getContentPane().add(cart);
+		
 
 		//PizzaType Next Button
 		btnNext.addMouseListener(new MouseAdapter() {
@@ -272,6 +279,14 @@ public class Menu extends JFrame {
 				btnSides.setBackground(Color.red);
 				btnDrinks.setBackground(Color.red);
 				btnPizza.setBackground(Color.red);
+				
+				//shows cart page
+				cart.setVisible(true);
+				drinks.setVisible(false);
+				pizzaTypePnl.setVisible(false);
+				menu.setVisible(false);
+				side.setVisible(false);
+				
 			}
 		});	
 	}

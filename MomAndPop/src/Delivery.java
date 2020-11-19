@@ -10,10 +10,10 @@ import java.awt.Color;
 import javax.swing.JButton;
 
 public class Delivery extends JPanel {
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
+	private JTextField txtFieldAddress;
+	private JTextField txtFieldCity;
+	private JTextField txtFieldState;
+	private JTextField txtFieldZipCode;
 
 	/**
 	 * Create the panel.
@@ -35,48 +35,48 @@ public class Delivery extends JPanel {
 		lblDeliveryInformation.setBounds(469, 148, 169, 30);
 		add(lblDeliveryInformation);
 		
-		textField = new JTextField();
-		textField.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		textField.setColumns(10);
-		textField.setBorder(new LineBorder(Color.BLACK));
-		textField.setBounds(395, 209, 317, 36);
-		add(textField);
+		txtFieldAddress = new JTextField();
+		txtFieldAddress.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		txtFieldAddress.setColumns(10);
+		txtFieldAddress.setBorder(new LineBorder(Color.BLACK));
+		txtFieldAddress.setBounds(395, 209, 317, 36);
+		add(txtFieldAddress);
 		
 		JLabel lblStreetAdress = new JLabel("Street Adress");
 		lblStreetAdress.setFont(new Font("Nirmala UI", Font.BOLD, 14));
 		lblStreetAdress.setBounds(405, 255, 98, 14);
 		add(lblStreetAdress);
 		
-		textField_1 = new JTextField();
-		textField_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		textField_1.setColumns(10);
-		textField_1.setBorder(new LineBorder(Color.BLACK));
-		textField_1.setBounds(395, 307, 317, 36);
-		add(textField_1);
+		txtFieldCity = new JTextField();
+		txtFieldCity.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		txtFieldCity.setColumns(10);
+		txtFieldCity.setBorder(new LineBorder(Color.BLACK));
+		txtFieldCity.setBounds(395, 307, 317, 36);
+		add(txtFieldCity);
 		
 		JLabel lblCity = new JLabel("City");
 		lblCity.setFont(new Font("Nirmala UI", Font.BOLD, 14));
 		lblCity.setBounds(405, 353, 65, 14);
 		add(lblCity);
 		
-		textField_2 = new JTextField();
-		textField_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		textField_2.setColumns(10);
-		textField_2.setBorder(new LineBorder(Color.BLACK));
-		textField_2.setBounds(395, 409, 91, 36);
-		add(textField_2);
+		txtFieldState = new JTextField();
+		txtFieldState.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		txtFieldState.setColumns(10);
+		txtFieldState.setBorder(new LineBorder(Color.BLACK));
+		txtFieldState.setBounds(395, 409, 91, 36);
+		add(txtFieldState);
 		
 		JLabel lblState = new JLabel("State");
 		lblState.setFont(new Font("Nirmala UI", Font.BOLD, 14));
 		lblState.setBounds(405, 455, 65, 14);
 		add(lblState);
 		
-		textField_3 = new JTextField();
-		textField_3.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		textField_3.setColumns(10);
-		textField_3.setBorder(new LineBorder(Color.BLACK));
-		textField_3.setBounds(608, 409, 91, 36);
-		add(textField_3);
+		txtFieldZipCode = new JTextField();
+		txtFieldZipCode.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		txtFieldZipCode.setColumns(10);
+		txtFieldZipCode.setBorder(new LineBorder(Color.BLACK));
+		txtFieldZipCode.setBounds(608, 409, 91, 36);
+		add(txtFieldZipCode);
 		
 		JLabel lblZipCode = new JLabel("Zip Code");
 		lblZipCode.setFont(new Font("Nirmala UI", Font.BOLD, 14));

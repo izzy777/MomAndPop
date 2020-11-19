@@ -42,18 +42,21 @@ public class Sides extends JPanel {
 		add(cbBCC);
 		
 		JComboBox cbB = new JComboBox();
+		cbB.setMaximumRowCount(9);
 		cbB.setFocusable(false);
 		cbB.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbB.setBounds(784, 145, 50, 41);
 		add(cbB);
 		
 		JComboBox cbBSb = new JComboBox();
+		cbBSb.setMaximumRowCount(9);
 		cbBSb.setFocusable(false);
 		cbBSb.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbBSb.setBounds(784, 301, 50, 41);
 		add(cbBSb);
 		
 		JComboBox cbBC = new JComboBox();
+		cbBC.setMaximumRowCount(9);
 		cbBC.setFocusable(false);
 		cbBC.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbBC.setBounds(784, 482, 50, 41);
@@ -69,7 +72,7 @@ public class Sides extends JPanel {
 		
 		JLabel lblNewLabel_3 = new JLabel("");
 		lblNewLabel_3.setIcon(new ImageIcon(Sides.class.getResource("/imgs/cookie.jpg")));
-		lblNewLabel_3.setBounds(387, 470, 71, 78);
+		lblNewLabel_3.setBounds(393, 466, 71, 78);
 		add(lblNewLabel_3);
 		
 		JLabel lblBigChocolateCookie = new JLabel("Big Chocolate Cookie");
@@ -87,7 +90,7 @@ public class Sides extends JPanel {
 		
 		JLabel lblNewLabel_3_2 = new JLabel("");
 		lblNewLabel_3_2.setIcon(new ImageIcon(Sides.class.getResource("/imgs/breadsticks.jpg")));
-		lblNewLabel_3_2.setBounds(402, 143, 71, 69);
+		lblNewLabel_3_2.setBounds(399, 131, 81, 83);
 		add(lblNewLabel_3_2);
 		
 		JLabel lblBreadstick = new JLabel("BreadStick");

@@ -15,25 +15,51 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JTable;
 import javax.swing.JScrollPane;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.ListSelectionModel;
 
 public class ReviewCart extends JPanel {
+	private String TXT_ITEM = "Item";
+	private String TXT_DESC = "Description";
+	private String TXT_QUANTITY = "Quantity";
+	private String TXT_PRICE = "Price";
+	private DefaultTableModel itemsModel;
 	private JTable table;
-
+	
 	/**
 	 * Create the panel.
 	 */
 	public ReviewCart() {
 		setBackground(SystemColor.control);
-		setLayout(null);
 		setBounds(136, 0, 1108, 671);
 		
+		itemsModel = new DefaultTableModel();
+		itemsModel.addColumn(TXT_ITEM);
+		itemsModel.addColumn(TXT_DESC);
+		itemsModel.addColumn(TXT_QUANTITY);
+		itemsModel.addColumn(TXT_PRICE);
+		setLayout(null);
+		
+		
+		
+		JLabel lblTotal = new JLabel("Total:");
+		lblTotal.setBounds(435, 608, 237, 31);
+		lblTotal.setHorizontalAlignment(SwingConstants.CENTER);
+		lblTotal.setFont(new Font("Nirmala UI", Font.PLAIN, 25));
+		add(lblTotal);
+		
+		JLabel lblReviewCart = new JLabel("Review Cart");
+		lblReviewCart.setBounds(435, 49, 237, 31);
+		lblReviewCart.setHorizontalAlignment(SwingConstants.CENTER);
+		lblReviewCart.setFont(new Font("Nirmala UI", Font.PLAIN, 30));
+		add(lblReviewCart);
+		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(199, 150, 710, 371);
+		scrollPane.setBounds(209, 141, 689, 388);
 		add(scrollPane);
 		
 		table = new JTable();
-
-		table.setEditingColumn(1);
+		table.getTableHeader().setReorderingAllowed(false);
+		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
 			},
@@ -49,18 +75,6 @@ public class ReviewCart extends JPanel {
 			}
 		});
 		scrollPane.setViewportView(table);
-		
-		JLabel lblTotal = new JLabel("Total:");
-		lblTotal.setHorizontalAlignment(SwingConstants.CENTER);
-		lblTotal.setFont(new Font("Nirmala UI", Font.PLAIN, 25));
-		lblTotal.setBounds(435, 629, 237, 31);
-		add(lblTotal);
-		
-		JLabel lblReviewCart = new JLabel("Review Cart");
-		lblReviewCart.setHorizontalAlignment(SwingConstants.CENTER);
-		lblReviewCart.setFont(new Font("Nirmala UI", Font.PLAIN, 30));
-		lblReviewCart.setBounds(435, 49, 237, 31);
-		add(lblReviewCart);
 		setVisible(false);
 
 	}

@@ -456,7 +456,7 @@ public class Drinks extends JPanel {
 		add(lbDSK);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\ryeon\\eclipse-workspace\\MomAndPop\\MomAndPop\\src\\imgs\\pepsi.jpg"));
+		lblNewLabel.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/pepsi.jpg")));
 		lblNewLabel.setBounds(94, 102, 71, 78);
 		add(lblNewLabel);
 		
@@ -514,14 +514,15 @@ public class Drinks extends JPanel {
 		lblNewLabel_3_2.setBounds(94, 542, 71, 78);
 		add(lblNewLabel_3_2);
 		
-		JLabel lblNewLabel_3_3 = new JLabel("");
-		lblNewLabel_3_3.setBounds(608, 542, 71, 78);
-		add(lblNewLabel_3_3);
-		
 		JLabel lblNewLabel_3_4 = new JLabel("");
 		lblNewLabel_3_4.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/Sierra-mist.jpg")));
 		lblNewLabel_3_4.setBounds(594, 405, 71, 78);
 		add(lblNewLabel_3_4);
+		
+		JLabel lblNewLabel_3_5 = new JLabel("");
+		lblNewLabel_3_5.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/lemonade.jpg")));
+		lblNewLabel_3_5.setBounds(594, 538, 71, 78);
+		add(lblNewLabel_3_5);
 		
 		JLabel lbLMN = new JLabel("Lemonade");
 		lbLMN.setVerticalAlignment(SwingConstants.TOP);
@@ -531,11 +532,6 @@ public class Drinks extends JPanel {
 		lbLMN.setAlignmentY(0.0f);
 		lbLMN.setBounds(574, 526, 362, 107);
 		add(lbLMN);
-		
-		JLabel lblNewLabel_3_5 = new JLabel("");
-		lblNewLabel_3_5.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/lemonade.jpg")));
-		lblNewLabel_3_5.setBounds(608, 542, 71, 78);
-		add(lblNewLabel_3_5);
 		
 		JLabel lbSM = new JLabel("Sierra Mist");
 		lbSM.setVerticalAlignment(SwingConstants.TOP);
