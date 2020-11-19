@@ -35,6 +35,16 @@ public class Drinks extends JPanel {
 		setBounds(0, 0, 1108, 671);
 		setLayout(null);
 		
+		JLabel lblNewLabel_3 = new JLabel("");
+		lblNewLabel_3.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/diet-A&W.jpg")));
+		lblNewLabel_3.setBounds(594, 258, 71, 78);
+		add(lblNewLabel_3);
+		
+		JLabel lblNewLabel_4 = new JLabel("A&W");
+		lblNewLabel_4.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblNewLabel_4.setBounds(748, 102, 46, 32);
+		add(lblNewLabel_4);
+		
 		JLabel lblS7 = new JLabel("S");
 		lblS7.setFont(new Font("Dialog", Font.PLAIN, 20));
 		lblS7.setBounds(726, 590, 14, 26);
@@ -65,94 +75,15 @@ public class Drinks extends JPanel {
 		rbLM.setBounds(745, 565, 21, 21);
 		add(rbLM);
 		
-		JLabel lblM6 = new JLabel("M");
-		lblM6.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblM6.setBounds(748, 452, 19, 31);
-		add(lblM6);
-		
-		JRadioButton rbSMS = new JRadioButton("");
-		sierraMist.add(rbSMS);
-		rbSMS.setBounds(722, 428, 21, 21);
-		add(rbSMS);
-		
-		JLabel lblL6 = new JLabel("L");
-		lblL6.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblL6.setBounds(774, 450, 26, 32);
-		add(lblL6);
-		
-		JLabel lblS6 = new JLabel("S");
-		lblS6.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblS6.setBounds(726, 453, 14, 26);
-		add(lblS6);
-		
-		JRadioButton rbSML = new JRadioButton("");
-		sierraMist.add(rbSML);
-		rbSML.setBounds(768, 428, 21, 21);
-		add(rbSML);
-		
-		JRadioButton rbSMM = new JRadioButton("");
-		sierraMist.add(rbSMM);
-		rbSMM.setBounds(745, 428, 21, 21);
-		add(rbSMM);
-		
-		JRadioButton rbDAWM = new JRadioButton("");
-		dietAW.add(rbDAWM);
-		rbDAWM.setBounds(745, 284, 21, 21);
-		add(rbDAWM);
-		
-		JLabel lblS5 = new JLabel("S");
-		lblS5.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblS5.setBounds(726, 305, 14, 26);
-		add(lblS5);
-		
-		JRadioButton rbDAWL = new JRadioButton("");
-		dietAW.add(rbDAWL);
-		rbDAWL.setBounds(768, 284, 21, 21);
-		add(rbDAWL);
-		
-		JLabel lblL5 = new JLabel("L");
-		lblL5.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblL5.setBounds(774, 302, 26, 32);
-		add(lblL5);
-		
-		JLabel lblM5 = new JLabel("M");
-		lblM5.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblM5.setBounds(748, 304, 19, 31);
-		add(lblM5);
-		
-		JRadioButton rbDAWS = new JRadioButton("");
-		dietAW.add(rbDAWS);
-		rbDAWS.setBounds(722, 284, 21, 21);
-		add(rbDAWS);
-		
-		JRadioButton rbAWM = new JRadioButton("");
-		AW.add(rbAWM);
-		rbAWM.setBounds(745, 141, 21, 21);
-		add(rbAWM);
-		
-		JRadioButton rbAWL = new JRadioButton("");
-		AW.add(rbAWL);
-		rbAWL.setBounds(768, 141, 21, 21);
-		add(rbAWL);
-		
-		JLabel lblL4 = new JLabel("L");
-		lblL4.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblL4.setBounds(774, 163, 26, 32);
-		add(lblL4);
-		
 		JLabel lblS4 = new JLabel("S");
+		lblS4.setHorizontalAlignment(SwingConstants.CENTER);
 		lblS4.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblS4.setBounds(726, 166, 14, 26);
+		lblS4.setBounds(748, 153, 21, 26);
 		add(lblS4);
-		
-		JLabel lblM4 = new JLabel("M");
-		lblM4.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblM4.setBounds(748, 165, 19, 31);
-		add(lblM4);
 		
 		JRadioButton rbAWS = new JRadioButton("");
 		AW.add(rbAWS);
-		rbAWS.setBounds(719, 141, 21, 21);
+		rbAWS.setBounds(748, 131, 21, 21);
 		add(rbAWS);
 		
 		JRadioButton rbDSL = new JRadioButton("");
@@ -428,15 +359,6 @@ public class Drinks extends JPanel {
 		btnL.setBounds(1019, 559, 40, 31);
 		add(btnL);
 		
-		JLabel lbDAW = new JLabel("Diet A&W");
-		lbDAW.setVerticalAlignment(SwingConstants.TOP);
-		lbDAW.setHorizontalAlignment(SwingConstants.CENTER);
-		lbDAW.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lbDAW.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
-		lbDAW.setAlignmentY(0.0f);
-		lbDAW.setBounds(574, 242, 362, 107);
-		add(lbDAW);
-		
 		JLabel lbSK = new JLabel("Sunkist");
 		lbSK.setVerticalAlignment(SwingConstants.TOP);
 		lbSK.setHorizontalAlignment(SwingConstants.CENTER);
@@ -470,20 +392,6 @@ public class Drinks extends JPanel {
 		lbPepsi.setBounds(74, 88, 362, 107);
 		add(lbPepsi);
 		
-		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/A&W.png")));
-		lblNewLabel_1.setBounds(594, 104, 71, 78);
-		add(lblNewLabel_1);
-		
-		JLabel lbAW = new JLabel("A&W");
-		lbAW.setVerticalAlignment(SwingConstants.TOP);
-		lbAW.setHorizontalAlignment(SwingConstants.CENTER);
-		lbAW.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lbAW.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
-		lbAW.setAlignmentY(0.0f);
-		lbAW.setBounds(574, 95, 362, 107);
-		add(lbAW);
-		
 		JLabel lbDP = new JLabel("Diet Pepsi");
 		lbDP.setVerticalAlignment(SwingConstants.TOP);
 		lbDP.setHorizontalTextPosition(SwingConstants.LEFT);
@@ -498,11 +406,6 @@ public class Drinks extends JPanel {
 		lblNewLabel_2.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/Diet-pepsi.jpg")));
 		lblNewLabel_2.setBounds(94, 253, 71, 78);
 		add(lblNewLabel_2);
-		
-		JLabel lblNewLabel_3 = new JLabel("");
-		lblNewLabel_3.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/diet-A&W.jpg")));
-		lblNewLabel_3.setBounds(594, 258, 71, 78);
-		add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_3_1 = new JLabel("");
 		lblNewLabel_3_1.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/sunkist.jpg")));
@@ -533,16 +436,128 @@ public class Drinks extends JPanel {
 		lbLMN.setBounds(574, 526, 362, 107);
 		add(lbLMN);
 		
-		JLabel lbSM = new JLabel("Sierra Mist");
-		lbSM.setVerticalAlignment(SwingConstants.TOP);
-		lbSM.setHorizontalAlignment(SwingConstants.CENTER);
-		lbSM.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lbSM.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
-		lbSM.setAlignmentY(0.0f);
-		lbSM.setBounds(574, 388, 362, 107);
-		add(lbSM);
+		JLabel lblM_1 = new JLabel("M");
+		lblM_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblM_1.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblM_1.setBounds(775, 153, 21, 26);
+		add(lblM_1);
+		
+		JRadioButton rbAWS_1 = new JRadioButton("");
+		rbAWS_1.setBounds(775, 131, 21, 21);
+		add(rbAWS_1);
+		
+		JLabel lblS4_1_1 = new JLabel("L");
+		lblS4_1_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblS4_1_1.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblS4_1_1.setBounds(802, 153, 21, 26);
+		add(lblS4_1_1);
+		
+		JRadioButton rbAWS_1_1 = new JRadioButton("");
+		rbAWS_1_1.setBounds(802, 131, 21, 21);
+		add(rbAWS_1_1);
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/A&W.png")));
+		lblNewLabel_1.setBounds(594, 104, 71, 78);
+		add(lblNewLabel_1);
+		
+		JLabel lbAW = new JLabel("");
+		lbAW.setVerticalAlignment(SwingConstants.TOP);
+		lbAW.setHorizontalAlignment(SwingConstants.CENTER);
+		lbAW.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lbAW.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
+		lbAW.setAlignmentY(0.0f);
+		lbAW.setBounds(574, 95, 362, 107);
+		add(lbAW);
+		
+		JLabel lblS4_1_1_1 = new JLabel("L");
+		lblS4_1_1_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblS4_1_1_1.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblS4_1_1_1.setBounds(802, 300, 21, 26);
+		add(lblS4_1_1_1);
+		
+		JLabel lblM_1_1 = new JLabel("M");
+		lblM_1_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblM_1_1.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblM_1_1.setBounds(775, 300, 21, 26);
+		add(lblM_1_1);
+		
+		JLabel lblS4_1 = new JLabel("S");
+		lblS4_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblS4_1.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblS4_1.setBounds(748, 300, 21, 26);
+		add(lblS4_1);
+		
+		JRadioButton rbAWS_2 = new JRadioButton("");
+		rbAWS_2.setBounds(748, 278, 21, 21);
+		add(rbAWS_2);
+		
+		JRadioButton rbAWS_1_2 = new JRadioButton("");
+		rbAWS_1_2.setBounds(775, 278, 21, 21);
+		add(rbAWS_1_2);
+		
+		JRadioButton rbAWS_1_1_1 = new JRadioButton("");
+		rbAWS_1_1_1.setBounds(802, 278, 21, 21);
+		add(rbAWS_1_1_1);
+		
+		JLabel lblNewLabel_4_1 = new JLabel("Diet A&W");
+		lblNewLabel_4_1.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblNewLabel_4_1.setBounds(748, 249, 119, 32);
+		add(lblNewLabel_4_1);
+		
+		JLabel lbAW_1 = new JLabel("");
+		lbAW_1.setVerticalAlignment(SwingConstants.TOP);
+		lbAW_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lbAW_1.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lbAW_1.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
+		lbAW_1.setAlignmentY(0.0f);
+		lbAW_1.setBounds(574, 242, 362, 107);
+		add(lbAW_1);
+		
+		JLabel lbAW_1_1 = new JLabel("");
+		lbAW_1_1.setVerticalAlignment(SwingConstants.TOP);
+		lbAW_1_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lbAW_1_1.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lbAW_1_1.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
+		lbAW_1_1.setAlignmentY(0.0f);
+		lbAW_1_1.setBounds(574, 388, 362, 107);
+		add(lbAW_1_1);
+		
+		JLabel lblS4_1_1_1_1 = new JLabel("L");
+		lblS4_1_1_1_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblS4_1_1_1_1.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblS4_1_1_1_1.setBounds(802, 446, 21, 26);
+		add(lblS4_1_1_1_1);
+		
+		JLabel lblM_1_1_1 = new JLabel("M");
+		lblM_1_1_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblM_1_1_1.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblM_1_1_1.setBounds(775, 446, 21, 26);
+		add(lblM_1_1_1);
+		
+		JLabel lblS4_1_2 = new JLabel("S");
+		lblS4_1_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblS4_1_2.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblS4_1_2.setBounds(748, 446, 21, 26);
+		add(lblS4_1_2);
+		
+		JRadioButton rbAWS_2_1 = new JRadioButton("");
+		rbAWS_2_1.setBounds(748, 424, 21, 21);
+		add(rbAWS_2_1);
+		
+		JRadioButton rbAWS_1_2_1 = new JRadioButton("");
+		rbAWS_1_2_1.setBounds(775, 424, 21, 21);
+		add(rbAWS_1_2_1);
+		
+		JRadioButton rbAWS_1_1_1_1 = new JRadioButton("");
+		rbAWS_1_1_1_1.setBounds(802, 424, 21, 21);
+		add(rbAWS_1_1_1_1);
+		
+		JLabel lblNewLabel_4_1_1 = new JLabel("Diet A&W");
+		lblNewLabel_4_1_1.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblNewLabel_4_1_1.setBounds(748, 395, 119, 32);
+		add(lblNewLabel_4_1_1);
 		setVisible(false);
 
 	}
-
 }
