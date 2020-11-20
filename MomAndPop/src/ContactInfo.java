@@ -150,6 +150,33 @@ public class ContactInfo extends JPanel {
 		lblCVV.setBounds(641, 563, 36, 14);
 		add(lblCVV);
 		
+		JButton btnBack = new JButton("BACK");
+		btnBack.setForeground(Color.WHITE);
+		btnBack.setFont(new Font("Nirmala UI", Font.BOLD, 20));
+		btnBack.setFocusable(false);
+		btnBack.setBorderPainted(false);
+		btnBack.setBackground(Color.RED);
+		btnBack.setBounds(56, 610, 137, 36);
+		add(btnBack);
+		
+		JButton btnPickup = new JButton("PICKUP");
+		btnPickup.setForeground(Color.WHITE);
+		btnPickup.setFont(new Font("Nirmala UI", Font.BOLD, 20));
+		btnPickup.setFocusable(false);
+		btnPickup.setBorderPainted(false);
+		btnPickup.setBackground(Color.RED);
+		btnPickup.setBounds(485, 610, 137, 36);
+		add(btnPickup);
+		
+		JButton btnDelivery = new JButton("Delivery");
+		btnDelivery.setForeground(Color.WHITE);
+		btnDelivery.setFont(new Font("Nirmala UI", Font.BOLD, 20));
+		btnDelivery.setFocusable(false);
+		btnDelivery.setBorderPainted(false);
+		btnDelivery.setBackground(Color.RED);
+		btnDelivery.setBounds(856, 610, 137, 36);
+		add(btnDelivery);
+		
 		
 		//Card Button Clicked
 		btnC.addMouseListener(new MouseAdapter() {
