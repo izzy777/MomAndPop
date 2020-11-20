@@ -35,176 +35,21 @@ public class Drinks extends JPanel {
 		setBounds(0, 0, 1108, 671);
 		setLayout(null);
 		
-		JLabel lblNewLabel_3 = new JLabel("");
-		lblNewLabel_3.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/diet-A&W.jpg")));
-		lblNewLabel_3.setBounds(594, 258, 71, 78);
-		add(lblNewLabel_3);
+		JLabel lblAW = new JLabel("A&W");
+		lblAW.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblAW.setBounds(748, 102, 155, 46);
+		add(lblAW);
 		
-		JLabel lblNewLabel_4 = new JLabel("A&W");
-		lblNewLabel_4.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblNewLabel_4.setBounds(748, 102, 46, 32);
-		add(lblNewLabel_4);
-		
-		JLabel lblS7 = new JLabel("S");
-		lblS7.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblS7.setBounds(726, 590, 14, 26);
-		add(lblS7);
-		
-		JLabel lblL7 = new JLabel("L");
-		lblL7.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblL7.setBounds(774, 587, 26, 32);
-		add(lblL7);
-		
-		JRadioButton rbLS = new JRadioButton("");
-		lemonade.add(rbLS);
-		rbLS.setBounds(722, 565, 21, 21);
-		add(rbLS);
-		
-		JLabel lblM7 = new JLabel("M");
-		lblM7.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblM7.setBounds(748, 589, 19, 31);
-		add(lblM7);
-		
-		JRadioButton rbLL = new JRadioButton("");
-		lemonade.add(rbLL);
-		rbLL.setBounds(768, 565, 21, 21);
-		add(rbLL);
-		
-		JRadioButton rbLM = new JRadioButton("");
-		lemonade.add(rbLM);
-		rbLM.setBounds(745, 565, 21, 21);
-		add(rbLM);
-		
-		JLabel lblS4 = new JLabel("S");
-		lblS4.setHorizontalAlignment(SwingConstants.CENTER);
-		lblS4.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblS4.setBounds(748, 153, 21, 26);
-		add(lblS4);
+		JLabel lblSAW = new JLabel("S");
+		lblSAW.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSAW.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblSAW.setBounds(748, 159, 21, 26);
+		add(lblSAW);
 		
 		JRadioButton rbAWS = new JRadioButton("");
 		AW.add(rbAWS);
-		rbAWS.setBounds(748, 131, 21, 21);
+		rbAWS.setBounds(748, 137, 21, 21);
 		add(rbAWS);
-		
-		JRadioButton rbDSL = new JRadioButton("");
-		dietSunkist.add(rbDSL);
-		rbDSL.setBounds(267, 569, 21, 21);
-		add(rbDSL);
-		
-		JLabel lblM3 = new JLabel("M");
-		lblM3.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblM3.setBounds(247, 593, 19, 31);
-		add(lblM3);
-		
-		JLabel lblL3 = new JLabel("L");
-		lblL3.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblL3.setBounds(273, 591, 26, 32);
-		add(lblL3);
-		
-		JRadioButton rbDSS = new JRadioButton("");
-		dietSunkist.add(rbDSS);
-		rbDSS.setBounds(221, 569, 21, 21);
-		add(rbDSS);
-		
-		JRadioButton rbDSM = new JRadioButton("");
-		dietSunkist.add(rbDSM);
-		rbDSM.setBounds(244, 569, 21, 21);
-		add(rbDSM);
-		
-		JLabel lblS3 = new JLabel("S");
-		lblS3.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblS3.setBounds(225, 594, 14, 26);
-		add(lblS3);
-		
-		JLabel lblM2 = new JLabel("M");
-		lblM2.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblM2.setBounds(247, 456, 19, 31);
-		add(lblM2);
-		
-		JRadioButton rbSM = new JRadioButton("");
-		sunkist.add(rbSM);
-		rbSM.setBounds(244, 432, 21, 21);
-		add(rbSM);
-		
-		JRadioButton rbSS = new JRadioButton("");
-		sunkist.add(rbSS);
-		rbSS.setBounds(221, 432, 21, 21);
-		add(rbSS);
-		
-		JLabel lblS2 = new JLabel("S");
-		lblS2.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblS2.setBounds(225, 457, 14, 26);
-		add(lblS2);
-		
-		JLabel lblL2 = new JLabel("L");
-		lblL2.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblL2.setBounds(273, 454, 26, 32);
-		add(lblL2);
-		
-		JRadioButton rbSL = new JRadioButton("");
-		sunkist.add(rbSL);
-		rbSL.setBounds(267, 432, 21, 21);
-		add(rbSL);
-		
-		JLabel lblS1 = new JLabel("S");
-		lblS1.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblS1.setBounds(225, 309, 14, 26);
-		add(lblS1);
-		
-		JRadioButton rbDPL = new JRadioButton("");
-		dietPepsi.add(rbDPL);
-		rbDPL.setBounds(267, 284, 21, 21);
-		add(rbDPL);
-		
-		JLabel lblM1 = new JLabel("M");
-		lblM1.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblM1.setBounds(247, 308, 19, 31);
-		add(lblM1);
-		
-		JRadioButton rbDPS = new JRadioButton("");
-		dietPepsi.add(rbDPS);
-		rbDPS.setBounds(221, 284, 21, 21);
-		add(rbDPS);
-		
-		JLabel lblL1 = new JLabel("L");
-		lblL1.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblL1.setBounds(273, 306, 26, 32);
-		add(lblL1);
-		
-		JRadioButton rbDPM = new JRadioButton("");
-		dietPepsi.add(rbDPM);
-		rbDPM.setBounds(244, 284, 21, 21);
-		add(rbDPM);
-		
-		JRadioButton rbPM = new JRadioButton("");
-		pepsi.add(rbPM);
-		rbPM.setBounds(245, 141, 21, 21);
-		add(rbPM);
-		
-		JRadioButton rbPS = new JRadioButton("");
-		pepsi.add(rbPS);
-		rbPS.setBounds(221, 141, 21, 21);
-		add(rbPS);
-		
-		JRadioButton rbPL = new JRadioButton("");
-		pepsi.add(rbPL);
-		rbPL.setBounds(268, 141, 21, 21);
-		add(rbPL);
-		
-		JLabel lblS = new JLabel("S");
-		lblS.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblS.setBounds(226, 166, 14, 26);
-		add(lblS);
-		
-		JLabel lblM = new JLabel("M");
-		lblM.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblM.setBounds(248, 165, 19, 31);
-		add(lblM);
-		
-		JLabel lblL = new JLabel("L");
-		lblL.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblL.setBounds(274, 163, 26, 32);
-		add(lblL);
 		
 		JLabel text = new JLabel("ALL DRINK SIZES $1");
 		text.setFont(new Font("Franklin Gothic Demi", Font.PLAIN, 25));
@@ -223,243 +68,166 @@ public class Drinks extends JPanel {
 		lblQ1.setBounds(985, 63, 64, 26);
 		add(lblQ1);
 		
-		JComboBox cb1 = new JComboBox();
-		cb1.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
-		cb1.setMaximumRowCount(9);
-		cb1.setFocusable(false);
-		cb1.setBounds(466, 131, 40, 31);
-		add(cb1);
+		JComboBox cbQuantityPepsi = new JComboBox();
+		cbQuantityPepsi.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
+		cbQuantityPepsi.setMaximumRowCount(9);
+		cbQuantityPepsi.setFocusable(false);
+		cbQuantityPepsi.setBounds(466, 131, 40, 31);
+		add(cbQuantityPepsi);
 		
-		JButton btnP = new JButton("");
-		btnP.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
-		btnP.setForeground(Color.WHITE);
-		btnP.setFocusable(false);
-		btnP.setBounds(new Rectangle(100, 0, 0, 0));
-		btnP.setBorderPainted(false);
-		btnP.setBackground(Color.RED);
-		btnP.setBounds(505, 131, 40, 31);
-		add(btnP);
+		JButton btnAddToCartPepsi = new JButton("");
+		btnAddToCartPepsi.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
+		btnAddToCartPepsi.setForeground(Color.WHITE);
+		btnAddToCartPepsi.setFocusable(false);
+		btnAddToCartPepsi.setBounds(new Rectangle(100, 0, 0, 0));
+		btnAddToCartPepsi.setBorderPainted(false);
+		btnAddToCartPepsi.setBackground(Color.RED);
+		btnAddToCartPepsi.setBounds(505, 131, 40, 31);
+		add(btnAddToCartPepsi);
 		
-		JComboBox cb2 = new JComboBox();
-		cb2.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
-		cb2.setMaximumRowCount(9);
-		cb2.setFocusable(false);
-		cb2.setBounds(466, 274, 40, 31);
-		add(cb2);
+		JComboBox cbQuantityDietPepsi = new JComboBox();
+		cbQuantityDietPepsi.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
+		cbQuantityDietPepsi.setMaximumRowCount(9);
+		cbQuantityDietPepsi.setFocusable(false);
+		cbQuantityDietPepsi.setBounds(466, 274, 40, 31);
+		add(cbQuantityDietPepsi);
 		
-		JButton btnDP = new JButton("");
-		btnDP.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
-		btnDP.setForeground(Color.WHITE);
-		btnDP.setFocusable(false);
-		btnDP.setBounds(new Rectangle(100, 0, 0, 0));
-		btnDP.setBorderPainted(false);
-		btnDP.setBackground(Color.RED);
-		btnDP.setBounds(505, 274, 40, 31);
-		add(btnDP);
+		JButton btnAddToCartDietPepsi = new JButton("");
+		btnAddToCartDietPepsi.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
+		btnAddToCartDietPepsi.setForeground(Color.WHITE);
+		btnAddToCartDietPepsi.setFocusable(false);
+		btnAddToCartDietPepsi.setBounds(new Rectangle(100, 0, 0, 0));
+		btnAddToCartDietPepsi.setBorderPainted(false);
+		btnAddToCartDietPepsi.setBackground(Color.RED);
+		btnAddToCartDietPepsi.setBounds(505, 274, 40, 31);
+		add(btnAddToCartDietPepsi);
 		
-		JComboBox cb3 = new JComboBox();
-		cb3.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
-		cb3.setMaximumRowCount(9);
-		cb3.setFocusable(false);
-		cb3.setBounds(466, 422, 40, 31);
-		add(cb3);
+		JComboBox cbQuantitySunkist = new JComboBox();
+		cbQuantitySunkist.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
+		cbQuantitySunkist.setMaximumRowCount(9);
+		cbQuantitySunkist.setFocusable(false);
+		cbQuantitySunkist.setBounds(466, 422, 40, 31);
+		add(cbQuantitySunkist);
 		
-		JButton btnS = new JButton("");
-		btnS.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
-		btnS.setForeground(Color.WHITE);
-		btnS.setFocusable(false);
-		btnS.setBounds(new Rectangle(100, 0, 0, 0));
-		btnS.setBorderPainted(false);
-		btnS.setBackground(Color.RED);
-		btnS.setBounds(505, 422, 40, 31);
-		add(btnS);
+		JButton btnAddToCartSunkist = new JButton("");
+		btnAddToCartSunkist.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
+		btnAddToCartSunkist.setForeground(Color.WHITE);
+		btnAddToCartSunkist.setFocusable(false);
+		btnAddToCartSunkist.setBounds(new Rectangle(100, 0, 0, 0));
+		btnAddToCartSunkist.setBorderPainted(false);
+		btnAddToCartSunkist.setBackground(Color.RED);
+		btnAddToCartSunkist.setBounds(505, 422, 40, 31);
+		add(btnAddToCartSunkist);
 		
-		JComboBox cb4 = new JComboBox();
-		cb4.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
-		cb4.setMaximumRowCount(9);
-		cb4.setFocusable(false);
-		cb4.setBounds(466, 559, 40, 31);
-		add(cb4);
+		JComboBox cbQuantityDietSunkist = new JComboBox();
+		cbQuantityDietSunkist.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
+		cbQuantityDietSunkist.setMaximumRowCount(9);
+		cbQuantityDietSunkist.setFocusable(false);
+		cbQuantityDietSunkist.setBounds(466, 559, 40, 31);
+		add(cbQuantityDietSunkist);
 		
-		JButton btnDS = new JButton("");
-		btnDS.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
-		btnDS.setForeground(Color.WHITE);
-		btnDS.setFocusable(false);
-		btnDS.setBounds(new Rectangle(100, 0, 0, 0));
-		btnDS.setBorderPainted(false);
-		btnDS.setBackground(Color.RED);
-		btnDS.setBounds(505, 559, 40, 31);
-		add(btnDS);
+		JButton btnAddToCartDietSunkist = new JButton("");
+		btnAddToCartDietSunkist.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
+		btnAddToCartDietSunkist.setForeground(Color.WHITE);
+		btnAddToCartDietSunkist.setFocusable(false);
+		btnAddToCartDietSunkist.setBounds(new Rectangle(100, 0, 0, 0));
+		btnAddToCartDietSunkist.setBorderPainted(false);
+		btnAddToCartDietSunkist.setBackground(Color.RED);
+		btnAddToCartDietSunkist.setBounds(505, 559, 40, 31);
+		add(btnAddToCartDietSunkist);
 		
-		JComboBox cb5 = new JComboBox();
-		cb5.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
-		cb5.setMaximumRowCount(9);
-		cb5.setFocusable(false);
-		cb5.setBounds(980, 131, 40, 31);
-		add(cb5);
+		JComboBox cbQuantityAW = new JComboBox();
+		cbQuantityAW.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
+		cbQuantityAW.setMaximumRowCount(9);
+		cbQuantityAW.setFocusable(false);
+		cbQuantityAW.setBounds(980, 131, 40, 31);
+		add(cbQuantityAW);
 		
-		JButton btnAW = new JButton("");
-		btnAW.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
-		btnAW.setForeground(Color.WHITE);
-		btnAW.setFocusable(false);
-		btnAW.setBounds(new Rectangle(100, 0, 0, 0));
-		btnAW.setBorderPainted(false);
-		btnAW.setBackground(Color.RED);
-		btnAW.setBounds(1019, 131, 40, 31);
-		add(btnAW);
+		JButton btnAddToCartAW = new JButton("");
+		btnAddToCartAW.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
+		btnAddToCartAW.setForeground(Color.WHITE);
+		btnAddToCartAW.setFocusable(false);
+		btnAddToCartAW.setBounds(new Rectangle(100, 0, 0, 0));
+		btnAddToCartAW.setBorderPainted(false);
+		btnAddToCartAW.setBackground(Color.RED);
+		btnAddToCartAW.setBounds(1019, 131, 40, 31);
+		add(btnAddToCartAW);
 		
-		JComboBox cb6 = new JComboBox();
-		cb6.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
-		cb6.setMaximumRowCount(9);
-		cb6.setFocusable(false);
-		cb6.setBounds(980, 274, 40, 31);
-		add(cb6);
+		JComboBox cbQuantityDietAW = new JComboBox();
+		cbQuantityDietAW.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
+		cbQuantityDietAW.setMaximumRowCount(9);
+		cbQuantityDietAW.setFocusable(false);
+		cbQuantityDietAW.setBounds(980, 274, 40, 31);
+		add(cbQuantityDietAW);
 		
-		JButton btnDAW = new JButton("");
-		btnDAW.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
-		btnDAW.setForeground(Color.WHITE);
-		btnDAW.setFocusable(false);
-		btnDAW.setBounds(new Rectangle(100, 0, 0, 0));
-		btnDAW.setBorderPainted(false);
-		btnDAW.setBackground(Color.RED);
-		btnDAW.setBounds(1019, 274, 40, 31);
-		add(btnDAW);
+		JButton btnAddToCartDietAW = new JButton("");
+		btnAddToCartDietAW.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
+		btnAddToCartDietAW.setForeground(Color.WHITE);
+		btnAddToCartDietAW.setFocusable(false);
+		btnAddToCartDietAW.setBounds(new Rectangle(100, 0, 0, 0));
+		btnAddToCartDietAW.setBorderPainted(false);
+		btnAddToCartDietAW.setBackground(Color.RED);
+		btnAddToCartDietAW.setBounds(1019, 274, 40, 31);
+		add(btnAddToCartDietAW);
 		
-		JComboBox cb7 = new JComboBox();
-		cb7.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
-		cb7.setMaximumRowCount(9);
-		cb7.setFocusable(false);
-		cb7.setBounds(980, 422, 40, 31);
-		add(cb7);
+		JComboBox cbQuantitySierraMist = new JComboBox();
+		cbQuantitySierraMist.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
+		cbQuantitySierraMist.setMaximumRowCount(9);
+		cbQuantitySierraMist.setFocusable(false);
+		cbQuantitySierraMist.setBounds(980, 422, 40, 31);
+		add(cbQuantitySierraMist);
 		
-		JButton btnSM = new JButton("");
-		btnSM.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
-		btnSM.setForeground(Color.WHITE);
-		btnSM.setFocusable(false);
-		btnSM.setBounds(new Rectangle(100, 0, 0, 0));
-		btnSM.setBorderPainted(false);
-		btnSM.setBackground(Color.RED);
-		btnSM.setBounds(1019, 422, 40, 31);
-		add(btnSM);
+		JButton btnAddToCartSierraMist = new JButton("");
+		btnAddToCartSierraMist.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
+		btnAddToCartSierraMist.setForeground(Color.WHITE);
+		btnAddToCartSierraMist.setFocusable(false);
+		btnAddToCartSierraMist.setBounds(new Rectangle(100, 0, 0, 0));
+		btnAddToCartSierraMist.setBorderPainted(false);
+		btnAddToCartSierraMist.setBackground(Color.RED);
+		btnAddToCartSierraMist.setBounds(1019, 422, 40, 31);
+		add(btnAddToCartSierraMist);
 		
-		JComboBox cb8 = new JComboBox();
-		cb8.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
-		cb8.setMaximumRowCount(9);
-		cb8.setFocusable(false);
-		cb8.setBounds(980, 559, 40, 31);
-		add(cb8);
+		JComboBox cbQuantityLemonade = new JComboBox();
+		cbQuantityLemonade.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
+		cbQuantityLemonade.setMaximumRowCount(9);
+		cbQuantityLemonade.setFocusable(false);
+		cbQuantityLemonade.setBounds(980, 559, 40, 31);
+		add(cbQuantityLemonade);
 		
-		JButton btnL = new JButton("");
-		btnL.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
-		btnL.setForeground(Color.WHITE);
-		btnL.setFocusable(false);
-		btnL.setBounds(new Rectangle(100, 0, 0, 0));
-		btnL.setBorderPainted(false);
-		btnL.setBackground(Color.RED);
-		btnL.setBounds(1019, 559, 40, 31);
-		add(btnL);
+		JButton btnAddToCartLemonade = new JButton("");
+		btnAddToCartLemonade.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
+		btnAddToCartLemonade.setForeground(Color.WHITE);
+		btnAddToCartLemonade.setFocusable(false);
+		btnAddToCartLemonade.setBounds(new Rectangle(100, 0, 0, 0));
+		btnAddToCartLemonade.setBorderPainted(false);
+		btnAddToCartLemonade.setBackground(Color.RED);
+		btnAddToCartLemonade.setBounds(1019, 559, 40, 31);
+		add(btnAddToCartLemonade);
 		
-		JLabel lbSK = new JLabel("Sunkist");
-		lbSK.setVerticalAlignment(SwingConstants.TOP);
-		lbSK.setHorizontalAlignment(SwingConstants.CENTER);
-		lbSK.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lbSK.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
-		lbSK.setAlignmentY(0.0f);
-		lbSK.setBounds(74, 388, 362, 107);
-		add(lbSK);
+		JLabel lblMAW = new JLabel("M");
+		lblMAW.setHorizontalAlignment(SwingConstants.CENTER);
+		lblMAW.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblMAW.setBounds(775, 159, 21, 26);
+		add(lblMAW);
 		
-		JLabel lbDSK = new JLabel("Diet Sunkist");
-		lbDSK.setVerticalAlignment(SwingConstants.TOP);
-		lbDSK.setHorizontalAlignment(SwingConstants.CENTER);
-		lbDSK.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lbDSK.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
-		lbDSK.setAlignmentY(0.0f);
-		lbDSK.setBounds(74, 526, 362, 107);
-		add(lbDSK);
+		JRadioButton rbAWM = new JRadioButton("");
+		rbAWM.setBounds(775, 137, 21, 21);
+		add(rbAWM);
 		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/pepsi.jpg")));
-		lblNewLabel.setBounds(94, 102, 71, 78);
-		add(lblNewLabel);
+		JLabel lblLAW = new JLabel("L");
+		lblLAW.setHorizontalAlignment(SwingConstants.CENTER);
+		lblLAW.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblLAW.setBounds(802, 159, 21, 26);
+		add(lblLAW);
 		
-		JLabel lbPepsi = new JLabel("Pepsi");
-		lbPepsi.setVerticalAlignment(SwingConstants.TOP);
-		lbPepsi.setHorizontalTextPosition(SwingConstants.CENTER);
-		lbPepsi.setHorizontalAlignment(SwingConstants.CENTER);
-		lbPepsi.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lbPepsi.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
-		lbPepsi.setAlignmentY(0.0f);
-		lbPepsi.setBounds(74, 88, 362, 107);
-		add(lbPepsi);
+		JRadioButton rbAWL = new JRadioButton("");
+		rbAWL.setBounds(802, 137, 21, 21);
+		add(rbAWL);
 		
-		JLabel lbDP = new JLabel("Diet Pepsi");
-		lbDP.setVerticalAlignment(SwingConstants.TOP);
-		lbDP.setHorizontalTextPosition(SwingConstants.LEFT);
-		lbDP.setHorizontalAlignment(SwingConstants.CENTER);
-		lbDP.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lbDP.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
-		lbDP.setAlignmentY(4.0f);
-		lbDP.setBounds(74, 242, 362, 107);
-		add(lbDP);
-		
-		JLabel lblNewLabel_2 = new JLabel("");
-		lblNewLabel_2.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/Diet-pepsi.jpg")));
-		lblNewLabel_2.setBounds(94, 253, 71, 78);
-		add(lblNewLabel_2);
-		
-		JLabel lblNewLabel_3_1 = new JLabel("");
-		lblNewLabel_3_1.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/sunkist.jpg")));
-		lblNewLabel_3_1.setBounds(94, 405, 71, 78);
-		add(lblNewLabel_3_1);
-		
-		JLabel lblNewLabel_3_2 = new JLabel("");
-		lblNewLabel_3_2.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/diet-sunkist.jpeg")));
-		lblNewLabel_3_2.setBounds(94, 542, 71, 78);
-		add(lblNewLabel_3_2);
-		
-		JLabel lblNewLabel_3_4 = new JLabel("");
-		lblNewLabel_3_4.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/Sierra-mist.jpg")));
-		lblNewLabel_3_4.setBounds(594, 405, 71, 78);
-		add(lblNewLabel_3_4);
-		
-		JLabel lblNewLabel_3_5 = new JLabel("");
-		lblNewLabel_3_5.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/lemonade.jpg")));
-		lblNewLabel_3_5.setBounds(594, 538, 71, 78);
-		add(lblNewLabel_3_5);
-		
-		JLabel lbLMN = new JLabel("Lemonade");
-		lbLMN.setVerticalAlignment(SwingConstants.TOP);
-		lbLMN.setHorizontalAlignment(SwingConstants.CENTER);
-		lbLMN.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lbLMN.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
-		lbLMN.setAlignmentY(0.0f);
-		lbLMN.setBounds(574, 526, 362, 107);
-		add(lbLMN);
-		
-		JLabel lblM_1 = new JLabel("M");
-		lblM_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblM_1.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblM_1.setBounds(775, 153, 21, 26);
-		add(lblM_1);
-		
-		JRadioButton rbAWS_1 = new JRadioButton("");
-		rbAWS_1.setBounds(775, 131, 21, 21);
-		add(rbAWS_1);
-		
-		JLabel lblS4_1_1 = new JLabel("L");
-		lblS4_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblS4_1_1.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblS4_1_1.setBounds(802, 153, 21, 26);
-		add(lblS4_1_1);
-		
-		JRadioButton rbAWS_1_1 = new JRadioButton("");
-		rbAWS_1_1.setBounds(802, 131, 21, 21);
-		add(rbAWS_1_1);
-		
-		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/A&W.png")));
-		lblNewLabel_1.setBounds(594, 104, 71, 78);
-		add(lblNewLabel_1);
+		JLabel lbliconAW = new JLabel("");
+		lbliconAW.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/A&W.png")));
+		lbliconAW.setBounds(594, 102, 71, 94);
+		add(lbliconAW);
 		
 		JLabel lbAW = new JLabel("");
 		lbAW.setVerticalAlignment(SwingConstants.TOP);
@@ -470,40 +238,45 @@ public class Drinks extends JPanel {
 		lbAW.setBounds(574, 95, 362, 107);
 		add(lbAW);
 		
-		JLabel lblS4_1_1_1 = new JLabel("L");
-		lblS4_1_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblS4_1_1_1.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblS4_1_1_1.setBounds(802, 300, 21, 26);
-		add(lblS4_1_1_1);
+		JLabel lblLDietAW = new JLabel("L");
+		lblLDietAW.setHorizontalAlignment(SwingConstants.CENTER);
+		lblLDietAW.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblLDietAW.setBounds(802, 306, 21, 26);
+		add(lblLDietAW);
 		
-		JLabel lblM_1_1 = new JLabel("M");
-		lblM_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblM_1_1.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblM_1_1.setBounds(775, 300, 21, 26);
-		add(lblM_1_1);
+		JLabel lblMDietAW = new JLabel("M");
+		lblMDietAW.setHorizontalAlignment(SwingConstants.CENTER);
+		lblMDietAW.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblMDietAW.setBounds(775, 306, 21, 26);
+		add(lblMDietAW);
 		
-		JLabel lblS4_1 = new JLabel("S");
-		lblS4_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblS4_1.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblS4_1.setBounds(748, 300, 21, 26);
-		add(lblS4_1);
+		JLabel lblSDietAW = new JLabel("S");
+		lblSDietAW.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSDietAW.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblSDietAW.setBounds(748, 306, 21, 26);
+		add(lblSDietAW);
 		
-		JRadioButton rbAWS_2 = new JRadioButton("");
-		rbAWS_2.setBounds(748, 278, 21, 21);
-		add(rbAWS_2);
+		JLabel lbliconDietAW = new JLabel("");
+		lbliconDietAW.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/diet-A&W.jpg")));
+		lbliconDietAW.setBounds(594, 249, 71, 94);
+		add(lbliconDietAW);
 		
-		JRadioButton rbAWS_1_2 = new JRadioButton("");
-		rbAWS_1_2.setBounds(775, 278, 21, 21);
-		add(rbAWS_1_2);
+		JRadioButton rbDietAWS = new JRadioButton("");
+		rbDietAWS.setBounds(748, 284, 21, 21);
+		add(rbDietAWS);
 		
-		JRadioButton rbAWS_1_1_1 = new JRadioButton("");
-		rbAWS_1_1_1.setBounds(802, 278, 21, 21);
-		add(rbAWS_1_1_1);
+		JLabel lblDietAW = new JLabel("Diet A&W");
+		lblDietAW.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblDietAW.setBounds(748, 249, 155, 46);
+		add(lblDietAW);
 		
-		JLabel lblNewLabel_4_1 = new JLabel("Diet A&W");
-		lblNewLabel_4_1.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblNewLabel_4_1.setBounds(748, 249, 119, 32);
-		add(lblNewLabel_4_1);
+		JRadioButton rbDietAWL = new JRadioButton("");
+		rbDietAWL.setBounds(802, 284, 21, 21);
+		add(rbDietAWL);
+		
+		JRadioButton rbDietAWM = new JRadioButton("");
+		rbDietAWM.setBounds(775, 284, 21, 21);
+		add(rbDietAWM);
 		
 		JLabel lbAW_1 = new JLabel("");
 		lbAW_1.setVerticalAlignment(SwingConstants.TOP);
@@ -514,6 +287,46 @@ public class Drinks extends JPanel {
 		lbAW_1.setBounds(574, 242, 362, 107);
 		add(lbAW_1);
 		
+		JLabel lbliconSierraMist = new JLabel("");
+		lbliconSierraMist.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/Sierra-mist.jpg")));
+		lbliconSierraMist.setBounds(594, 395, 71, 94);
+		add(lbliconSierraMist);
+		
+		JRadioButton rbSierraMistS = new JRadioButton("");
+		rbSierraMistS.setBounds(748, 430, 21, 21);
+		add(rbSierraMistS);
+		
+		JLabel lblSierraMist = new JLabel("Sierra Mist");
+		lblSierraMist.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblSierraMist.setBounds(748, 395, 155, 46);
+		add(lblSierraMist);
+		
+		JRadioButton rbSierraMistM = new JRadioButton("");
+		rbSierraMistM.setBounds(775, 430, 21, 21);
+		add(rbSierraMistM);
+		
+		JRadioButton rbSierraMistL = new JRadioButton("");
+		rbSierraMistL.setBounds(802, 430, 21, 21);
+		add(rbSierraMistL);
+		
+		JLabel lblLSierraMist = new JLabel("L");
+		lblLSierraMist.setHorizontalAlignment(SwingConstants.CENTER);
+		lblLSierraMist.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblLSierraMist.setBounds(802, 452, 21, 26);
+		add(lblLSierraMist);
+		
+		JLabel lblMSierraMist = new JLabel("M");
+		lblMSierraMist.setHorizontalAlignment(SwingConstants.CENTER);
+		lblMSierraMist.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblMSierraMist.setBounds(775, 452, 21, 26);
+		add(lblMSierraMist);
+		
+		JLabel lblSSierraMist = new JLabel("S");
+		lblSSierraMist.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSSierraMist.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblSSierraMist.setBounds(748, 452, 21, 26);
+		add(lblSSierraMist);
+		
 		JLabel lbAW_1_1 = new JLabel("");
 		lbAW_1_1.setVerticalAlignment(SwingConstants.TOP);
 		lbAW_1_1.setHorizontalAlignment(SwingConstants.CENTER);
@@ -523,40 +336,250 @@ public class Drinks extends JPanel {
 		lbAW_1_1.setBounds(574, 388, 362, 107);
 		add(lbAW_1_1);
 		
-		JLabel lblS4_1_1_1_1 = new JLabel("L");
-		lblS4_1_1_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblS4_1_1_1_1.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblS4_1_1_1_1.setBounds(802, 446, 21, 26);
-		add(lblS4_1_1_1_1);
+		JLabel lblLLemonade = new JLabel("L");
+		lblLLemonade.setHorizontalAlignment(SwingConstants.CENTER);
+		lblLLemonade.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblLLemonade.setBounds(802, 590, 21, 26);
+		add(lblLLemonade);
 		
-		JLabel lblM_1_1_1 = new JLabel("M");
-		lblM_1_1_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblM_1_1_1.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblM_1_1_1.setBounds(775, 446, 21, 26);
-		add(lblM_1_1_1);
+		JLabel lblMLemonade = new JLabel("M");
+		lblMLemonade.setHorizontalAlignment(SwingConstants.CENTER);
+		lblMLemonade.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblMLemonade.setBounds(775, 590, 21, 26);
+		add(lblMLemonade);
 		
-		JLabel lblS4_1_2 = new JLabel("S");
-		lblS4_1_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblS4_1_2.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblS4_1_2.setBounds(748, 446, 21, 26);
-		add(lblS4_1_2);
+		JLabel lblSLemonade = new JLabel("S");
+		lblSLemonade.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSLemonade.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblSLemonade.setBounds(748, 590, 21, 26);
+		add(lblSLemonade);
 		
-		JRadioButton rbAWS_2_1 = new JRadioButton("");
-		rbAWS_2_1.setBounds(748, 424, 21, 21);
-		add(rbAWS_2_1);
+		JRadioButton rbLemonadeS = new JRadioButton("");
+		rbLemonadeS.setBounds(748, 568, 21, 21);
+		add(rbLemonadeS);
 		
-		JRadioButton rbAWS_1_2_1 = new JRadioButton("");
-		rbAWS_1_2_1.setBounds(775, 424, 21, 21);
-		add(rbAWS_1_2_1);
+		JRadioButton rbLemonadeM = new JRadioButton("");
+		rbLemonadeM.setBounds(775, 568, 21, 21);
+		add(rbLemonadeM);
 		
-		JRadioButton rbAWS_1_1_1_1 = new JRadioButton("");
-		rbAWS_1_1_1_1.setBounds(802, 424, 21, 21);
-		add(rbAWS_1_1_1_1);
+		JRadioButton rbLemonadeL = new JRadioButton("");
+		rbLemonadeL.setBounds(802, 568, 21, 21);
+		add(rbLemonadeL);
 		
-		JLabel lblNewLabel_4_1_1 = new JLabel("Diet A&W");
-		lblNewLabel_4_1_1.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblNewLabel_4_1_1.setBounds(748, 395, 119, 32);
-		add(lblNewLabel_4_1_1);
+		JLabel lblLemonade = new JLabel("Lemonade");
+		lblLemonade.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblLemonade.setBounds(748, 533, 155, 46);
+		add(lblLemonade);
+		
+		JLabel lbliconLemonade = new JLabel("");
+		lbliconLemonade.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/lemonade.jpg")));
+		lbliconLemonade.setBounds(594, 533, 71, 94);
+		add(lbliconLemonade);
+		
+		JLabel lbAW_1_1_1 = new JLabel("");
+		lbAW_1_1_1.setVerticalAlignment(SwingConstants.TOP);
+		lbAW_1_1_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lbAW_1_1_1.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lbAW_1_1_1.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
+		lbAW_1_1_1.setAlignmentY(0.0f);
+		lbAW_1_1_1.setBounds(574, 526, 362, 107);
+		add(lbAW_1_1_1);
+		
+		JLabel lbliconDietSunkist = new JLabel("");
+		lbliconDietSunkist.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/diet-sunkist.jpeg")));
+		lbliconDietSunkist.setBounds(94, 533, 71, 94);
+		add(lbliconDietSunkist);
+		
+		JRadioButton rbDietSunkistS = new JRadioButton("");
+		rbDietSunkistS.setBounds(248, 568, 21, 21);
+		add(rbDietSunkistS);
+		
+		JLabel lblSDietSunkist = new JLabel("S");
+		lblSDietSunkist.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSDietSunkist.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblSDietSunkist.setBounds(248, 590, 21, 26);
+		add(lblSDietSunkist);
+		
+		JLabel lblMDietSunkist = new JLabel("M");
+		lblMDietSunkist.setHorizontalAlignment(SwingConstants.CENTER);
+		lblMDietSunkist.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblMDietSunkist.setBounds(275, 590, 21, 26);
+		add(lblMDietSunkist);
+		
+		JLabel lblLDietSunkist = new JLabel("L");
+		lblLDietSunkist.setHorizontalAlignment(SwingConstants.CENTER);
+		lblLDietSunkist.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblLDietSunkist.setBounds(302, 590, 21, 26);
+		add(lblLDietSunkist);
+		
+		JRadioButton rbDietSunkistL = new JRadioButton("");
+		rbDietSunkistL.setBounds(302, 568, 21, 21);
+		add(rbDietSunkistL);
+		
+		JRadioButton rbDietSunkistM = new JRadioButton("");
+		rbDietSunkistM.setBounds(275, 568, 21, 21);
+		add(rbDietSunkistM);
+		
+		JLabel lblDietSunkist = new JLabel("Diet Sunkist");
+		lblDietSunkist.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblDietSunkist.setBounds(248, 533, 155, 46);
+		add(lblDietSunkist);
+		
+		JLabel lbliconSunkist = new JLabel("");
+		lbliconSunkist.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/sunkist.jpg")));
+		lbliconSunkist.setBounds(94, 395, 71, 94);
+		add(lbliconSunkist);
+		
+		JLabel lblSunkist = new JLabel("Sunkist");
+		lblSunkist.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblSunkist.setBounds(248, 395, 155, 46);
+		add(lblSunkist);
+		
+		JRadioButton rbSunkistS = new JRadioButton("");
+		rbSunkistS.setBounds(248, 430, 21, 21);
+		add(rbSunkistS);
+		
+		JLabel lblSSunkist = new JLabel("S");
+		lblSSunkist.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSSunkist.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblSSunkist.setBounds(248, 452, 21, 26);
+		add(lblSSunkist);
+		
+		JLabel lblMSunkist = new JLabel("M");
+		lblMSunkist.setHorizontalAlignment(SwingConstants.CENTER);
+		lblMSunkist.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblMSunkist.setBounds(275, 452, 21, 26);
+		add(lblMSunkist);
+		
+		JRadioButton rbSunkistM = new JRadioButton("");
+		rbSunkistM.setBounds(275, 430, 21, 21);
+		add(rbSunkistM);
+		
+		JRadioButton rbSunkistL = new JRadioButton("");
+		rbSunkistL.setBounds(302, 430, 21, 21);
+		add(rbSunkistL);
+		
+		JLabel lblLSunkist = new JLabel("L");
+		lblLSunkist.setHorizontalAlignment(SwingConstants.CENTER);
+		lblLSunkist.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblLSunkist.setBounds(302, 452, 21, 26);
+		add(lblLSunkist);
+		
+		JLabel lblSDietPepsi = new JLabel("S");
+		lblSDietPepsi.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSDietPepsi.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblSDietPepsi.setBounds(248, 306, 21, 26);
+		add(lblSDietPepsi);
+		
+		JLabel lblMDietPepsi = new JLabel("M");
+		lblMDietPepsi.setHorizontalAlignment(SwingConstants.CENTER);
+		lblMDietPepsi.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblMDietPepsi.setBounds(275, 306, 21, 26);
+		add(lblMDietPepsi);
+		
+		JLabel lblLDietPepsi = new JLabel("L");
+		lblLDietPepsi.setHorizontalAlignment(SwingConstants.CENTER);
+		lblLDietPepsi.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblLDietPepsi.setBounds(302, 306, 21, 26);
+		add(lblLDietPepsi);
+		
+		JRadioButton rbDietPepsiL = new JRadioButton("");
+		rbDietPepsiL.setBounds(302, 284, 21, 21);
+		add(rbDietPepsiL);
+		
+		JRadioButton rbDietPepsiM = new JRadioButton("");
+		rbDietPepsiM.setBounds(275, 284, 21, 21);
+		add(rbDietPepsiM);
+		
+		JRadioButton rbDietPepsiS = new JRadioButton("");
+		rbDietPepsiS.setBounds(248, 284, 21, 21);
+		add(rbDietPepsiS);
+		
+		JLabel lbliconDietPepsi = new JLabel("");
+		lbliconDietPepsi.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/Diet-pepsi.jpg")));
+		lbliconDietPepsi.setBounds(94, 249, 71, 94);
+		add(lbliconDietPepsi);
+		
+		JLabel lblDietPepsi = new JLabel("Diet Pepsi");
+		lblDietPepsi.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblDietPepsi.setBounds(248, 249, 155, 46);
+		add(lblDietPepsi);
+		
+		JLabel lblLPepsi = new JLabel("L");
+		lblLPepsi.setHorizontalAlignment(SwingConstants.CENTER);
+		lblLPepsi.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblLPepsi.setBounds(302, 159, 21, 26);
+		add(lblLPepsi);
+		
+		JLabel lblMPepsi = new JLabel("M");
+		lblMPepsi.setHorizontalAlignment(SwingConstants.CENTER);
+		lblMPepsi.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblMPepsi.setBounds(275, 159, 21, 26);
+		add(lblMPepsi);
+		
+		JLabel lblSPepsi = new JLabel("S");
+		lblSPepsi.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSPepsi.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblSPepsi.setBounds(248, 159, 21, 26);
+		add(lblSPepsi);
+		
+		JRadioButton rbPepsiS = new JRadioButton("");
+		rbPepsiS.setBounds(248, 137, 21, 21);
+		add(rbPepsiS);
+		
+		JRadioButton rbPepsiM = new JRadioButton("");
+		rbPepsiM.setBounds(275, 137, 21, 21);
+		add(rbPepsiM);
+		
+		JRadioButton rbPepsiL = new JRadioButton("");
+		rbPepsiL.setBounds(302, 137, 21, 21);
+		add(rbPepsiL);
+		
+		JLabel lbliconPepsi = new JLabel("");
+		lbliconPepsi.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/pepsi.jpg")));
+		lbliconPepsi.setBounds(94, 102, 71, 94);
+		add(lbliconPepsi);
+		
+		JLabel lblPespi = new JLabel("Pepsi");
+		lblPespi.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblPespi.setBounds(248, 102, 155, 46);
+		add(lblPespi);
+		
+		JLabel lbAW_2 = new JLabel("");
+		lbAW_2.setVerticalAlignment(SwingConstants.TOP);
+		lbAW_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lbAW_2.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lbAW_2.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
+		lbAW_2.setAlignmentY(0.0f);
+		lbAW_2.setBounds(74, 95, 362, 107);
+		add(lbAW_2);
+		
+		JLabel lbAW_1_2 = new JLabel("");
+		lbAW_1_2.setVerticalAlignment(SwingConstants.TOP);
+		lbAW_1_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lbAW_1_2.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lbAW_1_2.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
+		lbAW_1_2.setAlignmentY(0.0f);
+		lbAW_1_2.setBounds(74, 242, 362, 107);
+		add(lbAW_1_2);
+		
+		JLabel lbAW_1_1_2 = new JLabel("");
+		lbAW_1_1_2.setVerticalAlignment(SwingConstants.TOP);
+		lbAW_1_1_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lbAW_1_1_2.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lbAW_1_1_2.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
+		lbAW_1_1_2.setAlignmentY(0.0f);
+		lbAW_1_1_2.setBounds(74, 388, 362, 107);
+		add(lbAW_1_1_2);
+		
+		JLabel lbAW_1_1_1_1 = new JLabel("");
+		lbAW_1_1_1_1.setVerticalAlignment(SwingConstants.TOP);
+		lbAW_1_1_1_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lbAW_1_1_1_1.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lbAW_1_1_1_1.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
+		lbAW_1_1_1_1.setAlignmentY(0.0f);
+		lbAW_1_1_1_1.setBounds(74, 526, 362, 107);
+		add(lbAW_1_1_1_1);
 		setVisible(false);
 
 	}
