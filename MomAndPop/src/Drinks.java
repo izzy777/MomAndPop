@@ -17,14 +17,14 @@ import javax.swing.ImageIcon;
 import javax.swing.ButtonGroup;
 
 public class Drinks extends JPanel {
-	private final ButtonGroup pepsi = new ButtonGroup();
-	private final ButtonGroup dietPepsi = new ButtonGroup();
-	private final ButtonGroup sunkist = new ButtonGroup();
-	private final ButtonGroup dietSunkist = new ButtonGroup();
 	private final ButtonGroup AW = new ButtonGroup();
+	private final ButtonGroup Pepsi = new ButtonGroup();
+	private final ButtonGroup dietPepsi = new ButtonGroup();
+	private final ButtonGroup Sunkist = new ButtonGroup();
+	private final ButtonGroup dietSunkist = new ButtonGroup();
 	private final ButtonGroup dietAW = new ButtonGroup();
 	private final ButtonGroup sierraMist = new ButtonGroup();
-	private final ButtonGroup lemonade = new ButtonGroup();
+	private final ButtonGroup Lemonade = new ButtonGroup();
 
 	/**
 	 * Create the panel.
@@ -211,6 +211,7 @@ public class Drinks extends JPanel {
 		add(lblMAW);
 		
 		JRadioButton rbAWM = new JRadioButton("");
+		AW.add(rbAWM);
 		rbAWM.setBounds(775, 137, 21, 21);
 		add(rbAWM);
 		
@@ -221,6 +222,7 @@ public class Drinks extends JPanel {
 		add(lblLAW);
 		
 		JRadioButton rbAWL = new JRadioButton("");
+		AW.add(rbAWL);
 		rbAWL.setBounds(802, 137, 21, 21);
 		add(rbAWL);
 		
@@ -262,6 +264,7 @@ public class Drinks extends JPanel {
 		add(lbliconDietAW);
 		
 		JRadioButton rbDietAWS = new JRadioButton("");
+		dietAW.add(rbDietAWS);
 		rbDietAWS.setBounds(748, 284, 21, 21);
 		add(rbDietAWS);
 		
@@ -271,10 +274,12 @@ public class Drinks extends JPanel {
 		add(lblDietAW);
 		
 		JRadioButton rbDietAWL = new JRadioButton("");
+		dietAW.add(rbDietAWL);
 		rbDietAWL.setBounds(802, 284, 21, 21);
 		add(rbDietAWL);
 		
 		JRadioButton rbDietAWM = new JRadioButton("");
+		dietAW.add(rbDietAWM);
 		rbDietAWM.setBounds(775, 284, 21, 21);
 		add(rbDietAWM);
 		
@@ -293,6 +298,7 @@ public class Drinks extends JPanel {
 		add(lbliconSierraMist);
 		
 		JRadioButton rbSierraMistS = new JRadioButton("");
+		sierraMist.add(rbSierraMistS);
 		rbSierraMistS.setBounds(748, 430, 21, 21);
 		add(rbSierraMistS);
 		
@@ -302,10 +308,12 @@ public class Drinks extends JPanel {
 		add(lblSierraMist);
 		
 		JRadioButton rbSierraMistM = new JRadioButton("");
+		sierraMist.add(rbSierraMistM);
 		rbSierraMistM.setBounds(775, 430, 21, 21);
 		add(rbSierraMistM);
 		
 		JRadioButton rbSierraMistL = new JRadioButton("");
+		sierraMist.add(rbSierraMistL);
 		rbSierraMistL.setBounds(802, 430, 21, 21);
 		add(rbSierraMistL);
 		
@@ -355,14 +363,17 @@ public class Drinks extends JPanel {
 		add(lblSLemonade);
 		
 		JRadioButton rbLemonadeS = new JRadioButton("");
+		Lemonade.add(rbLemonadeS);
 		rbLemonadeS.setBounds(748, 568, 21, 21);
 		add(rbLemonadeS);
 		
 		JRadioButton rbLemonadeM = new JRadioButton("");
+		Lemonade.add(rbLemonadeM);
 		rbLemonadeM.setBounds(775, 568, 21, 21);
 		add(rbLemonadeM);
 		
 		JRadioButton rbLemonadeL = new JRadioButton("");
+		Lemonade.add(rbLemonadeL);
 		rbLemonadeL.setBounds(802, 568, 21, 21);
 		add(rbLemonadeL);
 		
@@ -391,6 +402,7 @@ public class Drinks extends JPanel {
 		add(lbliconDietSunkist);
 		
 		JRadioButton rbDietSunkistS = new JRadioButton("");
+		dietSunkist.add(rbDietSunkistS);
 		rbDietSunkistS.setBounds(248, 568, 21, 21);
 		add(rbDietSunkistS);
 		
@@ -413,10 +425,12 @@ public class Drinks extends JPanel {
 		add(lblLDietSunkist);
 		
 		JRadioButton rbDietSunkistL = new JRadioButton("");
+		dietSunkist.add(rbDietSunkistL);
 		rbDietSunkistL.setBounds(302, 568, 21, 21);
 		add(rbDietSunkistL);
 		
 		JRadioButton rbDietSunkistM = new JRadioButton("");
+		dietSunkist.add(rbDietSunkistM);
 		rbDietSunkistM.setBounds(275, 568, 21, 21);
 		add(rbDietSunkistM);
 		
@@ -436,6 +450,7 @@ public class Drinks extends JPanel {
 		add(lblSunkist);
 		
 		JRadioButton rbSunkistS = new JRadioButton("");
+		Sunkist.add(rbSunkistS);
 		rbSunkistS.setBounds(248, 430, 21, 21);
 		add(rbSunkistS);
 		
@@ -452,10 +467,12 @@ public class Drinks extends JPanel {
 		add(lblMSunkist);
 		
 		JRadioButton rbSunkistM = new JRadioButton("");
+		Sunkist.add(rbSunkistM);
 		rbSunkistM.setBounds(275, 430, 21, 21);
 		add(rbSunkistM);
 		
 		JRadioButton rbSunkistL = new JRadioButton("");
+		Sunkist.add(rbSunkistL);
 		rbSunkistL.setBounds(302, 430, 21, 21);
 		add(rbSunkistL);
 		
@@ -484,14 +501,17 @@ public class Drinks extends JPanel {
 		add(lblLDietPepsi);
 		
 		JRadioButton rbDietPepsiL = new JRadioButton("");
+		dietPepsi.add(rbDietPepsiL);
 		rbDietPepsiL.setBounds(302, 284, 21, 21);
 		add(rbDietPepsiL);
 		
 		JRadioButton rbDietPepsiM = new JRadioButton("");
+		dietPepsi.add(rbDietPepsiM);
 		rbDietPepsiM.setBounds(275, 284, 21, 21);
 		add(rbDietPepsiM);
 		
 		JRadioButton rbDietPepsiS = new JRadioButton("");
+		dietPepsi.add(rbDietPepsiS);
 		rbDietPepsiS.setBounds(248, 284, 21, 21);
 		add(rbDietPepsiS);
 		
@@ -524,14 +544,17 @@ public class Drinks extends JPanel {
 		add(lblSPepsi);
 		
 		JRadioButton rbPepsiS = new JRadioButton("");
+		Pepsi.add(rbPepsiS);
 		rbPepsiS.setBounds(248, 137, 21, 21);
 		add(rbPepsiS);
 		
 		JRadioButton rbPepsiM = new JRadioButton("");
+		Pepsi.add(rbPepsiM);
 		rbPepsiM.setBounds(275, 137, 21, 21);
 		add(rbPepsiM);
 		
 		JRadioButton rbPepsiL = new JRadioButton("");
+		Pepsi.add(rbPepsiL);
 		rbPepsiL.setBounds(302, 137, 21, 21);
 		add(rbPepsiL);
 		
