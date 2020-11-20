@@ -151,6 +151,7 @@ public class Menu extends JFrame {
 
 		//Pizza Side Button
 		JButton btnPizza = new JButton("Pizza");
+		btnPizza.setHorizontalTextPosition(SwingConstants.RIGHT);
 		btnPizza.setIcon(new ImageIcon(Menu.class.getResource("/imgs/pizza.png")));
 		btnPizza.setRequestFocusEnabled(false);
 		btnPizza.setForeground(Color.WHITE);
@@ -264,6 +265,8 @@ public class Menu extends JFrame {
 				side.setVisible(false);
 				drinks.setVisible(false);
 				cart.setVisible(false);
+				topPnl.setVisible(false);
+				ci.setVisible(false);
 			}
 		});
 		
@@ -282,6 +285,8 @@ public class Menu extends JFrame {
 				menu.setVisible(false);
 				cart.setVisible(false);
 				drinks.setVisible(false);
+				topPnl.setVisible(false);
+				ci.setVisible(false);
 				
 			}
 		});
@@ -301,6 +306,8 @@ public class Menu extends JFrame {
 				menu.setVisible(false);
 				side.setVisible(false);
 				cart.setVisible(false);
+				topPnl.setVisible(false);
+				ci.setVisible(false);
 			}
 		});
 		
@@ -319,6 +326,8 @@ public class Menu extends JFrame {
 				pizzaTypePnl.setVisible(false);
 				menu.setVisible(false);
 				side.setVisible(false);
+				topPnl.setVisible(false);
+				ci.setVisible(false);
 				
 			}
 		});	
