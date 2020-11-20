@@ -33,48 +33,48 @@ public class PizzaType extends JPanel {
 		lblSize.setForeground(Color.DARK_GRAY);
 		lblSize.setHorizontalAlignment(SwingConstants.CENTER);
 		lblSize.setFont(new Font("Nirmala UI", Font.BOLD, 30));
-		lblSize.setBounds(133, 133, 219, 48);
+		lblSize.setBounds(133, 81, 219, 48);
 		add(lblSize);
 		
 		JLabel lblCrust = new JLabel("Crust");
 		lblCrust.setHorizontalAlignment(SwingConstants.CENTER);
 		lblCrust.setForeground(Color.DARK_GRAY);
 		lblCrust.setFont(new Font("Nirmala UI", Font.BOLD, 30));
-		lblCrust.setBounds(445, 133, 219, 48);
+		lblCrust.setBounds(445, 81, 219, 48);
 		add(lblCrust);
 		
 		JLabel lblSauce = new JLabel("Sauce");
 		lblSauce.setHorizontalAlignment(SwingConstants.CENTER);
 		lblSauce.setForeground(Color.DARK_GRAY);
 		lblSauce.setFont(new Font("Nirmala UI", Font.BOLD, 30));
-		lblSauce.setBounds(774, 133, 219, 48);
+		lblSauce.setBounds(774, 81, 219, 48);
 		add(lblSauce);
 		
 		JLabel lblCheese = new JLabel("Cheese");
 		lblCheese.setHorizontalAlignment(SwingConstants.CENTER);
 		lblCheese.setForeground(Color.DARK_GRAY);
 		lblCheese.setFont(new Font("Nirmala UI", Font.BOLD, 30));
-		lblCheese.setBounds(774, 356, 219, 48);
+		lblCheese.setBounds(774, 304, 219, 48);
 		add(lblCheese);
 		
 		JRadioButton rbtnS = new JRadioButton("");
 		sizeBtnGrp.add(rbtnS);
-		rbtnS.setBounds(117, 211, 21, 23);
+		rbtnS.setBounds(117, 159, 21, 23);
 		add(rbtnS);
 		
 		JRadioButton rbtnM = new JRadioButton("");
 		sizeBtnGrp.add(rbtnM);
-		rbtnM.setBounds(117, 300, 21, 23);
+		rbtnM.setBounds(117, 248, 21, 23);
 		add(rbtnM);
 		
 		JRadioButton rbtnL = new JRadioButton("");
 		sizeBtnGrp.add(rbtnL);
-		rbtnL.setBounds(117, 388, 21, 23);
+		rbtnL.setBounds(117, 336, 21, 23);
 		add(rbtnL);
 		
 		JRadioButton rbtnXL = new JRadioButton("");
 		sizeBtnGrp.add(rbtnXL);
-		rbtnXL.setBounds(117, 470, 21, 23);
+		rbtnXL.setBounds(117, 418, 21, 23);
 		add(rbtnXL);
 		
 		JLabel lblS = new JLabel("<html>Small $4<br>(0.50\u00A2 per topping)</br></html>");
@@ -84,7 +84,7 @@ public class PizzaType extends JPanel {
 		lblS.setForeground(Color.DARK_GRAY);
 		lblS.setFont(new Font("Nirmala UI", Font.BOLD, 15));
 		lblS.setHorizontalAlignment(SwingConstants.CENTER);
-		lblS.setBounds(152, 192, 183, 62);
+		lblS.setBounds(152, 140, 183, 62);
 		add(lblS);
 		
 		JLabel lblM = new JLabel("<html>Medium $6<br>(0.75\u00A2 per topping)</br></html>");
@@ -94,7 +94,7 @@ public class PizzaType extends JPanel {
 		lblM.setForeground(Color.DARK_GRAY);
 		lblM.setFont(new Font("Nirmala UI", Font.BOLD, 15));
 		lblM.setBorder(new LineBorder(Color.LIGHT_GRAY, 2, true));
-		lblM.setBounds(152, 280, 183, 62);
+		lblM.setBounds(152, 228, 183, 62);
 		add(lblM);
 		
 		JLabel lblL = new JLabel("<html>Large $8<br>($1 per topping)</br></html>");
@@ -104,7 +104,7 @@ public class PizzaType extends JPanel {
 		lblL.setForeground(Color.DARK_GRAY);
 		lblL.setFont(new Font("Nirmala UI", Font.BOLD, 15));
 		lblL.setBorder(new LineBorder(Color.LIGHT_GRAY, 2, true));
-		lblL.setBounds(152, 366, 183, 62);
+		lblL.setBounds(152, 314, 183, 62);
 		add(lblL);
 		
 		JLabel lblXL = new JLabel("<html>Extra Large $10<br>($1.25 per topping)</br></html>");
@@ -114,7 +114,7 @@ public class PizzaType extends JPanel {
 		lblXL.setForeground(Color.DARK_GRAY);
 		lblXL.setFont(new Font("Nirmala UI", Font.BOLD, 15));
 		lblXL.setBorder(new LineBorder(Color.LIGHT_GRAY, 2, true));
-		lblXL.setBounds(152, 450, 183, 62);
+		lblXL.setBounds(152, 398, 183, 62);
 		add(lblXL);
 		
 		JLabel lblCT = new JLabel("Thin\r\n");
@@ -124,17 +124,17 @@ public class PizzaType extends JPanel {
 		lblCT.setForeground(Color.DARK_GRAY);
 		lblCT.setFont(new Font("Nirmala UI", Font.BOLD, 15));
 		lblCT.setBorder(new LineBorder(Color.LIGHT_GRAY, 2, true));
-		lblCT.setBounds(469, 192, 183, 62);
+		lblCT.setBounds(469, 140, 183, 62);
 		add(lblCT);
 		
 		JRadioButton rbtnCS = new JRadioButton("");
 		crustBtnGrp.add(rbtnCS);
-		rbtnCS.setBounds(434, 211, 21, 23);
+		rbtnCS.setBounds(434, 159, 21, 23);
 		add(rbtnCS);
 		
 		JRadioButton rbtnCM = new JRadioButton("");
 		crustBtnGrp.add(rbtnCM);
-		rbtnCM.setBounds(434, 300, 21, 23);
+		rbtnCM.setBounds(434, 248, 21, 23);
 		add(rbtnCM);
 		
 		JLabel lblCR = new JLabel("Regular");
@@ -144,7 +144,7 @@ public class PizzaType extends JPanel {
 		lblCR.setForeground(Color.DARK_GRAY);
 		lblCR.setFont(new Font("Nirmala UI", Font.BOLD, 15));
 		lblCR.setBorder(new LineBorder(Color.LIGHT_GRAY, 2, true));
-		lblCR.setBounds(469, 280, 183, 62);
+		lblCR.setBounds(469, 228, 183, 62);
 		add(lblCR);
 		
 		JLabel lblCP = new JLabel("Pan");
@@ -154,12 +154,12 @@ public class PizzaType extends JPanel {
 		lblCP.setForeground(Color.DARK_GRAY);
 		lblCP.setFont(new Font("Nirmala UI", Font.BOLD, 15));
 		lblCP.setBorder(new LineBorder(Color.LIGHT_GRAY, 2, true));
-		lblCP.setBounds(469, 366, 183, 62);
+		lblCP.setBounds(469, 314, 183, 62);
 		add(lblCP);
 		
 		JRadioButton rbtnCL = new JRadioButton("");
 		crustBtnGrp.add(rbtnCL);
-		rbtnCL.setBounds(434, 388, 21, 23);
+		rbtnCL.setBounds(434, 336, 21, 23);
 		add(rbtnCL);
 		
 		JLabel lblNT = new JLabel("No Tomatoes");
@@ -169,17 +169,17 @@ public class PizzaType extends JPanel {
 		lblNT.setForeground(Color.DARK_GRAY);
 		lblNT.setFont(new Font("Nirmala UI", Font.BOLD, 15));
 		lblNT.setBorder(new LineBorder(Color.LIGHT_GRAY, 2, true));
-		lblNT.setBounds(798, 280, 183, 62);
+		lblNT.setBounds(798, 228, 183, 62);
 		add(lblNT);
 		
 		JRadioButton rbtnNT = new JRadioButton("");
 		sauceBtnGrp.add(rbtnNT);
-		rbtnNT.setBounds(763, 300, 21, 23);
+		rbtnNT.setBounds(763, 248, 21, 23);
 		add(rbtnNT);
 		
 		JRadioButton rbtnT = new JRadioButton("");
 		sauceBtnGrp.add(rbtnT);
-		rbtnT.setBounds(763, 211, 21, 23);
+		rbtnT.setBounds(763, 159, 21, 23);
 		add(rbtnT);
 		
 		JLabel lblT = new JLabel("Tomatoes");
@@ -189,7 +189,7 @@ public class PizzaType extends JPanel {
 		lblT.setForeground(Color.DARK_GRAY);
 		lblT.setFont(new Font("Nirmala UI", Font.BOLD, 15));
 		lblT.setBorder(new LineBorder(Color.LIGHT_GRAY, 2, true));
-		lblT.setBounds(798, 192, 183, 62);
+		lblT.setBounds(798, 140, 183, 62);
 		add(lblT);
 		
 		JLabel lblNC = new JLabel("No Cheese");
@@ -199,17 +199,17 @@ public class PizzaType extends JPanel {
 		lblNC.setForeground(Color.DARK_GRAY);
 		lblNC.setFont(new Font("Nirmala UI", Font.BOLD, 15));
 		lblNC.setBorder(new LineBorder(Color.LIGHT_GRAY, 2, true));
-		lblNC.setBounds(798, 503, 183, 62);
+		lblNC.setBounds(798, 451, 183, 62);
 		add(lblNC);
 		
 		JRadioButton rbtnNC = new JRadioButton("");
 		cheeseBtnGrp.add(rbtnNC);
-		rbtnNC.setBounds(763, 523, 21, 23);
+		rbtnNC.setBounds(763, 471, 21, 23);
 		add(rbtnNC);
 		
 		JRadioButton rbtnC = new JRadioButton("");
 		cheeseBtnGrp.add(rbtnC);
-		rbtnC.setBounds(763, 434, 21, 23);
+		rbtnC.setBounds(763, 382, 21, 23);
 		add(rbtnC);
 		
 		JLabel lblC = new JLabel("Cheese");
@@ -219,7 +219,7 @@ public class PizzaType extends JPanel {
 		lblC.setForeground(Color.DARK_GRAY);
 		lblC.setFont(new Font("Nirmala UI", Font.BOLD, 15));
 		lblC.setBorder(new LineBorder(Color.LIGHT_GRAY, 2, true));
-		lblC.setBounds(798, 415, 183, 62);
+		lblC.setBounds(798, 363, 183, 62);
 		add(lblC);
 		
 		top2Pnl = new Toppings();
