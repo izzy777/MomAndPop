@@ -11,14 +11,20 @@ import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class PizzaType extends JPanel {
 	private final ButtonGroup sizeBtnGrp = new ButtonGroup();
 	private final ButtonGroup crustBtnGrp = new ButtonGroup();
 	private final ButtonGroup sauceBtnGrp = new ButtonGroup();
 	private final ButtonGroup cheeseBtnGrp = new ButtonGroup();
-	Toppings top2Pnl;
-	Menu frmMomAndPop;
+	public String size;
+	public String crust;
+	public String tomato;
+	public String cheese;
+	public double multiplier;
+	
 
 	/**
 	 * Create the panel.
@@ -127,15 +133,15 @@ public class PizzaType extends JPanel {
 		lblCT.setBounds(469, 140, 183, 62);
 		add(lblCT);
 		
-		JRadioButton rbtnCS = new JRadioButton("");
-		crustBtnGrp.add(rbtnCS);
-		rbtnCS.setBounds(434, 159, 21, 23);
-		add(rbtnCS);
+		JRadioButton rbtnThin = new JRadioButton("");
+		crustBtnGrp.add(rbtnThin);
+		rbtnThin.setBounds(434, 159, 21, 23);
+		add(rbtnThin);
 		
-		JRadioButton rbtnCM = new JRadioButton("");
-		crustBtnGrp.add(rbtnCM);
-		rbtnCM.setBounds(434, 248, 21, 23);
-		add(rbtnCM);
+		JRadioButton rbtnRegular = new JRadioButton("");
+		crustBtnGrp.add(rbtnRegular);
+		rbtnRegular.setBounds(434, 248, 21, 23);
+		add(rbtnRegular);
 		
 		JLabel lblCR = new JLabel("Regular");
 		lblCR.setName("");
@@ -157,10 +163,10 @@ public class PizzaType extends JPanel {
 		lblCP.setBounds(469, 314, 183, 62);
 		add(lblCP);
 		
-		JRadioButton rbtnCL = new JRadioButton("");
-		crustBtnGrp.add(rbtnCL);
-		rbtnCL.setBounds(434, 336, 21, 23);
-		add(rbtnCL);
+		JRadioButton rbtnPan = new JRadioButton("");
+		crustBtnGrp.add(rbtnPan);
+		rbtnPan.setBounds(434, 336, 21, 23);
+		add(rbtnPan);
 		
 		JLabel lblNT = new JLabel("No Tomatoes");
 		lblNT.setName("");
@@ -222,7 +228,78 @@ public class PizzaType extends JPanel {
 		lblC.setBounds(798, 363, 183, 62);
 		add(lblC);
 		
-		top2Pnl = new Toppings();
+		//Methods depending on which Size is chosen
+		rbtnS.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				size = "Small";
+				multiplier = 0.50;
+			}
+		});
+
+		rbtnM.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				size = "Medium";
+				multiplier = 0.75;
+			}
+		});
+
+		rbtnL.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				size = "Large";
+				multiplier = 1.00;
+			}
+		});
 		
+		rbtnXL.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				size = "Extra Large";
+				multiplier = 1.25;
+			}
+		});
+		
+		//Methods depending on which Crust is chosen
+		rbtnThin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				crust = "Thin";
+			}
+		});
+		
+		rbtnRegular.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				crust = "Regular";
+			}
+		});
+		
+		rbtnPan.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				crust = "Pan";
+			}
+		});
+		
+		//Tomato or No Tomato Methods
+		rbtnT.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				tomato = "Tomato Sauce";
+			}
+		});
+		
+		rbtnNT.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				tomato = "No Tomato";
+			}
+		});
+		
+		//Cheese or No Cheese
+		rbtnC.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				cheese = "Cheese";
+			}
+		});
+		
+		rbtnNC.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				cheese = "No Cheese";
+			}
+		});
 	}
 }
