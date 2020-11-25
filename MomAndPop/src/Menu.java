@@ -496,6 +496,8 @@ public class Menu extends JFrame {
 					cart.setVisible(false);
 					topPnl.setVisible(false);
 					ci.setVisible(false);
+					pu.setVisible(false);
+					d.setVisible(false);
 				}
 				
 				//Clears everything selected
@@ -531,6 +533,8 @@ public class Menu extends JFrame {
 					drinks.setVisible(false);
 					topPnl.setVisible(false);
 					ci.setVisible(false);
+					pu.setVisible(false);
+					d.setVisible(false);
 				}
 				
 				//Clears Everything
@@ -568,6 +572,8 @@ public class Menu extends JFrame {
 					cart.setVisible(false);
 					topPnl.setVisible(false);
 					ci.setVisible(false);
+					pu.setVisible(false);
+					d.setVisible(false);
 				}
 				
 				//Clears everything
@@ -603,6 +609,8 @@ public class Menu extends JFrame {
 					side.setVisible(false);
 					topPnl.setVisible(false);
 					ci.setVisible(false);
+					pu.setVisible(false);
+					d.setVisible(false);
 				}
 				
 				cart.getSum();
