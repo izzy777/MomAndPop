@@ -346,7 +346,8 @@ public class Menu extends JFrame {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				cart.model.addRow(new Object[] {"Pepsi", drinks.getPepsiSize(), drinks.cbQuantityPepsi.getSelectedIndex(), drinks.cbQuantityPepsi.getSelectedIndex() * 1.00});
-				
+				drinks.cbQuantityPepsi.setSelectedIndex(0);
+				drinks.rbPepsi();
 			}
 		});
 		
@@ -355,7 +356,8 @@ public class Menu extends JFrame {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				cart.model.addRow(new Object[] {"Diet Pepsi", drinks.getDietPepsiSize(), drinks.cbQuantityDietPepsi.getSelectedIndex(), drinks.cbQuantityDietPepsi.getSelectedIndex() * 1.00});
-				
+				drinks.cbQuantityDietPepsi.setSelectedIndex(0);
+				drinks.rbDietPepsi();
 			}
 		});
 		
@@ -364,7 +366,8 @@ public class Menu extends JFrame {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				cart.model.addRow(new Object[] {"Sunkist", drinks.getSunkistSize(), drinks.cbQuantitySunkist.getSelectedIndex(), drinks.cbQuantitySunkist.getSelectedIndex() * 1.00});
-				
+				drinks.cbQuantitySunkist.setSelectedIndex(0);
+				drinks.rbSunkist();
 			}
 		});
 		
@@ -372,8 +375,9 @@ public class Menu extends JFrame {
 		btnAddToCartDietSunkist.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				cart.model.addRow(new Object[] {"Diet Sunkist", drinks.getDietSunkistSize(), drinks.cbQuantitySunkist.getSelectedIndex(), drinks.cbQuantityDietSunkist.getSelectedIndex() * 1.00});
-				
+				cart.model.addRow(new Object[] {"Diet Sunkist", drinks.getDietSunkistSize(), drinks.cbQuantityDietSunkist.getSelectedIndex(), drinks.cbQuantityDietSunkist.getSelectedIndex() * 1.00});
+				drinks.cbQuantityDietSunkist.setSelectedIndex(0);
+				drinks.rbDietSunkist();
 			}
 		});
 		
@@ -382,7 +386,8 @@ public class Menu extends JFrame {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				cart.model.addRow(new Object[] {"Root Beer", drinks.getRootBeerSize(), drinks.cbQuantityAW.getSelectedIndex(), drinks.cbQuantityAW.getSelectedIndex() * 1.00});
-				
+				drinks.cbQuantityAW.setSelectedIndex(0);
+				drinks.rbRootBeer();
 			}
 		});
 		
@@ -391,7 +396,8 @@ public class Menu extends JFrame {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				cart.model.addRow(new Object[] {"Diet Root Beer", drinks.getDietRootBeerSize(), drinks.cbQuantityDietAW.getSelectedIndex(), drinks.cbQuantityDietAW.getSelectedIndex() * 1.00});
-				
+				drinks.cbQuantityDietAW.setSelectedIndex(0);
+				drinks.rbDietRootBeer();
 			}
 		});
 		
@@ -400,7 +406,8 @@ public class Menu extends JFrame {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				cart.model.addRow(new Object[] {"Sierra Mist", drinks.getSierraMistSize(), drinks.cbQuantitySierraMist.getSelectedIndex(), drinks.cbQuantitySierraMist.getSelectedIndex() * 1.00});
-				
+				drinks.cbQuantitySierraMist.setSelectedIndex(0);
+				drinks.rbSierraMist();
 			}
 		});
 		
@@ -409,7 +416,8 @@ public class Menu extends JFrame {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				cart.model.addRow(new Object[] {"Lemonade", drinks.getLemonadeSize(), drinks.cbQuantityLemonade.getSelectedIndex(), drinks.cbQuantityLemonade.getSelectedIndex() * 1.00});
-				
+				drinks.cbQuantityLemonade.setSelectedIndex(0);
+				drinks.rbLemonade();
 			}
 		});
 

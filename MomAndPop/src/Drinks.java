@@ -676,4 +676,44 @@ public class Drinks extends JPanel {
 		return size;
 	}
 	
+	//--------------------------------------------------------Clear Radio Buttons--------------------------------------------------------
+	//Pepsi
+	public void rbPepsi() {
+		Pepsi.clearSelection();
+	}
+	
+	//Diet Pepsi
+	public void rbDietPepsi() {
+		dietPepsi.clearSelection();
+	}
+	
+	//Sunkist
+	public void rbSunkist() {
+		Sunkist.clearSelection();
+	}
+	
+	//Diet Sunkist
+	public void rbDietSunkist() {
+		dietSunkist.clearSelection();
+	}
+	
+	//Root Beer
+	public void rbRootBeer() {
+		AW.clearSelection();
+	}
+	
+	//Diet Root Beer
+	public void rbDietRootBeer() {
+		dietAW.clearSelection();
+	}
+	
+	//Sierra Mist
+	public void rbSierraMist() {
+		sierraMist.clearSelection();
+	}
+	
+	//Lemonade
+	public void rbLemonade() {
+		Lemonade.clearSelection();
+	}
 }
