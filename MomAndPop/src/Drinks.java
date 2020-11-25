@@ -15,6 +15,8 @@ import java.awt.Rectangle;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.ButtonGroup;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Drinks extends JPanel {
 	private final ButtonGroup AW = new ButtonGroup();
@@ -69,13 +71,22 @@ public class Drinks extends JPanel {
 		add(lblQ1);
 		
 		JComboBox cbQuantityPepsi = new JComboBox();
-		cbQuantityPepsi.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
+		cbQuantityPepsi.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbQuantityPepsi.setMaximumRowCount(9);
 		cbQuantityPepsi.setFocusable(false);
 		cbQuantityPepsi.setBounds(466, 131, 40, 31);
 		add(cbQuantityPepsi);
 		
 		JButton btnAddToCartPepsi = new JButton("");
+		btnAddToCartPepsi.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (e.getSource() == btnAddToCartPepsi) {
+					int pepsiQuantity = cbQuantityPepsi.getSelectedIndex(); 
+					System.out.println("pepsi: " + pepsiQuantity);
+				}
+			}
+		});
+		
 		btnAddToCartPepsi.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
 		btnAddToCartPepsi.setForeground(Color.WHITE);
 		btnAddToCartPepsi.setFocusable(false);
@@ -86,13 +97,22 @@ public class Drinks extends JPanel {
 		add(btnAddToCartPepsi);
 		
 		JComboBox cbQuantityDietPepsi = new JComboBox();
-		cbQuantityDietPepsi.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
+		cbQuantityDietPepsi.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbQuantityDietPepsi.setMaximumRowCount(9);
 		cbQuantityDietPepsi.setFocusable(false);
 		cbQuantityDietPepsi.setBounds(466, 274, 40, 31);
 		add(cbQuantityDietPepsi);
 		
 		JButton btnAddToCartDietPepsi = new JButton("");
+		btnAddToCartDietPepsi.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (e.getSource() == btnAddToCartDietPepsi) {
+					int cbQuantityDietPepsi = cbQuantityPepsi.getSelectedIndex(); 
+					System.out.println("Diet pepsi: " + cbQuantityDietPepsi);
+				}
+				
+			}
+		});
 		btnAddToCartDietPepsi.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
 		btnAddToCartDietPepsi.setForeground(Color.WHITE);
 		btnAddToCartDietPepsi.setFocusable(false);
@@ -103,7 +123,7 @@ public class Drinks extends JPanel {
 		add(btnAddToCartDietPepsi);
 		
 		JComboBox cbQuantitySunkist = new JComboBox();
-		cbQuantitySunkist.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
+		cbQuantitySunkist.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbQuantitySunkist.setMaximumRowCount(9);
 		cbQuantitySunkist.setFocusable(false);
 		cbQuantitySunkist.setBounds(466, 422, 40, 31);
@@ -120,7 +140,7 @@ public class Drinks extends JPanel {
 		add(btnAddToCartSunkist);
 		
 		JComboBox cbQuantityDietSunkist = new JComboBox();
-		cbQuantityDietSunkist.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
+		cbQuantityDietSunkist.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbQuantityDietSunkist.setMaximumRowCount(9);
 		cbQuantityDietSunkist.setFocusable(false);
 		cbQuantityDietSunkist.setBounds(466, 559, 40, 31);
@@ -137,13 +157,21 @@ public class Drinks extends JPanel {
 		add(btnAddToCartDietSunkist);
 		
 		JComboBox cbQuantityAW = new JComboBox();
-		cbQuantityAW.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
+		cbQuantityAW.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbQuantityAW.setMaximumRowCount(9);
 		cbQuantityAW.setFocusable(false);
 		cbQuantityAW.setBounds(980, 131, 40, 31);
 		add(cbQuantityAW);
 		
 		JButton btnAddToCartAW = new JButton("");
+		btnAddToCartAW.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (e.getSource() == btnAddToCartAW) {
+					int AWQuantity = cbQuantityAW.getSelectedIndex(); 
+					System.out.println("A&W Root Beer " + AWQuantity);
+				}
+			}
+		});
 		btnAddToCartAW.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
 		btnAddToCartAW.setForeground(Color.WHITE);
 		btnAddToCartAW.setFocusable(false);
@@ -171,7 +199,7 @@ public class Drinks extends JPanel {
 		add(btnAddToCartDietAW);
 		
 		JComboBox cbQuantitySierraMist = new JComboBox();
-		cbQuantitySierraMist.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
+		cbQuantitySierraMist.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbQuantitySierraMist.setMaximumRowCount(9);
 		cbQuantitySierraMist.setFocusable(false);
 		cbQuantitySierraMist.setBounds(980, 422, 40, 31);
@@ -188,7 +216,7 @@ public class Drinks extends JPanel {
 		add(btnAddToCartSierraMist);
 		
 		JComboBox cbQuantityLemonade = new JComboBox();
-		cbQuantityLemonade.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
+		cbQuantityLemonade.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbQuantityLemonade.setMaximumRowCount(9);
 		cbQuantityLemonade.setFocusable(false);
 		cbQuantityLemonade.setBounds(980, 559, 40, 31);
