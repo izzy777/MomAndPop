@@ -26,12 +26,12 @@ public class Delivery extends JPanel {
 		
 		JLabel lblDelivery = new JLabel("Delivery");
 		lblDelivery.setHorizontalAlignment(SwingConstants.CENTER);
-		lblDelivery.setFont(new Font("Dialog", Font.PLAIN, 70));
+		lblDelivery.setFont(new Font("Franklin Gothic Demi", Font.PLAIN, 70));
 		lblDelivery.setBounds(395, 42, 317, 80);
 		add(lblDelivery);
 		
 		JLabel lblDeliveryInformation = new JLabel("Delivery Information\r\n");
-		lblDeliveryInformation.setFont(new Font("Dialog", Font.BOLD, 17));
+		lblDeliveryInformation.setFont(new Font("Nirmala UI", Font.BOLD, 17));
 		lblDeliveryInformation.setBounds(469, 148, 169, 30);
 		add(lblDeliveryInformation);
 		
@@ -82,23 +82,5 @@ public class Delivery extends JPanel {
 		lblZipCode.setFont(new Font("Nirmala UI", Font.BOLD, 14));
 		lblZipCode.setBounds(618, 458, 65, 14);
 		add(lblZipCode);
-		
-		JButton btnBack = new JButton("Back");
-		btnBack.setForeground(Color.WHITE);
-		btnBack.setFont(new Font("Nirmala UI", Font.BOLD, 20));
-		btnBack.setFocusable(false);
-		btnBack.setBorderPainted(false);
-		btnBack.setBackground(Color.RED);
-		btnBack.setBounds(116, 588, 137, 36);
-		add(btnBack);
-		
-		JButton btnPlaceOrder = new JButton("Place Order");
-		btnPlaceOrder.setForeground(Color.WHITE);
-		btnPlaceOrder.setFont(new Font("Nirmala UI", Font.BOLD, 20));
-		btnPlaceOrder.setFocusable(false);
-		btnPlaceOrder.setBorderPainted(false);
-		btnPlaceOrder.setBackground(Color.RED);
-		btnPlaceOrder.setBounds(696, 588, 169, 36);
-		add(btnPlaceOrder);
 	}
 }

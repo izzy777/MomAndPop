@@ -30,6 +30,9 @@ public class Menu extends JFrame {
 	Drinks drinks;
 	ReviewCart cart;
 	ContactInfo ci;
+	PickUp pu;
+	OrderConfirmed oc;
+	Delivery d;
 	
 
 	/**
@@ -89,6 +92,24 @@ public class Menu extends JFrame {
 		menuTxt.setBounds(0, 274, 1108, 123);
 		menu.add(menuTxt);
 		
+		//Place Order on Pickup Page
+		JButton btnPickUpPO = new JButton("Place Order");
+		btnPickUpPO.setForeground(Color.WHITE);
+		btnPickUpPO.setFont(new Font("Nirmala UI", Font.BOLD, 20));
+		btnPickUpPO.setFocusable(false);
+		btnPickUpPO.setBorderPainted(false);
+		btnPickUpPO.setBackground(Color.RED);
+		btnPickUpPO.setBounds(867, 600, 201, 40);
+		
+		//Place Button on Delivery Page
+		JButton btnDPO = new JButton("Place Order");
+		btnDPO.setForeground(Color.WHITE);
+		btnDPO.setFont(new Font("Nirmala UI", Font.BOLD, 20));
+		btnDPO.setFocusable(false);
+		btnDPO.setBorderPainted(false);
+		btnDPO.setBackground(Color.RED);
+		btnDPO.setBounds(867, 600, 201, 40);
+		
 		//Delivery Button on Contact Info
 		JButton btnDelivery = new JButton("Delivery");
 		btnDelivery.setForeground(Color.WHITE);
@@ -115,6 +136,24 @@ public class Menu extends JFrame {
 		btnCIBack.setBorderPainted(false);
 		btnCIBack.setBackground(Color.RED);
 		btnCIBack.setBounds(37, 600, 201, 40);
+		
+		//Back Button on PickUp Page
+		JButton btnPUBack = new JButton("Back");
+		btnPUBack.setForeground(Color.WHITE);
+		btnPUBack.setFont(new Font("Nirmala UI", Font.BOLD, 20));
+		btnPUBack.setFocusable(false);
+		btnPUBack.setBorderPainted(false);
+		btnPUBack.setBackground(Color.RED);
+		btnPUBack.setBounds(37, 600, 201, 40);
+		
+		//Back Button on Delivery Page
+		JButton btnDBack = new JButton("Back");
+		btnDBack.setForeground(Color.WHITE);
+		btnDBack.setFont(new Font("Nirmala UI", Font.BOLD, 20));
+		btnDBack.setFocusable(false);
+		btnDBack.setBorderPainted(false);
+		btnDBack.setBackground(Color.RED);
+		btnDBack.setBounds(37, 600, 201, 40);
 		
 		//Add to Cart Button on Toppings Page
 		JButton btnATC = new JButton("ADD TO CART");
@@ -340,6 +379,28 @@ public class Menu extends JFrame {
 		ci.add(btnPickup);
 		getContentPane().add(ci);
 		
+		//Pickup
+		pu = new PickUp();
+		pu.setVisible(false);
+		pu.setBounds(136, 0, 1108, 671);
+		pu.add(btnPUBack);
+		pu.add(btnPickUpPO);
+		getContentPane().add(pu);
+		
+		//Delivery
+		d = new Delivery();
+		d.setVisible(false);
+		d.setBounds(136, 0, 1108, 671);
+		d.add(btnDBack);
+		d.add(btnDPO);
+		getContentPane().add(d);
+		
+		//Order Confirmed
+		oc = new OrderConfirmed();
+		oc.setVisible(false);
+		oc.setBounds(136, 0, 1108, 671);
+		getContentPane().add(oc);
+		
 		//--------------------------------------------Drinks Add to Cart Methods--------------------------------------------
 		//Pepsi
 		btnAddToCartPepsi.addMouseListener(new MouseAdapter() {
@@ -420,20 +481,22 @@ public class Menu extends JFrame {
 		btnPizza.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				//Change/reset colors
-				btnPizza.setBackground(Color.decode("#FF3030"));
-				btnSides.setBackground(Color.red);
-				btnDrinks.setBackground(Color.red);
-				btnCheckout.setBackground(Color.red);
-				
-				//Shows toppings
-				pizzaTypePnl.setVisible(true);
-				menu.setVisible(false);
-				side.setVisible(false);
-				drinks.setVisible(false);
-				cart.setVisible(false);
-				topPnl.setVisible(false);
-				ci.setVisible(false);
+				if(btnPizza.isEnabled() == true) {
+					//Change/reset colors
+					btnPizza.setBackground(Color.decode("#FF3030"));
+					btnSides.setBackground(Color.red);
+					btnDrinks.setBackground(Color.red);
+					btnCheckout.setBackground(Color.red);
+					
+					//Shows toppings
+					pizzaTypePnl.setVisible(true);
+					menu.setVisible(false);
+					side.setVisible(false);
+					drinks.setVisible(false);
+					cart.setVisible(false);
+					topPnl.setVisible(false);
+					ci.setVisible(false);
+				}
 				
 				//Clears everything selected
 				pizzaTypePnl.clearPizza();
@@ -454,19 +517,21 @@ public class Menu extends JFrame {
 		btnSides.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				btnSides.setBackground(Color.decode("#FF3030"));
-				btnPizza.setBackground(Color.red);
-				btnDrinks.setBackground(Color.red);
-				btnCheckout.setBackground(Color.red);
-				
-				//Shows sides
-				side.setVisible(true);
-				pizzaTypePnl.setVisible(false);
-				menu.setVisible(false);
-				cart.setVisible(false);
-				drinks.setVisible(false);
-				topPnl.setVisible(false);
-				ci.setVisible(false);
+				if (btnSides.isEnabled() == true) {
+					btnSides.setBackground(Color.decode("#FF3030"));
+					btnPizza.setBackground(Color.red);
+					btnDrinks.setBackground(Color.red);
+					btnCheckout.setBackground(Color.red);
+					
+					//Shows sides
+					side.setVisible(true);
+					pizzaTypePnl.setVisible(false);
+					menu.setVisible(false);
+					cart.setVisible(false);
+					drinks.setVisible(false);
+					topPnl.setVisible(false);
+					ci.setVisible(false);
+				}
 				
 				//Clears Everything
 				pizzaTypePnl.clearPizza();
@@ -489,19 +554,21 @@ public class Menu extends JFrame {
 		btnDrinks.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				btnDrinks.setBackground(Color.decode("#FF3030"));
-				btnSides.setBackground(Color.red);
-				btnPizza.setBackground(Color.red);
-				btnCheckout.setBackground(Color.red);
-				
-				//Shows drinks
-				drinks.setVisible(true);
-				pizzaTypePnl.setVisible(false);
-				menu.setVisible(false);
-				side.setVisible(false);
-				cart.setVisible(false);
-				topPnl.setVisible(false);
-				ci.setVisible(false);
+				if(btnDrinks.isEnabled() == true) {
+					btnDrinks.setBackground(Color.decode("#FF3030"));
+					btnSides.setBackground(Color.red);
+					btnPizza.setBackground(Color.red);
+					btnCheckout.setBackground(Color.red);
+					
+					//Shows drinks
+					drinks.setVisible(true);
+					pizzaTypePnl.setVisible(false);
+					menu.setVisible(false);
+					side.setVisible(false);
+					cart.setVisible(false);
+					topPnl.setVisible(false);
+					ci.setVisible(false);
+				}
 				
 				//Clears everything
 				pizzaTypePnl.clearPizza();
@@ -522,19 +589,21 @@ public class Menu extends JFrame {
 		btnCheckout.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				btnCheckout.setBackground(Color.decode("#FF3030"));
-				btnSides.setBackground(Color.red);
-				btnDrinks.setBackground(Color.red);
-				btnPizza.setBackground(Color.red);
-				
-				//shows cart page
-				cart.setVisible(true);
-				drinks.setVisible(false);
-				pizzaTypePnl.setVisible(false);
-				menu.setVisible(false);
-				side.setVisible(false);
-				topPnl.setVisible(false);
-				ci.setVisible(false);
+				if (btnCheckout.isEnabled() == true) {
+					btnCheckout.setBackground(Color.decode("#FF3030"));
+					btnSides.setBackground(Color.red);
+					btnDrinks.setBackground(Color.red);
+					btnPizza.setBackground(Color.red);
+					
+					//shows cart page
+					cart.setVisible(true);
+					drinks.setVisible(false);
+					pizzaTypePnl.setVisible(false);
+					menu.setVisible(false);
+					side.setVisible(false);
+					topPnl.setVisible(false);
+					ci.setVisible(false);
+				}
 				
 				cart.getSum();
 				cart.setTotal();
@@ -565,9 +634,7 @@ public class Menu extends JFrame {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				ci.setVisible(true);
-				cart.setVisible(false);
-				
-				
+				cart.setVisible(false);				
 			}
 		});
 		
@@ -580,16 +647,83 @@ public class Menu extends JFrame {
 			}
 		});
 		
+		//Delivery Button on Contact Information
+		btnDelivery.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				d.setVisible(true);
+				ci.setVisible(false);
+				
+			}
+		});
+		
+		//Back Button on Delivery
+		btnDBack.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				d.setVisible(false);
+				ci.setVisible(true);
+				
+			}
+		});
+		
+		//Pickup Button on Contact Information
+		btnPickup.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				pu.setVisible(true);
+				ci.setVisible(false);
+				
+			}
+		});
+		
+		//Back Button on Pickup Page
+		btnPUBack.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				pu.setVisible(false);
+				ci.setVisible(true);
+			}
+		});
+		
+		//Place Order Button on Delivery Page
+		btnDPO.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				d.setVisible(false);
+				oc.setVisible(true);
+				oc.scrollPane.setViewportView(cart.table);
+				btnPizza.setEnabled(false);
+				btnSides.setEnabled(false);
+				btnDrinks.setEnabled(false);
+				btnCheckout.setEnabled(false);
+				oc.lblTotal.setText("Total: $" + cart.total);
+			}
+		});
+		//Place Order Button on Pickup Page
+		btnPickUpPO.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				pu.setVisible(false);
+				oc.setVisible(true);
+				oc.scrollPane.setViewportView(cart.table);
+				btnPizza.setEnabled(false);
+				btnSides.setEnabled(false);
+				btnDrinks.setEnabled(false);
+				btnCheckout.setEnabled(false);
+				oc.lblTotal.setText("Total: $" + cart.total);
+			}
+		});
+		
 		//Add to Cart Button for Pizza
 		btnATC.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				String desc = "Small";
 				double base = pizzaTypePnl.base;
 				double mul = pizzaTypePnl.multiplier;
 				int top = topPnl.toppingCount();
 				double price = mul * top + base;
-				cart.model.addRow(new Object[] {"Pizza", desc, "1", price});
+				cart.model.addRow(new Object[] {"Pizza", pizzaTypePnl.desc() + topPnl.desc(), "1", price});
 				topPnl.setVisible(false);
 				menu.setVisible(true);
 				pizzaTypePnl.clearPizza();
@@ -608,6 +742,7 @@ public class Menu extends JFrame {
 
 		
 	}
+	//Add to cart Method for Sides
 	public void addToCart() {
 		if (side.cbBS.isSelected() == true) {
 			cart.model.addRow(new Object[] {"BreakSticks", "", side.cbB.getSelectedIndex()+1, (side.cbB.getSelectedIndex()+1) * 4.00 });

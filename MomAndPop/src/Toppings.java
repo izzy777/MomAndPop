@@ -23,6 +23,7 @@ public class Toppings extends JPanel {
 	JCheckBox cbM;
 	JCheckBox cbT;
 	JCheckBox cbPA;
+	String desc = ", ";
 	/**
 	 * Create the panel.
 	 */
@@ -187,5 +188,33 @@ public class Toppings extends JPanel {
 		cbM.setSelected(false);
 		cbT.setSelected(false);
 		cbPA.setSelected(false);
+	}
+	
+	public String desc() {
+		if (cbP.isSelected() == true) {
+			desc += "Pepperoni, ";
+		}
+		if (cbS.isSelected() == true) {
+			desc += "Sausage, ";
+		}
+		if (cbH.isSelected() == true) {
+			desc += "Ham, ";
+		}
+		if (cbGP.isSelected() == true) {
+			desc += "Green Peppers, ";		
+		}
+		if (cbO.isSelected() == true) {
+			desc += "Onions, ";
+		}
+		if (cbM.isSelected() == true) {
+			desc += "Mushrooms, ";
+		}
+		if (cbT.isSelected() == true) {
+			desc += "Tomatoes, ";
+		}
+		if (cbPA.isSelected() == true) {
+			desc += "Pineapples, ";
+		}
+		return desc;
 	}
 }

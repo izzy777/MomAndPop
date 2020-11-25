@@ -317,4 +317,9 @@ public class PizzaType extends JPanel {
 		sauceBtnGrp.clearSelection();
 		cheeseBtnGrp.clearSelection();
 	}
+	
+	public String desc() {
+		String desc = size + ", " + crust + ", " + tomato + ", " + cheese;
+		return desc;
+	}
 }

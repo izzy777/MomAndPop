@@ -84,11 +84,19 @@ public class ContactInfo extends JPanel {
 		add(lblPN);
 		
 		JButton btnCC = new JButton("Cash/Check");
+		btnCC.setForeground(Color.WHITE);
+		btnCC.setFont(new Font("Nirmala UI", Font.BOLD, 14));
+		btnCC.setBorder(null);
+		btnCC.setBackground(Color.red);
 		btnCC.setFocusable(false);
 		btnCC.setBounds(442, 370, 110, 36);
 		add(btnCC);
 		
 		JButton btnC = new JButton("Card");
+		btnC.setFont(new Font("Nirmala UI", Font.BOLD, 14));
+		btnC.setForeground(Color.WHITE);
+		btnC.setBorder(null);
+		btnC.setBackground(Color.RED);
 		btnC.setFocusable(false);
 		btnC.setBounds(555, 370, 110, 36);
 		add(btnC);
@@ -163,6 +171,8 @@ public class ContactInfo extends JPanel {
 				tfEM.setVisible(true);
 				tfEY.setVisible(true);
 				tfCVV.setVisible(true);
+				btnC.setBackground(new Color(139, 0, 0));
+				btnCC.setBackground(Color.red);
 			}
 		});
 		
@@ -178,6 +188,8 @@ public class ContactInfo extends JPanel {
 				tfEM.setVisible(false);
 				tfEY.setVisible(false);
 				tfCVV.setVisible(false);
+				btnCC.setBackground(new Color(139, 0, 0));
+				btnC.setBackground(Color.red);
 			}
 		});
 	}
