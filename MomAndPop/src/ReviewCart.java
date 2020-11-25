@@ -60,8 +60,6 @@ public class ReviewCart extends JPanel {
 		model.addColumn("Description");
 		model.addColumn("Quantity");
 		model.addColumn("Price");
-		model.addRow(new Object[] {"Pizza", "pizzam,ljnglkjszlgjolsrjgl;kirjzlgjrdzlkjglk;szrjglkjrdgljdlrjxgkldrjlgkjdrg", "1","10.20"});
-		model.addRow(new Object[] {"Drink", "pizzam,ljnglkjszlgjolsrjgl;kirjzlgjrdzlkjglk;szrjglkjrdgljdlrjxgkldrjlgkjdrg", "1","10.20"});
 		
 		table = new JTable(model);
 		table.setGridColor(Color.WHITE);

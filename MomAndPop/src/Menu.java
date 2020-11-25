@@ -207,7 +207,7 @@ public class Menu extends JFrame {
 		logo.setBounds(0, 0, 136, 124);
 		getContentPane().add(logo);
 		
-		//These are AddToCart Buttons on Drinks
+		//--------------------------------------------ATC Buttons on Drinks--------------------------------------------
 		//Pepsi
 		JButton btnAddToCartPepsi = new JButton("");	
 		btnAddToCartPepsi.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
@@ -288,7 +288,7 @@ public class Menu extends JFrame {
 		btnAddToCartLemonade.setBackground(Color.RED);
 		btnAddToCartLemonade.setBounds(1019, 559, 40, 31);
 		
-		//These are pages
+		//--------------------------------------------Panels--------------------------------------------
 		//Pizza Type: Size, Crust, Sauce, Cheese
 		pizzaTypePnl = new PizzaType();
 		pizzaTypePnl.setBounds(136, 0, 1108, 671);
@@ -340,64 +340,82 @@ public class Menu extends JFrame {
 		ci.add(btnPickup);
 		getContentPane().add(ci);
 		
-		//Drinks Add to Cart Methods
+		//--------------------------------------------Drinks Add to Cart Methods--------------------------------------------
+		//Pepsi
 		btnAddToCartPepsi.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				cart.model.addRow(new Object[] {"Pepsi", "small", drinks.cbQuantityPepsi.getSelectedIndex(), "1.00"});
+				cart.model.addRow(new Object[] {"Pepsi", drinks.getPepsiSize(), drinks.cbQuantityPepsi.getSelectedIndex(), drinks.cbQuantityPepsi.getSelectedIndex() * 1.00});
 				
 			}
 		});
+		
+		//Diet Pepsi
 		btnAddToCartDietPepsi.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				cart.model.addRow(new Object[] {"Pepsi", "small", drinks.cbQuantityDietPepsi.getSelectedIndex(), "1.00"});
+				cart.model.addRow(new Object[] {"Diet Pepsi", drinks.getDietPepsiSize(), drinks.cbQuantityDietPepsi.getSelectedIndex(), drinks.cbQuantityDietPepsi.getSelectedIndex() * 1.00});
 				
 			}
 		});
-
+		
+		//Sunkist
 		btnAddToCartSunkist.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				cart.model.addRow(new Object[] {"Pepsi", "small", drinks.cbQuantitySunkist.getSelectedIndex(), "1.00"});
+				cart.model.addRow(new Object[] {"Sunkist", drinks.getSunkistSize(), drinks.cbQuantitySunkist.getSelectedIndex(), drinks.cbQuantitySunkist.getSelectedIndex() * 1.00});
 				
 			}
 		});
+		
+		//Diet Sunkist
+		btnAddToCartDietSunkist.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				cart.model.addRow(new Object[] {"Diet Sunkist", drinks.getDietSunkistSize(), drinks.cbQuantitySunkist.getSelectedIndex(), drinks.cbQuantityDietSunkist.getSelectedIndex() * 1.00});
+				
+			}
+		});
+		
+		//Root Beer
 		btnAddToCartAW.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				cart.model.addRow(new Object[] {"Pepsi", "small", drinks.cbQuantityAW.getSelectedIndex(), "1.00"});
+				cart.model.addRow(new Object[] {"Root Beer", drinks.getRootBeerSize(), drinks.cbQuantityAW.getSelectedIndex(), drinks.cbQuantityAW.getSelectedIndex() * 1.00});
 				
 			}
 		});
+		
+		//Diet Root Beer
 		btnAddToCartDietAW.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				cart.model.addRow(new Object[] {"Pepsi", "small", drinks.cbQuantityDietAW.getSelectedIndex(), "1.00"});
+				cart.model.addRow(new Object[] {"Diet Root Beer", drinks.getDietRootBeerSize(), drinks.cbQuantityDietAW.getSelectedIndex(), drinks.cbQuantityDietAW.getSelectedIndex() * 1.00});
 				
 			}
 		});
+		
+		//Sierra Mist
 		btnAddToCartSierraMist.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				cart.model.addRow(new Object[] {"Pepsi", "small", drinks.cbQuantitySierraMist.getSelectedIndex(), "1.00"});
+				cart.model.addRow(new Object[] {"Sierra Mist", drinks.getSierraMistSize(), drinks.cbQuantitySierraMist.getSelectedIndex(), drinks.cbQuantitySierraMist.getSelectedIndex() * 1.00});
 				
 			}
 		});
+		
+		//Lemonade
 		btnAddToCartLemonade.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				cart.model.addRow(new Object[] {"Pepsi", "small", drinks.cbQuantityLemonade.getSelectedIndex(), "1.00"});
+				cart.model.addRow(new Object[] {"Lemonade", drinks.getLemonadeSize(), drinks.cbQuantityLemonade.getSelectedIndex(), drinks.cbQuantityLemonade.getSelectedIndex() * 1.00});
 				
 			}
 		});
 
 
 
-
-
-
-	
+		//--------------------------------------------Button Clicks Methods--------------------------------------------
 		//If Pizza was click
 		btnPizza.addMouseListener(new MouseAdapter() {
 			@Override
