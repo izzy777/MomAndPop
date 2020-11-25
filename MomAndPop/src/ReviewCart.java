@@ -69,17 +69,22 @@ public class ReviewCart extends JPanel {
 		scrollPane.setViewportView(table);
 		
 		JButton btnRemove = new JButton("Remove");
-		btnRemove.setBounds(948, 323, 89, 23);
+		btnRemove.setFocusable(false);
+		btnRemove.setForeground(Color.WHITE);
+		btnRemove.setFont(new Font("Nirmala UI", Font.BOLD, 15));
+		btnRemove.setBorder(null);
+		btnRemove.setBackground(Color.RED);
+		btnRemove.setBounds(938, 498, 136, 31);
 		add(btnRemove);
 		setVisible(false);
 		
 		//Removes selected row;
-				btnRemove.addMouseListener(new MouseAdapter() {
-					@Override
-					public void mouseReleased(MouseEvent e) {
-						model.removeRow(table.getSelectedRow());
-					}
-				});
+		btnRemove.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				model.removeRow(table.getSelectedRow());
+			}
+		});
 
 	}
 }
