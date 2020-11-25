@@ -29,7 +29,15 @@ public class Drinks extends JPanel {
 	private final ButtonGroup dietAW = new ButtonGroup();
 	private final ButtonGroup sierraMist = new ButtonGroup();
 	private final ButtonGroup Lemonade = new ButtonGroup();
-	Menu m;
+	
+	public JComboBox cbQuantityPepsi;
+	public JComboBox cbQuantityDietPepsi;
+	public JComboBox cbQuantitySunkist;
+	public JComboBox cbQuantityDietSunkist;
+	public JComboBox cbQuantityAW;
+	public JComboBox cbQuantityDietAW;
+	public JComboBox cbQuantitySierraMist;
+	public JComboBox cbQuantityLemonade;
 	/**
 	 * Create the panel.
 	 */
@@ -72,7 +80,7 @@ public class Drinks extends JPanel {
 		lblQ1.setBounds(985, 63, 64, 26);
 		add(lblQ1);
 		
-		JComboBox cbQuantityPepsi = new JComboBox();
+		 cbQuantityPepsi = new JComboBox();
 		cbQuantityPepsi.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbQuantityPepsi.setMaximumRowCount(9);
 		cbQuantityPepsi.setFocusable(false);
@@ -80,7 +88,7 @@ public class Drinks extends JPanel {
 		add(cbQuantityPepsi);
 		
 		
-		JComboBox cbQuantityDietPepsi = new JComboBox();
+		 cbQuantityDietPepsi = new JComboBox();
 		cbQuantityDietPepsi.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbQuantityDietPepsi.setMaximumRowCount(9);
 		cbQuantityDietPepsi.setFocusable(false);
@@ -88,7 +96,7 @@ public class Drinks extends JPanel {
 		add(cbQuantityDietPepsi);
 
 		
-		JComboBox cbQuantitySunkist = new JComboBox();
+		 cbQuantitySunkist = new JComboBox();
 		cbQuantitySunkist.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbQuantitySunkist.setMaximumRowCount(9);
 		cbQuantitySunkist.setFocusable(false);
@@ -96,7 +104,7 @@ public class Drinks extends JPanel {
 		add(cbQuantitySunkist);
 
 		
-		JComboBox cbQuantityDietSunkist = new JComboBox();
+		 cbQuantityDietSunkist = new JComboBox();
 		cbQuantityDietSunkist.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbQuantityDietSunkist.setMaximumRowCount(9);
 		cbQuantityDietSunkist.setFocusable(false);
@@ -105,7 +113,7 @@ public class Drinks extends JPanel {
 		
 		
 		
-		JComboBox cbQuantityAW = new JComboBox();
+		cbQuantityAW = new JComboBox();
 		cbQuantityAW.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbQuantityAW.setMaximumRowCount(9);
 		cbQuantityAW.setFocusable(false);
@@ -113,7 +121,7 @@ public class Drinks extends JPanel {
 		add(cbQuantityAW);
 		
 		
-		JComboBox cbQuantityDietAW = new JComboBox();
+		cbQuantityDietAW = new JComboBox();
 		cbQuantityDietAW.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbQuantityDietAW.setMaximumRowCount(9);
 		cbQuantityDietAW.setFocusable(false);
@@ -121,7 +129,7 @@ public class Drinks extends JPanel {
 		add(cbQuantityDietAW);
 
 		
-		JComboBox cbQuantitySierraMist = new JComboBox();
+		cbQuantitySierraMist = new JComboBox();
 		cbQuantitySierraMist.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbQuantitySierraMist.setMaximumRowCount(9);
 		cbQuantitySierraMist.setFocusable(false);
@@ -129,7 +137,7 @@ public class Drinks extends JPanel {
 		add(cbQuantitySierraMist);
 		
 		
-		JComboBox cbQuantityLemonade = new JComboBox();
+		cbQuantityLemonade = new JComboBox();
 		cbQuantityLemonade.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbQuantityLemonade.setMaximumRowCount(9);
 		cbQuantityLemonade.setFocusable(false);
