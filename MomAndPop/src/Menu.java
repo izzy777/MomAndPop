@@ -344,9 +344,58 @@ public class Menu extends JFrame {
 		btnAddToCartPepsi.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				cart.model.addRow(new Object[] {"Pepsi", "small", "1", "1.00"});
+				cart.model.addRow(new Object[] {"Pepsi", "small", drinks.cbQuantityPepsi.getSelectedIndex(), "1.00"});
+				
 			}
 		});
+		btnAddToCartDietPepsi.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				cart.model.addRow(new Object[] {"Pepsi", "small", drinks.cbQuantityDietPepsi.getSelectedIndex(), "1.00"});
+				
+			}
+		});
+
+		btnAddToCartSunkist.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				cart.model.addRow(new Object[] {"Pepsi", "small", drinks.cbQuantitySunkist.getSelectedIndex(), "1.00"});
+				
+			}
+		});
+		btnAddToCartAW.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				cart.model.addRow(new Object[] {"Pepsi", "small", drinks.cbQuantityAW.getSelectedIndex(), "1.00"});
+				
+			}
+		});
+		btnAddToCartDietAW.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				cart.model.addRow(new Object[] {"Pepsi", "small", drinks.cbQuantityDietAW.getSelectedIndex(), "1.00"});
+				
+			}
+		});
+		btnAddToCartSierraMist.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				cart.model.addRow(new Object[] {"Pepsi", "small", drinks.cbQuantitySierraMist.getSelectedIndex(), "1.00"});
+				
+			}
+		});
+		btnAddToCartLemonade.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				cart.model.addRow(new Object[] {"Pepsi", "small", drinks.cbQuantityLemonade.getSelectedIndex(), "1.00"});
+				
+			}
+		});
+
+
+
+
+
 
 	
 		//If Pizza was click
