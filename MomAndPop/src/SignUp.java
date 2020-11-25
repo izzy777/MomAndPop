@@ -53,7 +53,7 @@ public class SignUp extends JFrame {
 		setResizable(false);
 		
 		JLabel logo = new JLabel("");
-		logo.setIcon(new ImageIcon(SignUp.class.getResource("/imgs/logo.png")));
+		logo.setIcon(new ImageIcon(SignUp.class.getResource("/imgs/mom&poplogoresized.png")));
 		logo.setHorizontalAlignment(SwingConstants.CENTER);
 		logo.setBounds(0, 0, 136, 124);
 		getContentPane().add(logo);
@@ -149,6 +149,12 @@ public class SignUp extends JFrame {
 		lblEmail.setFont(new Font("Nirmala UI", Font.BOLD, 14));
 		lblEmail.setBounds(640, 278, 46, 14);
 		panel.add(lblEmail);
+		
+		JLabel logo_1 = new JLabel("");
+		logo_1.setIcon(new ImageIcon(SignUp.class.getResource("/imgs/logobackground.png")));
+		logo_1.setHorizontalAlignment(SwingConstants.CENTER);
+		logo_1.setBounds(0, 0, 136, 146);
+		getContentPane().add(logo_1);
 		
 		//Action when SignUp button is pressed
 		btnSignUp.addActionListener(new ActionListener() {

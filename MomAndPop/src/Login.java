@@ -113,10 +113,16 @@ public class Login {
 		panel.add(btnSignUp);
 		
 		JLabel logo = new JLabel("");
-		logo.setIcon(new ImageIcon(Login.class.getResource("/imgs/logo.png")));
+		logo.setIcon(new ImageIcon(Login.class.getResource("/imgs/mom&poplogoresized.png")));
 		logo.setHorizontalAlignment(SwingConstants.CENTER);
 		logo.setBounds(0, 0, 136, 124);
 		frame.getContentPane().add(logo);
+		
+		JLabel logo_1 = new JLabel("");
+		logo_1.setIcon(new ImageIcon(Login.class.getResource("/imgs/logobackground.png")));
+		logo_1.setHorizontalAlignment(SwingConstants.CENTER);
+		logo_1.setBounds(0, 0, 136, 141);
+		frame.getContentPane().add(logo_1);
 		
 		//Action when Signup button is pressed
 		btnSignUp.addActionListener(new ActionListener() {
