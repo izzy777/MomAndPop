@@ -346,7 +346,6 @@ public class Menu extends JFrame {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				cart.model.addRow(new Object[] {"Pepsi", drinks.getPepsiSize(), drinks.cbQuantityPepsi.getSelectedIndex()+1, drinks.cbQuantityPepsi.getSelectedIndex()+1 * 1.00});
-				drinks.cbQuantityPepsi.setSelectedIndex(0);
 				drinks.rbPepsi();
 			}
 		});
@@ -356,7 +355,6 @@ public class Menu extends JFrame {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				cart.model.addRow(new Object[] {"Diet Pepsi", drinks.getDietPepsiSize(), drinks.cbQuantityDietPepsi.getSelectedIndex()+1, drinks.cbQuantityDietPepsi.getSelectedIndex()+1 * 1.00});
-				drinks.cbQuantityDietPepsi.setSelectedIndex(0);
 				drinks.rbDietPepsi();
 			}
 		});
@@ -366,7 +364,6 @@ public class Menu extends JFrame {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				cart.model.addRow(new Object[] {"Sunkist", drinks.getSunkistSize(), drinks.cbQuantitySunkist.getSelectedIndex()+1, drinks.cbQuantitySunkist.getSelectedIndex()+1 * 1.00});
-				drinks.cbQuantitySunkist.setSelectedIndex(0);
 				drinks.rbSunkist();
 			}
 		});
@@ -376,7 +373,6 @@ public class Menu extends JFrame {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				cart.model.addRow(new Object[] {"Diet Sunkist", drinks.getDietSunkistSize(), drinks.cbQuantityDietSunkist.getSelectedIndex()+1, drinks.cbQuantityDietSunkist.getSelectedIndex()+1 * 1.00});
-				drinks.cbQuantityDietSunkist.setSelectedIndex(0);
 				drinks.rbDietSunkist();
 			}
 		});
@@ -386,7 +382,6 @@ public class Menu extends JFrame {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				cart.model.addRow(new Object[] {"Root Beer", drinks.getRootBeerSize(), drinks.cbQuantityAW.getSelectedIndex()+1, drinks.cbQuantityAW.getSelectedIndex()+1 * 1.00});
-				drinks.cbQuantityAW.setSelectedIndex(0);
 				drinks.rbRootBeer();
 			}
 		});
@@ -396,7 +391,6 @@ public class Menu extends JFrame {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				cart.model.addRow(new Object[] {"Diet Root Beer", drinks.getDietRootBeerSize(), drinks.cbQuantityDietAW.getSelectedIndex()+1, drinks.cbQuantityDietAW.getSelectedIndex()+1 * 1.00});
-				drinks.cbQuantityDietAW.setSelectedIndex(0);
 				drinks.rbDietRootBeer();
 			}
 		});
@@ -406,7 +400,6 @@ public class Menu extends JFrame {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				cart.model.addRow(new Object[] {"Sierra Mist", drinks.getSierraMistSize(), drinks.cbQuantitySierraMist.getSelectedIndex()+1, drinks.cbQuantitySierraMist.getSelectedIndex()+1 * 1.00});
-				drinks.cbQuantitySierraMist.setSelectedIndex(0);
 				drinks.rbSierraMist();
 			}
 		});
@@ -416,7 +409,6 @@ public class Menu extends JFrame {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				cart.model.addRow(new Object[] {"Lemonade", drinks.getLemonadeSize(), drinks.cbQuantityLemonade.getSelectedIndex()+1, drinks.cbQuantityLemonade.getSelectedIndex()+1 * 1.00});
-				drinks.cbQuantityLemonade.setSelectedIndex(0);
 				drinks.rbLemonade();
 			}
 		});
@@ -442,6 +434,19 @@ public class Menu extends JFrame {
 				cart.setVisible(false);
 				topPnl.setVisible(false);
 				ci.setVisible(false);
+				
+				//Clears everything selected
+				pizzaTypePnl.clearPizza();
+				topPnl.clearTop();
+				drinks.rbPepsi();
+				drinks.rbDietPepsi();
+				drinks.rbSunkist();
+				drinks.rbDietSunkist();
+				drinks.rbRootBeer();
+				drinks.rbDietRootBeer();
+				drinks.rbSierraMist();
+				drinks.rbLemonade();
+				side.clearAll();
 			}
 		});
 		
@@ -463,8 +468,22 @@ public class Menu extends JFrame {
 				topPnl.setVisible(false);
 				ci.setVisible(false);
 				
+				//Clears Everything
+				pizzaTypePnl.clearPizza();
+				topPnl.clearTop();
+				drinks.rbPepsi();
+				drinks.rbDietPepsi();
+				drinks.rbSunkist();
+				drinks.rbDietSunkist();
+				drinks.rbRootBeer();
+				drinks.rbDietRootBeer();
+				drinks.rbSierraMist();
+				drinks.rbLemonade();
+				side.clearAll();
+				
 			}
 		});
+		
 		
 		//If Drinks was clicked
 		btnDrinks.addMouseListener(new MouseAdapter() {
@@ -475,7 +494,7 @@ public class Menu extends JFrame {
 				btnPizza.setBackground(Color.red);
 				btnCheckout.setBackground(Color.red);
 				
-				//shows drinks
+				//Shows drinks
 				drinks.setVisible(true);
 				pizzaTypePnl.setVisible(false);
 				menu.setVisible(false);
@@ -483,6 +502,19 @@ public class Menu extends JFrame {
 				cart.setVisible(false);
 				topPnl.setVisible(false);
 				ci.setVisible(false);
+				
+				//Clears everything
+				pizzaTypePnl.clearPizza();
+				topPnl.clearTop();
+				drinks.rbPepsi();
+				drinks.rbDietPepsi();
+				drinks.rbSunkist();
+				drinks.rbDietSunkist();
+				drinks.rbRootBeer();
+				drinks.rbDietRootBeer();
+				drinks.rbSierraMist();
+				drinks.rbLemonade();
+				side.clearAll();
 			}
 		});
 		
@@ -558,7 +590,35 @@ public class Menu extends JFrame {
 				int top = topPnl.toppingCount();
 				double price = mul * top + base;
 				cart.model.addRow(new Object[] {"Pizza", desc, "1", price});
+				topPnl.setVisible(false);
+				menu.setVisible(true);
+				pizzaTypePnl.clearPizza();
+				topPnl.clearTop();
 			}
 		});
+		
+		//Add to Cart Button for Sides
+		btnSATC.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				addToCart();
+				side.clearAll();
+			}
+		});
+
+		
+	}
+	public void addToCart() {
+		if (side.cbBS.isSelected() == true) {
+			cart.model.addRow(new Object[] {"BreakSticks", "", side.cbB.getSelectedIndex()+1, (side.cbB.getSelectedIndex()+1) * 4.00 });
+		}
+		if (side.cbBSB.isSelected() == true) {
+			cart.model.addRow(new Object[] {"BreakStick Bites", "", side.cbBSb.getSelectedIndex()+1, (side.cbBSb.getSelectedIndex()+1) * 2.00 });
+			
+		}
+		if (side.cbBCC.isSelected() == true) {
+			cart.model.addRow(new Object[] {"Big Chocolate Cookie", "", side.cbBC.getSelectedIndex()+1, (side.cbBC.getSelectedIndex()+1) * 4.00 });
+		}
+		
 	}
 }

@@ -676,44 +676,53 @@ public class Drinks extends JPanel {
 		return size;
 	}
 	
-	//--------------------------------------------------------Clear Radio Buttons--------------------------------------------------------
+	//--------------------------------------------------------Clear Radio Buttons and CheckBoxes--------------------------------------------------------
 	//Pepsi
 	public void rbPepsi() {
 		Pepsi.clearSelection();
+		cbQuantityPepsi.setSelectedIndex(0);
 	}
 	
 	//Diet Pepsi
 	public void rbDietPepsi() {
 		dietPepsi.clearSelection();
+		cbQuantityDietPepsi.setSelectedIndex(0);
 	}
 	
 	//Sunkist
 	public void rbSunkist() {
 		Sunkist.clearSelection();
+		cbQuantitySunkist.setSelectedIndex(0);
 	}
 	
 	//Diet Sunkist
 	public void rbDietSunkist() {
 		dietSunkist.clearSelection();
+		cbQuantityDietSunkist.setSelectedIndex(0);
 	}
 	
 	//Root Beer
 	public void rbRootBeer() {
 		AW.clearSelection();
+		cbQuantityAW.setSelectedIndex(0);
 	}
 	
 	//Diet Root Beer
 	public void rbDietRootBeer() {
 		dietAW.clearSelection();
+		cbQuantityDietAW.setSelectedIndex(0);
+		
 	}
 	
 	//Sierra Mist
 	public void rbSierraMist() {
 		sierraMist.clearSelection();
+		cbQuantitySierraMist.setSelectedIndex(0);
 	}
 	
 	//Lemonade
 	public void rbLemonade() {
 		Lemonade.clearSelection();
+		cbQuantityLemonade.setSelectedIndex(0);
 	}
 }

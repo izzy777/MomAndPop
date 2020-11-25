@@ -310,4 +310,11 @@ public class PizzaType extends JPanel {
 	public double getMultiplier() {
 		return multiplier;
 	}
+	
+	public void clearPizza() {
+		sizeBtnGrp.clearSelection();
+		crustBtnGrp.clearSelection();
+		sauceBtnGrp.clearSelection();
+		cheeseBtnGrp.clearSelection();
+	}
 }

@@ -12,7 +12,13 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 
 public class Sides extends JPanel {
-
+	
+	public JCheckBox cbBS;
+	public JCheckBox cbBSB;
+	public JCheckBox cbBCC;
+	JComboBox cbB;
+	JComboBox cbBSb;
+	JComboBox cbBC;
 	/**
 	 * Create the panel.
 	 */
@@ -21,48 +27,46 @@ public class Sides extends JPanel {
 		setBounds(0, 0, 1108, 671);
 		setLayout(null);
 		
-		JCheckBox cbBS = new JCheckBox("");
+		cbBS = new JCheckBox("");
 		cbBS.setFocusable(false);
 		cbBS.setContentAreaFilled(false);
 		cbBS.setBounds(331, 131, 37, 81);
 		add(cbBS);
 	
-		JCheckBox cbBSB = new JCheckBox("");
+		cbBSB = new JCheckBox("");
 		cbBSB.setFocusable(false);
 		cbBSB.setContentAreaFilled(false);
 		cbBSB.setBounds(331, 288, 37, 81);
 		add(cbBSB);
-		
-		
-		
-		JCheckBox cbBCC = new JCheckBox("");
+	
+		cbBCC = new JCheckBox("");
 		cbBCC.setFocusable(false);
 		cbBCC.setContentAreaFilled(false);
 		cbBCC.setBounds(331, 458, 37, 81);
 		add(cbBCC);
 		
-		JComboBox cbB = new JComboBox();
+		cbB = new JComboBox();
 		cbB.setMaximumRowCount(9);
 		cbB.setFocusable(false);
 		cbB.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbB.setBounds(784, 145, 50, 41);
 		add(cbB);
 		
-		JComboBox cbBSb = new JComboBox();
+		cbBSb = new JComboBox();
 		cbBSb.setMaximumRowCount(9);
 		cbBSb.setFocusable(false);
 		cbBSb.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbBSb.setBounds(784, 301, 50, 41);
 		add(cbBSb);
 		
-		JComboBox cbBC = new JComboBox();
+		cbBC = new JComboBox();
 		cbBC.setMaximumRowCount(9);
 		cbBC.setFocusable(false);
 		cbBC.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
 		cbBC.setBounds(784, 482, 50, 41);
 		add(cbBC);
 		
-		JLabel lblBreadstickBites = new JLabel("BreadStick Bites");
+		JLabel lblBreadstickBites = new JLabel("BreadStick Bites $2");
 		lblBreadstickBites.setHorizontalAlignment(SwingConstants.CENTER);
 		lblBreadstickBites.setFont(new Font("Dialog", Font.PLAIN, 20));
 		lblBreadstickBites.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
@@ -70,12 +74,7 @@ public class Sides extends JPanel {
 		lblBreadstickBites.setBounds(374, 274, 362, 107);
 		add(lblBreadstickBites);
 		
-		JLabel lblNewLabel_3 = new JLabel("");
-		lblNewLabel_3.setIcon(new ImageIcon(Sides.class.getResource("/imgs/cookie.jpg")));
-		lblNewLabel_3.setBounds(393, 466, 71, 78);
-		add(lblNewLabel_3);
-		
-		JLabel lblBigChocolateCookie = new JLabel("Big Chocolate Cookie");
+		JLabel lblBigChocolateCookie = new JLabel("Big Chocolate Cookie $4");
 		lblBigChocolateCookie.setHorizontalAlignment(SwingConstants.CENTER);
 		lblBigChocolateCookie.setFont(new Font("Dialog", Font.PLAIN, 20));
 		lblBigChocolateCookie.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
@@ -83,17 +82,22 @@ public class Sides extends JPanel {
 		lblBigChocolateCookie.setBounds(374, 451, 362, 107);
 		add(lblBigChocolateCookie);
 		
-		JLabel lblNewLabel_3_1 = new JLabel("");
-		lblNewLabel_3_1.setIcon(new ImageIcon(Sides.class.getResource("/imgs/BreadstickBites.jpg")));
-		lblNewLabel_3_1.setBounds(387, 291, 86, 78);
-		add(lblNewLabel_3_1);
+		JLabel iconC = new JLabel("");
+		iconC.setIcon(new ImageIcon(Sides.class.getResource("/imgs/cookie.jpg")));
+		iconC.setBounds(393, 466, 71, 78);
+		add(iconC);
 		
-		JLabel lblNewLabel_3_2 = new JLabel("");
-		lblNewLabel_3_2.setIcon(new ImageIcon(Sides.class.getResource("/imgs/breadsticks.jpg")));
-		lblNewLabel_3_2.setBounds(399, 131, 81, 83);
-		add(lblNewLabel_3_2);
+		JLabel iconBSB = new JLabel("");
+		iconBSB.setIcon(new ImageIcon(Sides.class.getResource("/imgs/BreadstickBites.jpg")));
+		iconBSB.setBounds(387, 291, 77, 78);
+		add(iconBSB);
 		
-		JLabel lblBreadstick = new JLabel("BreadStick");
+		JLabel iconBS = new JLabel("");
+		iconBS.setIcon(new ImageIcon(Sides.class.getResource("/imgs/breadsticks.jpg")));
+		iconBS.setBounds(399, 131, 81, 83);
+		add(iconBS);
+		
+		JLabel lblBreadstick = new JLabel("BreadStick $4");
 		lblBreadstick.setHorizontalAlignment(SwingConstants.CENTER);
 		lblBreadstick.setFont(new Font("Dialog", Font.PLAIN, 20));
 		lblBreadstick.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
@@ -102,5 +106,13 @@ public class Sides extends JPanel {
 		add(lblBreadstick);
 		setVisible(false);
 			
+	}
+	public void clearAll() {
+		cbBS.setSelected(false);
+		cbBSB.setSelected(false);
+		cbBCC.setSelected(false);
+		cbB.setSelectedIndex(0);
+		cbBSb.setSelectedIndex(0);
+		cbBC.setSelectedIndex(0);
 	}
 }

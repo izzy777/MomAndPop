@@ -178,4 +178,14 @@ public class Toppings extends JPanel {
 		
 		return top;
 	}
+	public void clearTop() {
+		cbP.setSelected(false);
+		cbS.setSelected(false);
+		cbH.setSelected(false);
+		cbGP.setSelected(false);
+		cbO.setSelected(false);
+		cbM.setSelected(false);
+		cbT.setSelected(false);
+		cbPA.setSelected(false);
+	}
 }

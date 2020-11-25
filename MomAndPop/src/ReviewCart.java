@@ -75,7 +75,7 @@ public class ReviewCart extends JPanel {
 		btnRemove.setFont(new Font("Nirmala UI", Font.BOLD, 15));
 		btnRemove.setBorder(null);
 		btnRemove.setBackground(Color.RED);
-		btnRemove.setBounds(938, 498, 136, 31);
+		btnRemove.setBounds(933, 498, 136, 31);
 		add(btnRemove);
 		setVisible(false);
 		
