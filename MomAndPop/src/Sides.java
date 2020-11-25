@@ -66,41 +66,43 @@ public class Sides extends JPanel {
 		cbBC.setBounds(784, 482, 50, 41);
 		add(cbBC);
 		
-		JLabel lblBreadstickBites = new JLabel("BreadStick Bites $2");
-		lblBreadstickBites.setHorizontalAlignment(SwingConstants.CENTER);
-		lblBreadstickBites.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblBreadstickBites.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
-		lblBreadstickBites.setAlignmentY(0.0f);
-		lblBreadstickBites.setBounds(374, 274, 362, 107);
-		add(lblBreadstickBites);
-		
-		JLabel lblBigChocolateCookie = new JLabel("Big Chocolate Cookie $4");
-		lblBigChocolateCookie.setHorizontalAlignment(SwingConstants.CENTER);
-		lblBigChocolateCookie.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblBigChocolateCookie.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
-		lblBigChocolateCookie.setAlignmentY(0.0f);
-		lblBigChocolateCookie.setBounds(374, 451, 362, 107);
-		add(lblBigChocolateCookie);
-		
-		JLabel iconC = new JLabel("");
-		iconC.setIcon(new ImageIcon(Sides.class.getResource("/imgs/cookie.jpg")));
-		iconC.setBounds(393, 466, 71, 78);
-		add(iconC);
-		
 		JLabel iconBSB = new JLabel("");
 		iconBSB.setIcon(new ImageIcon(Sides.class.getResource("/imgs/BreadstickBites.jpg")));
 		iconBSB.setBounds(387, 291, 77, 78);
 		add(iconBSB);
 		
+		JLabel iconC = new JLabel("");
+		iconC.setHorizontalAlignment(SwingConstants.CENTER);
+		iconC.setIcon(new ImageIcon(Sides.class.getResource("/imgs/cookie.jpg")));
+		iconC.setBounds(387, 466, 71, 78);
+		add(iconC);
+		
 		JLabel iconBS = new JLabel("");
+		iconBS.setHorizontalAlignment(SwingConstants.CENTER);
 		iconBS.setIcon(new ImageIcon(Sides.class.getResource("/imgs/breadsticks.jpg")));
-		iconBS.setBounds(399, 131, 81, 83);
+		iconBS.setBounds(387, 131, 77, 83);
 		add(iconBS);
+		
+		JLabel lblBreadstickBites = new JLabel("    BreadStick Bites $2");
+		lblBreadstickBites.setHorizontalAlignment(SwingConstants.CENTER);
+		lblBreadstickBites.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblBreadstickBites.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
+		lblBreadstickBites.setAlignmentY(0.0f);
+		lblBreadstickBites.setBounds(374, 274, 362, 107);
+		add(lblBreadstickBites);
+		
+		JLabel lblBigChocolateCookie = new JLabel("    Big Chocolate Cookie $4");
+		lblBigChocolateCookie.setHorizontalAlignment(SwingConstants.CENTER);
+		lblBigChocolateCookie.setFont(new Font("Dialog", Font.PLAIN, 20));
+		lblBigChocolateCookie.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
+		lblBigChocolateCookie.setAlignmentY(0.0f);
+		lblBigChocolateCookie.setBounds(374, 451, 362, 107);
+		add(lblBigChocolateCookie);
 		
 		JLabel lblBreadstick = new JLabel("BreadStick $4");
 		lblBreadstick.setHorizontalAlignment(SwingConstants.CENTER);
 		lblBreadstick.setFont(new Font("Dialog", Font.PLAIN, 20));
-		lblBreadstick.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
+		lblBreadstick.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
 		lblBreadstick.setAlignmentY(0.0f);
 		lblBreadstick.setBounds(374, 119, 362, 107);
 		add(lblBreadstick);

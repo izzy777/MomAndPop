@@ -102,13 +102,13 @@ public class Drinks extends JPanel {
 		JLabel lblQ = new JLabel("Quantity");
 		lblQ.setForeground(Color.DARK_GRAY);
 		lblQ.setFont(new Font("Franklin Gothic Demi", Font.PLAIN, 16));
-		lblQ.setBounds(473, 63, 64, 26);
+		lblQ.setBounds(466, 63, 64, 26);
 		add(lblQ);
 
 		JLabel lblQ1 = new JLabel("Quantity");
 		lblQ1.setForeground(Color.DARK_GRAY);
 		lblQ1.setFont(new Font("Franklin Gothic Demi", Font.PLAIN, 16));
-		lblQ1.setBounds(985, 63, 64, 26);
+		lblQ1.setBounds(980, 63, 64, 26);
 		add(lblQ1);
 
 		
@@ -533,7 +533,7 @@ public class Drinks extends JPanel {
 		borderPepsi.setVerticalAlignment(SwingConstants.TOP);
 		borderPepsi.setHorizontalAlignment(SwingConstants.CENTER);
 		borderPepsi.setFont(new Font("Dialog", Font.PLAIN, 20));
-		borderPepsi.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
+		borderPepsi.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
 		borderPepsi.setAlignmentY(0.0f);
 		borderPepsi.setBounds(74, 95, 362, 107);
 		add(borderPepsi);
@@ -543,7 +543,7 @@ public class Drinks extends JPanel {
 		borderDietPepsi.setVerticalAlignment(SwingConstants.TOP);
 		borderDietPepsi.setHorizontalAlignment(SwingConstants.CENTER);
 		borderDietPepsi.setFont(new Font("Dialog", Font.PLAIN, 20));
-		borderDietPepsi.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
+		borderDietPepsi.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
 		borderDietPepsi.setAlignmentY(0.0f);
 		borderDietPepsi.setBounds(74, 242, 362, 107);
 		add(borderDietPepsi);
@@ -553,7 +553,7 @@ public class Drinks extends JPanel {
 		borderSunkist.setVerticalAlignment(SwingConstants.TOP);
 		borderSunkist.setHorizontalAlignment(SwingConstants.CENTER);
 		borderSunkist.setFont(new Font("Dialog", Font.PLAIN, 20));
-		borderSunkist.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
+		borderSunkist.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
 		borderSunkist.setAlignmentY(0.0f);
 		borderSunkist.setBounds(74, 388, 362, 107);
 		add(borderSunkist);
@@ -563,7 +563,7 @@ public class Drinks extends JPanel {
 		borderDietSunkist.setVerticalAlignment(SwingConstants.TOP);
 		borderDietSunkist.setHorizontalAlignment(SwingConstants.CENTER);
 		borderDietSunkist.setFont(new Font("Dialog", Font.PLAIN, 20));
-		borderDietSunkist.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
+		borderDietSunkist.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
 		borderDietSunkist.setAlignmentY(0.0f);
 		borderDietSunkist.setBounds(74, 526, 362, 107);
 		add(borderDietSunkist);
@@ -574,7 +574,7 @@ public class Drinks extends JPanel {
 		borderLemonade.setVerticalAlignment(SwingConstants.TOP);
 		borderLemonade.setHorizontalAlignment(SwingConstants.CENTER);
 		borderLemonade.setFont(new Font("Dialog", Font.PLAIN, 20));
-		borderLemonade.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
+		borderLemonade.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
 		borderLemonade.setAlignmentY(0.0f);
 		borderLemonade.setBounds(574, 526, 362, 107);
 		add(borderLemonade);
@@ -584,7 +584,7 @@ public class Drinks extends JPanel {
 		borderSierraMist.setVerticalAlignment(SwingConstants.TOP);
 		borderSierraMist.setHorizontalAlignment(SwingConstants.CENTER);
 		borderSierraMist.setFont(new Font("Dialog", Font.PLAIN, 20));
-		borderSierraMist.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
+		borderSierraMist.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
 		borderSierraMist.setAlignmentY(0.0f);
 		borderSierraMist.setBounds(574, 388, 362, 107);
 		add(borderSierraMist);
@@ -594,7 +594,7 @@ public class Drinks extends JPanel {
 		borderAW.setVerticalAlignment(SwingConstants.TOP);
 		borderAW.setHorizontalAlignment(SwingConstants.CENTER);
 		borderAW.setFont(new Font("Dialog", Font.PLAIN, 20));
-		borderAW.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
+		borderAW.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
 		borderAW.setAlignmentY(0.0f);
 		borderAW.setBounds(574, 95, 362, 107);
 		add(borderAW);
@@ -604,7 +604,7 @@ public class Drinks extends JPanel {
 		borderDAW.setVerticalAlignment(SwingConstants.TOP);
 		borderDAW.setHorizontalAlignment(SwingConstants.CENTER);
 		borderDAW.setFont(new Font("Dialog", Font.PLAIN, 20));
-		borderDAW.setBorder(new LineBorder(new Color(192, 192, 192), 5, true));
+		borderDAW.setBorder(new LineBorder(new Color(192, 192, 192), 2, true));
 		borderDAW.setAlignmentY(0.0f);
 		borderDAW.setBounds(574, 242, 362, 107);
 		add(borderDAW);

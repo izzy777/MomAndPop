@@ -242,8 +242,8 @@ public class Menu extends JFrame {
 		//Logo
 		JLabel logo = new JLabel("");
 		logo.setHorizontalAlignment(SwingConstants.CENTER);
-		logo.setIcon(new ImageIcon(Menu.class.getResource("/imgs/logo.png")));
-		logo.setBounds(0, 0, 136, 124);
+		logo.setIcon(new ImageIcon(Menu.class.getResource("/imgs/mom&poplogoresized.png")));
+		logo.setBounds(0, 0, 136, 136);
 		getContentPane().add(logo);
 		
 		//--------------------------------------------ATC Buttons on Drinks--------------------------------------------
@@ -326,6 +326,12 @@ public class Menu extends JFrame {
 		btnAddToCartLemonade.setBorderPainted(false);
 		btnAddToCartLemonade.setBackground(Color.RED);
 		btnAddToCartLemonade.setBounds(1019, 559, 40, 31);
+		
+		JLabel logo_1 = new JLabel("");
+		logo_1.setIcon(new ImageIcon(Menu.class.getResource("/imgs/logobackground.png")));
+		logo_1.setHorizontalAlignment(SwingConstants.CENTER);
+		logo_1.setBounds(0, 0, 136, 152);
+		getContentPane().add(logo_1);
 		
 		//--------------------------------------------Panels--------------------------------------------
 		//Pizza Type: Size, Crust, Sauce, Cheese
