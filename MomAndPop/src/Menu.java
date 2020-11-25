@@ -28,6 +28,7 @@ public class Menu extends JFrame {
 	Drinks drinks;
 	ReviewCart cart;
 	ContactInfo ci;
+	
 
 	/**
 	 * Launch the application.
@@ -209,7 +210,7 @@ public class Menu extends JFrame {
 		pizzaTypePnl = new PizzaType();
 		pizzaTypePnl.setBounds(136, 0, 1108, 671);
 		pizzaTypePnl.add(btnNext);
-		getContentPane().add(pizzaTypePnl);
+		getContentPane().add(pizzaTypePnl);		
 		
 		//Toppings: Meats and Veggies
 		topPnl = new Toppings();
@@ -368,6 +369,20 @@ public class Menu extends JFrame {
 			public void mouseReleased(MouseEvent e) {
 				ci.setVisible(false);
 				cart.setVisible(true);
+			}
+		});
+		
+		//Add to Cart Button for Pizza
+		btnATC.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				String desc = "Small";
+				desc = desc + "hello";
+				double base = pizzaTypePnl.base;
+				double mul = pizzaTypePnl.multiplier;
+				int top = topPnl.toppingCount();
+				double price = mul * top + base;
+				cart.model.addRow(new Object[] {"Pizza", desc, "1", price});
 			}
 		});
 	}

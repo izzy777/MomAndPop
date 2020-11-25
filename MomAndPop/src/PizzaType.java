@@ -24,6 +24,7 @@ public class PizzaType extends JPanel {
 	public String tomato;
 	public String cheese;
 	public double multiplier;
+	public double base;
 	
 
 	/**
@@ -233,6 +234,7 @@ public class PizzaType extends JPanel {
 			public void actionPerformed(ActionEvent e) {
 				size = "Small";
 				multiplier = 0.50;
+				base = 4;
 			}
 		});
 
@@ -240,6 +242,7 @@ public class PizzaType extends JPanel {
 			public void actionPerformed(ActionEvent e) {
 				size = "Medium";
 				multiplier = 0.75;
+				base = 6;
 			}
 		});
 
@@ -247,6 +250,7 @@ public class PizzaType extends JPanel {
 			public void actionPerformed(ActionEvent e) {
 				size = "Large";
 				multiplier = 1.00;
+				base = 8;
 			}
 		});
 		
@@ -254,6 +258,7 @@ public class PizzaType extends JPanel {
 			public void actionPerformed(ActionEvent e) {
 				size = "Extra Large";
 				multiplier = 1.25;
+				base = 10;
 			}
 		});
 		
@@ -301,5 +306,8 @@ public class PizzaType extends JPanel {
 				cheese = "No Cheese";
 			}
 		});
+	}
+	public double getMultiplier() {
+		return multiplier;
 	}
 }

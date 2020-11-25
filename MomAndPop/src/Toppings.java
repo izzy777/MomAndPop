@@ -14,7 +14,15 @@ import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
 
 public class Toppings extends JPanel {
-
+	int toppingNum;
+	JCheckBox cbP;
+	JCheckBox cbS;
+	JCheckBox cbH;
+	JCheckBox cbGP;
+	JCheckBox cbO;
+	JCheckBox cbM;
+	JCheckBox cbT;
+	JCheckBox cbPA;
 	/**
 	 * Create the panel.
 	 */
@@ -106,43 +114,43 @@ public class Toppings extends JPanel {
 		lblH.setBounds(234, 378, 219, 40);
 		add(lblH);
 		
-		JCheckBox cbP = new JCheckBox("");
+		cbP = new JCheckBox("");
 		cbP.setContentAreaFilled(false);
 		cbP.setBounds(200, 249, 21, 40);
 		cbP.setFocusable(false);
 		add(cbP);
 		
-		JCheckBox cbS = new JCheckBox("");
+		cbS = new JCheckBox("");
 		cbS.setContentAreaFilled(false);
 		cbS.setBounds(200, 314, 28, 40);
 		add(cbS);
 		
-		JCheckBox cbH = new JCheckBox("");
+		cbH = new JCheckBox("");
 		cbH.setContentAreaFilled(false);
 		cbH.setBounds(200, 378, 28, 40);
 		add(cbH);
 		
-		JCheckBox cbGP = new JCheckBox("");
+		cbGP = new JCheckBox("");
 		cbGP.setContentAreaFilled(false);
 		cbGP.setBounds(620, 249, 28, 40);
 		add(cbGP);
 		
-		JCheckBox cbO = new JCheckBox("");
+		cbO = new JCheckBox("");
 		cbO.setContentAreaFilled(false);
 		cbO.setBounds(620, 314, 28, 40);
 		add(cbO);
 		
-		JCheckBox cbM = new JCheckBox("");
+		cbM = new JCheckBox("");
 		cbM.setContentAreaFilled(false);
 		cbM.setBounds(620, 378, 28, 40);
 		add(cbM);
 		
-		JCheckBox cbT = new JCheckBox("");
+		cbT = new JCheckBox("");
 		cbT.setContentAreaFilled(false);
 		cbT.setBounds(620, 439, 28, 40);
 		add(cbT);
 		
-		JCheckBox cbPA = new JCheckBox("");
+		cbPA = new JCheckBox("");
 		cbPA.setContentAreaFilled(false);
 		cbPA.setBounds(620, 500, 28, 40);
 		add(cbPA);
@@ -153,6 +161,21 @@ public class Toppings extends JPanel {
 		lblFirstTopping.setFont(new Font("Franklin Gothic Demi Cond", Font.PLAIN, 25));
 		lblFirstTopping.setBounds(10, 74, 1088, 130);
 		add(lblFirstTopping);
+		
+		
 
+	}
+	public int toppingCount() {
+		int top = -1;
+		if (cbP.isSelected() == true) top++;
+		if (cbS.isSelected() == true) top++;
+		if (cbH.isSelected() == true) top++;
+		if (cbGP.isSelected() == true) top++;
+		if (cbO.isSelected() == true) top++;
+		if (cbM.isSelected() == true) top++;
+		if (cbT.isSelected() == true) top++;
+		if (cbPA.isSelected() == true) top++;
+		
+		return top;
 	}
 }

@@ -5,7 +5,6 @@ import javax.swing.SwingConstants;
 import javax.swing.border.EtchedBorder;
 import java.awt.Color;
 import java.awt.Component;
-
 import javax.swing.JCheckBox;
 import javax.swing.JButton;
 import javax.swing.border.LineBorder;
@@ -17,9 +16,12 @@ import javax.swing.JScrollPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.ListSelectionModel;
 import javax.swing.ScrollPaneConstants;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class ReviewCart extends JPanel {
-	private JTable table;
+	public JTable table;
+	public DefaultTableModel model;
 	
 	/**
 	 * Create the panel.
@@ -48,27 +50,38 @@ public class ReviewCart extends JPanel {
 		scrollPane.setBounds(209, 141, 689, 388);
 		add(scrollPane);
 		
-		table = new JTable();
+		model = new DefaultTableModel() {
+			@Override
+			public boolean isCellEditable(int row, int column) {
+				return false;
+			}
+		};
+		model.addColumn("Item");
+		model.addColumn("Description");
+		model.addColumn("Quantity");
+		model.addColumn("Price");
+		model.addRow(new Object[] {"Pizza", "pizzam,ljnglkjszlgjolsrjgl;kirjzlgjrdzlkjglk;szrjglkjrdgljdlrjxgkldrjlgkjdrg", "1","10.20"});
+		model.addRow(new Object[] {"Drink", "pizzam,ljnglkjszlgjolsrjgl;kirjzlgjrdzlkjglk;szrjglkjrdgljdlrjxgkldrjlgkjdrg", "1","10.20"});
+		
+		table = new JTable(model);
 		table.setGridColor(Color.WHITE);
 		table.setBackground(Color.WHITE);
 		table.getTableHeader().setReorderingAllowed(false);
 		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-		table.setModel(new DefaultTableModel(
-			new Object[][] {
-			},
-			new String[] {
-				"Item", "Description", "Quantity", "Price"
-			}
-		) {
-			Class[] columnTypes = new Class[] {
-				String.class, String.class, Integer.class, Double.class
-			};
-			public Class getColumnClass(int columnIndex) {
-				return columnTypes[columnIndex];
-			}
-		});
 		scrollPane.setViewportView(table);
+		
+		JButton btnRemove = new JButton("Remove");
+		btnRemove.setBounds(948, 323, 89, 23);
+		add(btnRemove);
 		setVisible(false);
+		
+		//Removes selected row;
+				btnRemove.addMouseListener(new MouseAdapter() {
+					@Override
+					public void mouseReleased(MouseEvent e) {
+						model.removeRow(table.getSelectedRow());
+					}
+				});
 
 	}
 }
