@@ -504,6 +504,8 @@ public class Menu extends JFrame {
 				topPnl.setVisible(false);
 				ci.setVisible(false);
 				
+				cart.getSum();
+				cart.setTotal();
 			}
 		});	
 		
@@ -551,7 +553,6 @@ public class Menu extends JFrame {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				String desc = "Small";
-				desc = desc + "hello";
 				double base = pizzaTypePnl.base;
 				double mul = pizzaTypePnl.multiplier;
 				int top = topPnl.toppingCount();

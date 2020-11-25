@@ -22,7 +22,8 @@ import java.awt.event.MouseEvent;
 public class ReviewCart extends JPanel {
 	public JTable table;
 	public DefaultTableModel model;
-	
+	double total;
+	private JLabel lblTotal;
 	/**
 	 * Create the panel.
 	 */
@@ -32,7 +33,7 @@ public class ReviewCart extends JPanel {
 		setLayout(null);
 		
 
-		JLabel lblTotal = new JLabel("Total:");
+		lblTotal = new JLabel("Total:");
 		lblTotal.setBounds(435, 608, 237, 31);
 		lblTotal.setHorizontalAlignment(SwingConstants.CENTER);
 		lblTotal.setFont(new Font("Nirmala UI", Font.BOLD, 25));
@@ -83,8 +84,22 @@ public class ReviewCart extends JPanel {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				model.removeRow(table.getSelectedRow());
+				getSum();
+				setTotal();
 			}
 		});
-
+		
+		
+	}
+	//set Total
+	public void setTotal() {
+		lblTotal.setText("Total: $" + total);
+	}
+	
+	public void getSum() {
+		total = 0;
+		for(int i = 0; i < table.getRowCount(); i++) {
+			total = total + Double.parseDouble(table.getValueAt(i, 3).toString());
+		}
 	}
 }
