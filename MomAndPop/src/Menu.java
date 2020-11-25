@@ -5,6 +5,8 @@ import javax.swing.JPanel;
 import java.awt.Color;
 import javax.swing.JLabel;
 import java.awt.Font;
+import java.awt.Rectangle;
+
 import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
 import javax.swing.ImageIcon;
@@ -205,6 +207,87 @@ public class Menu extends JFrame {
 		logo.setBounds(0, 0, 136, 124);
 		getContentPane().add(logo);
 		
+		//These are AddToCart Buttons on Drinks
+		//Pepsi
+		JButton btnAddToCartPepsi = new JButton("");	
+		btnAddToCartPepsi.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
+		btnAddToCartPepsi.setForeground(Color.WHITE);
+		btnAddToCartPepsi.setFocusable(false);
+		btnAddToCartPepsi.setBounds(new Rectangle(100, 0, 0, 0));
+		btnAddToCartPepsi.setBorderPainted(false);
+		btnAddToCartPepsi.setBackground(Color.RED);
+		btnAddToCartPepsi.setBounds(505, 131, 40, 31);
+		
+		//Diet Pepsi
+		JButton btnAddToCartDietPepsi = new JButton("");
+		btnAddToCartDietPepsi.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
+		btnAddToCartDietPepsi.setForeground(Color.WHITE);
+		btnAddToCartDietPepsi.setFocusable(false);
+		btnAddToCartDietPepsi.setBounds(new Rectangle(100, 0, 0, 0));
+		btnAddToCartDietPepsi.setBorderPainted(false);
+		btnAddToCartDietPepsi.setBackground(Color.RED);
+		btnAddToCartDietPepsi.setBounds(505, 274, 40, 31);
+		
+		//Sunkist
+		JButton btnAddToCartSunkist = new JButton("");
+		btnAddToCartSunkist.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
+		btnAddToCartSunkist.setForeground(Color.WHITE);
+		btnAddToCartSunkist.setFocusable(false);
+		btnAddToCartSunkist.setBounds(new Rectangle(100, 0, 0, 0));
+		btnAddToCartSunkist.setBorderPainted(false);
+		btnAddToCartSunkist.setBackground(Color.RED);
+		btnAddToCartSunkist.setBounds(505, 422, 40, 31);
+		
+		//Diet Sunkist
+		JButton btnAddToCartDietSunkist = new JButton("");
+		btnAddToCartDietSunkist.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
+		btnAddToCartDietSunkist.setForeground(Color.WHITE);
+		btnAddToCartDietSunkist.setFocusable(false);
+		btnAddToCartDietSunkist.setBounds(new Rectangle(100, 0, 0, 0));
+		btnAddToCartDietSunkist.setBorderPainted(false);
+		btnAddToCartDietSunkist.setBackground(Color.RED);
+		btnAddToCartDietSunkist.setBounds(505, 559, 40, 31);
+		
+		//Root Beer
+		JButton btnAddToCartAW = new JButton("");
+		btnAddToCartAW.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
+		btnAddToCartAW.setForeground(Color.WHITE);
+		btnAddToCartAW.setFocusable(false);
+		btnAddToCartAW.setBounds(new Rectangle(100, 0, 0, 0));
+		btnAddToCartAW.setBorderPainted(false);
+		btnAddToCartAW.setBackground(Color.RED);
+		btnAddToCartAW.setBounds(1019, 131, 40, 31);
+		
+		//Diet Root Beer
+		JButton btnAddToCartDietAW = new JButton("");
+		btnAddToCartDietAW.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
+		btnAddToCartDietAW.setForeground(Color.WHITE);
+		btnAddToCartDietAW.setFocusable(false);
+		btnAddToCartDietAW.setBounds(new Rectangle(100, 0, 0, 0));
+		btnAddToCartDietAW.setBorderPainted(false);
+		btnAddToCartDietAW.setBackground(Color.RED);
+		btnAddToCartDietAW.setBounds(1019, 274, 40, 31);
+		
+		//Sierra Mist
+		JButton btnAddToCartSierraMist = new JButton("");
+		btnAddToCartSierraMist.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
+		btnAddToCartSierraMist.setForeground(Color.WHITE);
+		btnAddToCartSierraMist.setFocusable(false);
+		btnAddToCartSierraMist.setBounds(new Rectangle(100, 0, 0, 0));
+		btnAddToCartSierraMist.setBorderPainted(false);
+		btnAddToCartSierraMist.setBackground(Color.RED);
+		btnAddToCartSierraMist.setBounds(1019, 422, 40, 31);
+		
+		//Lemonade
+		JButton btnAddToCartLemonade = new JButton("");
+		btnAddToCartLemonade.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
+		btnAddToCartLemonade.setForeground(Color.WHITE);
+		btnAddToCartLemonade.setFocusable(false);
+		btnAddToCartLemonade.setBounds(new Rectangle(100, 0, 0, 0));
+		btnAddToCartLemonade.setBorderPainted(false);
+		btnAddToCartLemonade.setBackground(Color.RED);
+		btnAddToCartLemonade.setBounds(1019, 559, 40, 31);
+		
 		//These are pages
 		//Pizza Type: Size, Crust, Sauce, Cheese
 		pizzaTypePnl = new PizzaType();
@@ -231,6 +314,14 @@ public class Menu extends JFrame {
 		drinks = new Drinks();
 		drinks.setVisible(false);
 		drinks.setBounds(136, 0, 1108, 671);
+		drinks.add(btnAddToCartPepsi);
+		drinks.add(btnAddToCartDietPepsi);
+		drinks.add(btnAddToCartSunkist);
+		drinks.add(btnAddToCartDietSunkist);
+		drinks.add(btnAddToCartAW);
+		drinks.add(btnAddToCartDietAW);
+		drinks.add(btnAddToCartLemonade);
+		drinks.add(btnAddToCartSierraMist);
 		getContentPane().add(drinks);
 		
 		//Cart
@@ -248,6 +339,14 @@ public class Menu extends JFrame {
 		ci.add(btnDelivery);
 		ci.add(btnPickup);
 		getContentPane().add(ci);
+		
+		//Drinks Add to Cart Methods
+		btnAddToCartPepsi.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				cart.model.addRow(new Object[] {"Pepsi", "small", "1", "1.00"});
+			}
+		});
 
 	
 		//If Pizza was click

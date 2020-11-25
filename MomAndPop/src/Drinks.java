@@ -16,6 +16,8 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.ButtonGroup;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.event.ActionEvent;
 
 public class Drinks extends JPanel {
@@ -27,7 +29,7 @@ public class Drinks extends JPanel {
 	private final ButtonGroup dietAW = new ButtonGroup();
 	private final ButtonGroup sierraMist = new ButtonGroup();
 	private final ButtonGroup Lemonade = new ButtonGroup();
-
+	Menu m;
 	/**
 	 * Create the panel.
 	 */
@@ -77,24 +79,6 @@ public class Drinks extends JPanel {
 		cbQuantityPepsi.setBounds(466, 131, 40, 31);
 		add(cbQuantityPepsi);
 		
-		JButton btnAddToCartPepsi = new JButton("");
-		btnAddToCartPepsi.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				if (e.getSource() == btnAddToCartPepsi) {
-					int pepsiQuantity = cbQuantityPepsi.getSelectedIndex(); 
-					System.out.println("pepsi: " + pepsiQuantity);
-				}
-			}
-		});
-		
-		btnAddToCartPepsi.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
-		btnAddToCartPepsi.setForeground(Color.WHITE);
-		btnAddToCartPepsi.setFocusable(false);
-		btnAddToCartPepsi.setBounds(new Rectangle(100, 0, 0, 0));
-		btnAddToCartPepsi.setBorderPainted(false);
-		btnAddToCartPepsi.setBackground(Color.RED);
-		btnAddToCartPepsi.setBounds(505, 131, 40, 31);
-		add(btnAddToCartPepsi);
 		
 		JComboBox cbQuantityDietPepsi = new JComboBox();
 		cbQuantityDietPepsi.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
@@ -102,25 +86,7 @@ public class Drinks extends JPanel {
 		cbQuantityDietPepsi.setFocusable(false);
 		cbQuantityDietPepsi.setBounds(466, 274, 40, 31);
 		add(cbQuantityDietPepsi);
-		
-		JButton btnAddToCartDietPepsi = new JButton("");
-		btnAddToCartDietPepsi.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				if (e.getSource() == btnAddToCartDietPepsi) {
-					int cbQuantityDietPepsi = cbQuantityPepsi.getSelectedIndex(); 
-					System.out.println("Diet pepsi: " + cbQuantityDietPepsi);
-				}
-				
-			}
-		});
-		btnAddToCartDietPepsi.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
-		btnAddToCartDietPepsi.setForeground(Color.WHITE);
-		btnAddToCartDietPepsi.setFocusable(false);
-		btnAddToCartDietPepsi.setBounds(new Rectangle(100, 0, 0, 0));
-		btnAddToCartDietPepsi.setBorderPainted(false);
-		btnAddToCartDietPepsi.setBackground(Color.RED);
-		btnAddToCartDietPepsi.setBounds(505, 274, 40, 31);
-		add(btnAddToCartDietPepsi);
+
 		
 		JComboBox cbQuantitySunkist = new JComboBox();
 		cbQuantitySunkist.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
@@ -128,16 +94,7 @@ public class Drinks extends JPanel {
 		cbQuantitySunkist.setFocusable(false);
 		cbQuantitySunkist.setBounds(466, 422, 40, 31);
 		add(cbQuantitySunkist);
-		
-		JButton btnAddToCartSunkist = new JButton("");
-		btnAddToCartSunkist.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
-		btnAddToCartSunkist.setForeground(Color.WHITE);
-		btnAddToCartSunkist.setFocusable(false);
-		btnAddToCartSunkist.setBounds(new Rectangle(100, 0, 0, 0));
-		btnAddToCartSunkist.setBorderPainted(false);
-		btnAddToCartSunkist.setBackground(Color.RED);
-		btnAddToCartSunkist.setBounds(505, 422, 40, 31);
-		add(btnAddToCartSunkist);
+
 		
 		JComboBox cbQuantityDietSunkist = new JComboBox();
 		cbQuantityDietSunkist.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
@@ -146,15 +103,7 @@ public class Drinks extends JPanel {
 		cbQuantityDietSunkist.setBounds(466, 559, 40, 31);
 		add(cbQuantityDietSunkist);
 		
-		JButton btnAddToCartDietSunkist = new JButton("");
-		btnAddToCartDietSunkist.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
-		btnAddToCartDietSunkist.setForeground(Color.WHITE);
-		btnAddToCartDietSunkist.setFocusable(false);
-		btnAddToCartDietSunkist.setBounds(new Rectangle(100, 0, 0, 0));
-		btnAddToCartDietSunkist.setBorderPainted(false);
-		btnAddToCartDietSunkist.setBackground(Color.RED);
-		btnAddToCartDietSunkist.setBounds(505, 559, 40, 31);
-		add(btnAddToCartDietSunkist);
+		
 		
 		JComboBox cbQuantityAW = new JComboBox();
 		cbQuantityAW.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
@@ -163,23 +112,6 @@ public class Drinks extends JPanel {
 		cbQuantityAW.setBounds(980, 131, 40, 31);
 		add(cbQuantityAW);
 		
-		JButton btnAddToCartAW = new JButton("");
-		btnAddToCartAW.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				if (e.getSource() == btnAddToCartAW) {
-					int AWQuantity = cbQuantityAW.getSelectedIndex(); 
-					System.out.println("A&W Root Beer " + AWQuantity);
-				}
-			}
-		});
-		btnAddToCartAW.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
-		btnAddToCartAW.setForeground(Color.WHITE);
-		btnAddToCartAW.setFocusable(false);
-		btnAddToCartAW.setBounds(new Rectangle(100, 0, 0, 0));
-		btnAddToCartAW.setBorderPainted(false);
-		btnAddToCartAW.setBackground(Color.RED);
-		btnAddToCartAW.setBounds(1019, 131, 40, 31);
-		add(btnAddToCartAW);
 		
 		JComboBox cbQuantityDietAW = new JComboBox();
 		cbQuantityDietAW.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9"}));
@@ -187,16 +119,7 @@ public class Drinks extends JPanel {
 		cbQuantityDietAW.setFocusable(false);
 		cbQuantityDietAW.setBounds(980, 274, 40, 31);
 		add(cbQuantityDietAW);
-		
-		JButton btnAddToCartDietAW = new JButton("");
-		btnAddToCartDietAW.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
-		btnAddToCartDietAW.setForeground(Color.WHITE);
-		btnAddToCartDietAW.setFocusable(false);
-		btnAddToCartDietAW.setBounds(new Rectangle(100, 0, 0, 0));
-		btnAddToCartDietAW.setBorderPainted(false);
-		btnAddToCartDietAW.setBackground(Color.RED);
-		btnAddToCartDietAW.setBounds(1019, 274, 40, 31);
-		add(btnAddToCartDietAW);
+
 		
 		JComboBox cbQuantitySierraMist = new JComboBox();
 		cbQuantitySierraMist.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
@@ -205,15 +128,6 @@ public class Drinks extends JPanel {
 		cbQuantitySierraMist.setBounds(980, 422, 40, 31);
 		add(cbQuantitySierraMist);
 		
-		JButton btnAddToCartSierraMist = new JButton("");
-		btnAddToCartSierraMist.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
-		btnAddToCartSierraMist.setForeground(Color.WHITE);
-		btnAddToCartSierraMist.setFocusable(false);
-		btnAddToCartSierraMist.setBounds(new Rectangle(100, 0, 0, 0));
-		btnAddToCartSierraMist.setBorderPainted(false);
-		btnAddToCartSierraMist.setBackground(Color.RED);
-		btnAddToCartSierraMist.setBounds(1019, 422, 40, 31);
-		add(btnAddToCartSierraMist);
 		
 		JComboBox cbQuantityLemonade = new JComboBox();
 		cbQuantityLemonade.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}));
@@ -222,15 +136,7 @@ public class Drinks extends JPanel {
 		cbQuantityLemonade.setBounds(980, 559, 40, 31);
 		add(cbQuantityLemonade);
 		
-		JButton btnAddToCartLemonade = new JButton("");
-		btnAddToCartLemonade.setIcon(new ImageIcon(Drinks.class.getResource("/imgs/cart.png")));
-		btnAddToCartLemonade.setForeground(Color.WHITE);
-		btnAddToCartLemonade.setFocusable(false);
-		btnAddToCartLemonade.setBounds(new Rectangle(100, 0, 0, 0));
-		btnAddToCartLemonade.setBorderPainted(false);
-		btnAddToCartLemonade.setBackground(Color.RED);
-		btnAddToCartLemonade.setBounds(1019, 559, 40, 31);
-		add(btnAddToCartLemonade);
+
 		
 		JLabel lblMAW = new JLabel("M");
 		lblMAW.setHorizontalAlignment(SwingConstants.CENTER);
