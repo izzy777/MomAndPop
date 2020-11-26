@@ -85,9 +85,10 @@ public class PickUp extends JPanel {
 		add(lblText);
 		
 		JLabel lblASAP = new JLabel("Your Order Will Be Ready Within 20-30 Minutes!");
+		lblASAP.setHorizontalAlignment(SwingConstants.CENTER);
 		lblASAP.setVisible(false);
 		lblASAP.setFont(new Font("Tahoma", Font.PLAIN, 32));
-		lblASAP.setBounds(303, 359, 501, 52);
+		lblASAP.setBounds(179, 359, 750, 52);
 		add(lblASAP);
 		
 		//ASAP Button Clicked
