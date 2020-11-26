@@ -55,6 +55,7 @@ public class Login {
 		frame.getContentPane().setLayout(null);
 		frame.setBackground(Color.RED);
 		frame.setResizable(false);
+		frame.setLocationRelativeTo(null);
 		
 		JPanel panel = new JPanel();
 		panel.setBounds(136, 0, 1108, 671);

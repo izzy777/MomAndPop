@@ -51,6 +51,7 @@ public class SignUp extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setLayout(null);
 		setResizable(false);
+		setLocationRelativeTo(null);
 		
 		JLabel logo = new JLabel("");
 		logo.setIcon(new ImageIcon(SignUp.class.getResource("/imgs/mom&poplogoresized.png")));

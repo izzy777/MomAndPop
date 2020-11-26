@@ -68,6 +68,7 @@ public class Menu extends JFrame {
 		getContentPane().setLayout(null);
 		setBackground(Color.RED);
 		setResizable(false);
+		setLocationRelativeTo(null);
 		
 		//main menu panel
 		JPanel menu = new JPanel();
