@@ -759,10 +759,10 @@ public class Menu extends JFrame {
 	//Add to cart Method for Sides
 	public void addToCart() {
 		if (side.cbBS.isSelected() == true) {
-			cart.model.addRow(new Object[] {"BreakSticks", "", side.cbB.getSelectedIndex()+1, (side.cbB.getSelectedIndex()+1) * 4.00 });
+			cart.model.addRow(new Object[] {"BreadSticks", "", side.cbB.getSelectedIndex()+1, (side.cbB.getSelectedIndex()+1) * 4.00 });
 		}
 		if (side.cbBSB.isSelected() == true) {
-			cart.model.addRow(new Object[] {"BreakStick Bites", "", side.cbBSb.getSelectedIndex()+1, (side.cbBSb.getSelectedIndex()+1) * 2.00 });
+			cart.model.addRow(new Object[] {"BreadStick Bites", "", side.cbBSb.getSelectedIndex()+1, (side.cbBSb.getSelectedIndex()+1) * 2.00 });
 			
 		}
 		if (side.cbBCC.isSelected() == true) {
