@@ -84,6 +84,12 @@ public class PickUp extends JPanel {
 		lblText.setBounds(303, 165, 501, 31);
 		add(lblText);
 		
+		JLabel lblASAP = new JLabel("Come in then next 20-30 Minutes");
+		lblASAP.setVisible(false);
+		lblASAP.setFont(new Font("Tahoma", Font.PLAIN, 32));
+		lblASAP.setBounds(303, 359, 501, 52);
+		add(lblASAP);
+		
 		//ASAP Button Clicked
 		btnASAP.addMouseListener(new MouseAdapter() {
 			@Override
@@ -94,6 +100,7 @@ public class PickUp extends JPanel {
 				tfDate.setVisible(false);
 				lblDate.setVisible(false);
 				lblTime.setVisible(false);
+				lblASAP.setVisible(true);
 			}
 		});
 		
@@ -107,6 +114,7 @@ public class PickUp extends JPanel {
 				tfDate.setVisible(true);
 				lblDate.setVisible(true);
 				lblTime.setVisible(true);
+				lblASAP.setVisible(false);
 			}
 		});
 	}
