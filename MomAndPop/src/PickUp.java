@@ -84,7 +84,7 @@ public class PickUp extends JPanel {
 		lblText.setBounds(303, 165, 501, 31);
 		add(lblText);
 		
-		JLabel lblASAP = new JLabel("Come in then next 20-30 Minutes");
+		JLabel lblASAP = new JLabel("Your Order Will Be Ready Within 20-30 Minutes!");
 		lblASAP.setVisible(false);
 		lblASAP.setFont(new Font("Tahoma", Font.PLAIN, 32));
 		lblASAP.setBounds(303, 359, 501, 52);
