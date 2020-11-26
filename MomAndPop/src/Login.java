@@ -56,6 +56,7 @@ public class Login {
 		frame.setBackground(Color.RED);
 		frame.setResizable(false);
 		frame.setLocationRelativeTo(null);
+		frame.setTitle("Mom and Pop Pizzeria");
 		
 		JPanel panel = new JPanel();
 		panel.setBounds(136, 0, 1108, 671);

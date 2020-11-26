@@ -52,6 +52,7 @@ public class SignUp extends JFrame {
 		getContentPane().setLayout(null);
 		setResizable(false);
 		setLocationRelativeTo(null);
+		setTitle("Mom and Pop Pizzeria");
 		
 		JLabel logo = new JLabel("");
 		logo.setIcon(new ImageIcon(SignUp.class.getResource("/imgs/mom&poplogoresized.png")));

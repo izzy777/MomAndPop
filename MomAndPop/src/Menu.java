@@ -69,6 +69,7 @@ public class Menu extends JFrame {
 		setBackground(Color.RED);
 		setResizable(false);
 		setLocationRelativeTo(null);
+		setTitle("Mom and Pop Pizzeria");
 		
 		//main menu panel
 		JPanel menu = new JPanel();
